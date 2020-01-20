@@ -5,11 +5,9 @@ import { FormsModule, ReactiveFormsModule }   								  from '@angular/forms';
 
 import { IonicApp, IonicModule, IonicErrorHandler, DeepLinkConfig }           from 'ionic-angular';
 import { StatusBar }                                                          from '@ionic-native/status-bar';
-import { SuperTabsModule }                                                    from 'ionic2-super-tabs';
-import { AgmCoreModule }                                                      from '@agm/core';
-import { ChartsModule }                                                       from 'ng2-charts';
 import { TranslateModule, TranslateLoader }                                   from '@ngx-translate/core';
 import { TranslateHttpLoader }                                                from '@ngx-translate/http-loader';
+import { AnimationService, AnimatesDirective }                                from 'css-animator';
 /*=c8o_ModuleTsImports*/
 
 import { C8o }                                                                from "c8osdkangular";
@@ -36,15 +34,15 @@ export function createTranslateLoader(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [
-    MyApp,/*=c8o_PagesDeclarations*/
-  ],
+  declarations: [/*Begin_c8o_NgDeclarations*/
+    MyApp,
+    /*=c8o_PagesDeclarations*/
+  /*End_c8o_NgDeclarations*/],
   imports: [/*Begin_c8o_NgModules*/
     BrowserModule,
     HttpClientModule,
 	FormsModule,
 	ReactiveFormsModule,
-	ChartsModule,
 	TranslateModule.forRoot({
         loader: {
           provide: TranslateLoader,
@@ -52,19 +50,19 @@ export function createTranslateLoader(http: HttpClient) {
           deps: [HttpClient]
         }
 	}),
-	SuperTabsModule.forRoot(),
-	AgmCoreModule.forRoot({
-	      apiKey: 'AIzaSyB0Nl1dX0kEsB5QZaNf6m-tnb1N-U5dpXs'
-	}),
     IonicModule.forRoot(MyApp, {}, deepLinkConfig)
   /*End_c8o_NgModules*/],
   bootstrap: [IonicApp],
-  entryComponents: [MyApp,/*=c8o_PagesDeclarations*/],
+  entryComponents: [/*Begin_c8o_NgComponents*/
+    MyApp,
+    /*=c8o_PagesDeclarations*/
+  /*End_c8o_NgComponents*/],
   providers: [/*Begin_c8o_NgProviders*/
     StatusBar,
     C8o,
     C8oRouter,
     ActionBeans,
+    AnimationService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   /*End_c8o_NgProviders*/]
 })

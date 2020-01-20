@@ -1,10 +1,20 @@
 import { Component }																from '@angular/core';
 import { DomSanitizer }                 											from '@angular/platform-browser';
-import { NavParams, LoadingController, MenuController, Platform }					from 'ionic-angular';
+import { NavParams,
+		 LoadingController,
+		 MenuController,
+		 Platform,
+		 AlertController,
+		 ActionSheetController,
+		 ModalController }															from 'ionic-angular';
 import { C8oRouter }                    											from 'c8ocaf';
 import { C8oPage }                      											from 'c8ocaf';
+import { ChangeDetectorRef,
+		 ChangeDetectionStrategy,
+		 InjectionToken,
+		 Injector,
+		 Type} 																		from "@angular/core";
 import { ActionBeans } 																from '../../services/actionbeans.service';
-import {ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector, Type} from "@angular/core";
 
 
 /*

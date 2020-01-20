@@ -1,6 +1,12 @@
-import {Injectable} from "@angular/core";
-import {C8oPage}    from 'c8ocaf';
-import {Platform}   from "ionic-angular";
+import {Injectable}         from "@angular/core";
+import {C8oPage}            from 'c8ocaf';
+import {AnimationService, 
+        AnimationBuilder}   from 'css-animator';
+import {Platform,
+        ModalController,
+        AlertController,
+        PopoverController
+}                           from "ionic-angular";
 
 /*=c8o_ActionTsImports*/
 

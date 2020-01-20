@@ -42,6 +42,7 @@ export class MyApp {
     rootPage = /*=c8o_RootPage*/;
     pages : Array<{title: string, icon: string, component: any, includedInAutoMenu?: boolean}>;
     pagesKeyValue: any;
+    private imgCache : Object = new Object();
 	
 	/*Begin_c8o_AppDeclaration*/
 	/*End_c8o_AppDeclaration*/
@@ -111,12 +112,11 @@ export class MyApp {
 		   
         platform.ready().then(() => {
             statusBar.styleDefault();
-            translate.setDefaultLang('en')
-            translate.use(translate.getBrowserLang())
             /**
              * Then we finalize initialization
              */
             this.c8o.finalizeInit().then(()=>{
+                this.resetImageCache();
                 /*Begin_c8o_AppInitialization*/
                 /*End_c8o_AppInitialization*/
             });
@@ -152,6 +152,48 @@ export class MyApp {
             }
         }
         return arrayIncluded;
+    }
+    
+    /**
+     * Get attachment data url a requestable response to be displayed
+     *
+     * @param id             the DocumentID to get the attachment from
+     * @param attachmentName  name of the attachment to display (eg: image.jpg)
+     * @param placeholderURL  the url to display while we get the attachment (This is an Async process)
+     * @param databaseName    the Qname of a FS database (ex project.fsdatabase) to get the attachment from.
+     *
+     */
+    public getAttachmentUrl(id: string, attachmentName: string, placeholderURL : string, databaseName?: string): Object{
+        return this.router.getAttachmentUrl(id, attachmentName, placeholderURL, this.imgCache, databaseName);
+    }
+    
+    /**
+     * Reset Image Cache.
+     *
+     * @param cacheEntry : the name of the Entry to clear. If not provided, clears all the entries
+     *
+     */
+    public resetImageCache(cacheEntry: string= null ) {
+        if (cacheEntry) {
+            delete this.imgCache[cacheEntry]
+            return;
+        }
+        this.imgCache = []
+    }
+    
+    /**
+     * Gets the data from previous called requestable list. can be used in an Angular 2 directive such as
+     *
+     *   *ngFor="let category of listen(['fs://.view']).rows" or
+     *   *ngFor="let Page2 of listen(['fs://.view', 'fs://.view#search']).rows"
+     *
+     * The data for the first requestable to match is returned
+     *
+     * @return the data for one of the requestables in the list.
+     */
+    public listen(requestables : string[]) : any {
+        return this.router.getResponseForView(this.constructor.name, requestables);
+        //this.router.getResponseForView('_C80_GeneralView', ['fs://fs_monmobile.view');
     }
 
 	/*Begin_c8o_AppFunction*/

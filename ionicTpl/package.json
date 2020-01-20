@@ -30,13 +30,12 @@
     "@ionic-native/status-bar": "4.3.3",
     "ionicons": "3.0.0",
     "sw-toolbox": "3.6.0",
-    "ionic2-super-tabs": "4.0.1",
-    "@agm/core": "1.0.0-beta.2",
-    "ng2-charts":"1.6.0",
     "@ngx-translate/core":"9.0.2",
-    "@ngx-translate/http-loader":"2.0.1",  
-    "c8osdkangular": "2.1.58",
-    "c8ocaf": "1.0.88"
+    "@ngx-translate/http-loader":"2.0.1",
+    "css-animator": "2.3.0",  
+    "animate.css": "3.6.1",  
+    "c8osdkangular": "2.1.64",
+    "c8ocaf": "1.0.100"
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.1.6",
