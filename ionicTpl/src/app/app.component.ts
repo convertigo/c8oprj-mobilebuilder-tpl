@@ -1,4 +1,5 @@
 import { Component, ViewChild}                              from '@angular/core';
+import { ChangeDetectorRef, Injector}                       from '@angular/core';
 
 import { Platform, Nav, App, LoadingController}             from 'ionic-angular';
 import { StatusBar }                                        from '@ionic-native/status-bar';
@@ -7,8 +8,10 @@ import { TranslateService }                                 from '@ngx-translate
 // Convertigo CAF Imports
 import { C8oRouter }                                        from 'c8ocaf';
 import { C8oRoute, C8oRouteOptions, C8oRouteListener}       from 'c8ocaf'
-import { C8oPage}                                           from "c8ocaf";
+import { C8oPage, C8oPageBase, C8oCafUtils}                 from "c8ocaf";
 import { C8o, C8oSettings, C8oLogLevel,C8oProgress }        from "c8osdkangular";
+
+import { ActionBeans }                                      from '../services/actionbeans.service';
 
 /*
 	You can customize your application class by writing code between the :
@@ -20,6 +23,7 @@ import { C8o, C8oSettings, C8oLogLevel,C8oProgress }        from "c8osdkangular"
    	
    	Any code placed outside these these comments will be lost when the application is generated
 */
+/*=c8o_AppImports*/
 
 /*Begin_c8o_AppImport*/
 /*End_c8o_AppImport*/
@@ -37,17 +41,23 @@ import { C8o, C8oSettings, C8oLogLevel,C8oProgress }        from "c8osdkangular"
 @Component({
     templateUrl: 'app.html'
 })
-export class MyApp {
+export class MyApp extends C8oPageBase {
     @ViewChild(Nav) nav: Nav;
     rootPage = /*=c8o_RootPage*/;
-    pages : Array<{title: string, icon: string, component: any, includedInAutoMenu?: boolean}>;
+    pages : Array<{title: string, icon: string, iconPos: string, component: any, includedInAutoMenu?: boolean}>;
     pagesKeyValue: any;
-    private imgCache : Object = new Object();
-	
+    public actionBeans: ActionBeans;
+    /*=c8o_AppDeclarations*/
+    
 	/*Begin_c8o_AppDeclaration*/
 	/*End_c8o_AppDeclaration*/
 
-    constructor(platform: Platform, statusBar: StatusBar, private c8o: C8o, private router: C8oRouter, private loader: LoadingController, private app: App, private translate: TranslateService) {
+    constructor(platform: Platform, statusBar: StatusBar, c8o: C8o, router: C8oRouter, loader: LoadingController, private app: App, private translate: TranslateService, ref: ChangeDetectorRef, injector: Injector) {
+        
+        super(injector, router, loader, ref);
+        
+        this.actionBeans = this.getInstance(ActionBeans);
+        
         /**
          * declaring page to show in Menu
          */
@@ -106,7 +116,8 @@ export class MyApp {
         /* ============================================================================================================
              End of Convertigo Angular Framework (CAF) initialization...
            ============================================================================================================*/
-		   
+        /*=c8o_AppConstructors*/
+        
 		/*Begin_c8o_AppConstructor*/
 		/*End_c8o_AppConstructor*/
 		   
@@ -154,48 +165,8 @@ export class MyApp {
         return arrayIncluded;
     }
     
-    /**
-     * Get attachment data url a requestable response to be displayed
-     *
-     * @param id             the DocumentID to get the attachment from
-     * @param attachmentName  name of the attachment to display (eg: image.jpg)
-     * @param placeholderURL  the url to display while we get the attachment (This is an Async process)
-     * @param databaseName    the Qname of a FS database (ex project.fsdatabase) to get the attachment from.
-     *
-     */
-    public getAttachmentUrl(id: string, attachmentName: string, placeholderURL : string, databaseName?: string): Object{
-        return this.router.getAttachmentUrl(id, attachmentName, placeholderURL, this.imgCache, databaseName);
-    }
-    
-    /**
-     * Reset Image Cache.
-     *
-     * @param cacheEntry : the name of the Entry to clear. If not provided, clears all the entries
-     *
-     */
-    public resetImageCache(cacheEntry: string= null ) {
-        if (cacheEntry) {
-            delete this.imgCache[cacheEntry]
-            return;
-        }
-        this.imgCache = []
-    }
-    
-    /**
-     * Gets the data from previous called requestable list. can be used in an Angular 2 directive such as
-     *
-     *   *ngFor="let category of listen(['fs://.view']).rows" or
-     *   *ngFor="let Page2 of listen(['fs://.view', 'fs://.view#search']).rows"
-     *
-     * The data for the first requestable to match is returned
-     *
-     * @return the data for one of the requestables in the list.
-     */
-    public listen(requestables : string[]) : any {
-        return this.router.getResponseForView(this.constructor.name, requestables);
-        //this.router.getResponseForView('_C80_GeneralView', ['fs://fs_monmobile.view');
-    }
-
 	/*Begin_c8o_AppFunction*/
 	/*End_c8o_AppFunction*/
+    
+    /*=c8o_AppFunctions*/
 }

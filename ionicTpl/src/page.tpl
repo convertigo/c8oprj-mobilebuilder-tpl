@@ -4,11 +4,14 @@ import { NavParams,
 		 LoadingController,
 		 MenuController,
 		 Platform,
+		 Events,
 		 AlertController,
 		 ActionSheetController,
 		 ModalController }															from 'ionic-angular';
-import { C8oRouter }                    											from 'c8ocaf';
-import { C8oPage }                      											from 'c8ocaf';
+import { C8oPage,
+		 C8oPageBase,
+		 C8oRouter, 
+		 C8oCafUtils }                      										from 'c8ocaf';
 import { ChangeDetectorRef,
 		 ChangeDetectionStrategy,
 		 InjectionToken,
@@ -39,6 +42,7 @@ import { ActionBeans } 																from '../../services/actionbeans.service'
 export class /*=c8o_PageName*/ extends C8oPage  {
 	/*=c8o_PageDeclarations*/
 
+	public events : Events;
 	public actionBeans: ActionBeans;
 	public static nameStatic: string = "/*=c8o_PageName*/";
 	/*Begin_c8o_PageDeclaration*/
@@ -46,7 +50,9 @@ export class /*=c8o_PageName*/ extends C8oPage  {
 
 	constructor(routerProvider : C8oRouter, navParams: NavParams, loadingCtrl: LoadingController, sanitizer: DomSanitizer, ref: ChangeDetectorRef, injector: Injector, menuCtrl: MenuController){
 		super(routerProvider, navParams, loadingCtrl, sanitizer, ref, injector, menuCtrl);
+		this.events = this.getInstance(Events);
 		this.actionBeans = this.getInstance(ActionBeans);
+		
 		/*=c8o_PageConstructors*/
 		
 		/*Begin_c8o_PageConstructor*/
