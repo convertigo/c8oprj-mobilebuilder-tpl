@@ -7,7 +7,6 @@ import { IonicApp, IonicModule, IonicErrorHandler, DeepLinkConfig }           fr
 import { StatusBar }                                                          from '@ionic-native/status-bar';
 import { TranslateModule, TranslateLoader }                                   from '@ngx-translate/core';
 import { TranslateHttpLoader }                                                from '@ngx-translate/http-loader';
-import { AnimationService, AnimatesDirective }                                from 'css-animator';
 /*=c8o_ModuleTsImports*/
 
 import { C8o }                                                                from "c8osdkangular";
@@ -62,7 +61,6 @@ export function createTranslateLoader(http: HttpClient) {
     C8o,
     C8oRouter,
     ActionBeans,
-    AnimationService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   /*End_c8o_NgProviders*/]
 })

@@ -1,8 +1,6 @@
 import {Injectable}         from "@angular/core";
 import {C8oPageBase,
         C8oCafUtils}        from 'c8ocaf';
-import {AnimationService, 
-        AnimationBuilder}   from 'css-animator';
 import {Platform,
         ModalController,
         AlertController,
