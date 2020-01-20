@@ -12,6 +12,7 @@ import { C8oPage,
 		 C8oPageBase,
 		 C8oRouter, 
 		 C8oCafUtils }                      										from 'c8ocaf';
+import { C8oNetworkStatus }                                 						from 'c8osdkangular';
 import { ChangeDetectorRef,
 		 ChangeDetectionStrategy,
 		 InjectionToken,
@@ -59,6 +60,10 @@ export class /*=c8o_PageName*/ extends C8oPage  {
 		/*End_c8o_PageConstructor*/
 		
     }
+	
+	instance() {
+		return this;
+	}
 	
 	/*Begin_c8o_PageFunction*/
 	/*End_c8o_PageFunction*/

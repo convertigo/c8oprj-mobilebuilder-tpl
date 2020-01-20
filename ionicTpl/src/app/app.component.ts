@@ -1,7 +1,7 @@
 import { Component, ViewChild}                              from '@angular/core';
 import { ChangeDetectorRef, Injector}                       from '@angular/core';
 
-import { Platform, Nav, App, LoadingController}             from 'ionic-angular';
+import { Platform, Nav, App, Events, LoadingController}     from 'ionic-angular';
 import { StatusBar }                                        from '@ionic-native/status-bar';
 import { TranslateService }                                 from '@ngx-translate/core';
 
@@ -10,6 +10,7 @@ import { C8oRouter }                                        from 'c8ocaf';
 import { C8oRoute, C8oRouteOptions, C8oRouteListener}       from 'c8ocaf'
 import { C8oPage, C8oPageBase, C8oCafUtils}                 from "c8ocaf";
 import { C8o, C8oSettings, C8oLogLevel,C8oProgress }        from "c8osdkangular";
+import { C8oNetworkStatus }                                 from "c8osdkangular";
 
 import { ActionBeans }                                      from '../services/actionbeans.service';
 
@@ -47,6 +48,7 @@ export class MyApp extends C8oPageBase {
     pages : Array<{title: string, icon: string, iconPos: string, component: any, includedInAutoMenu?: boolean}>;
     pagesKeyValue: any;
     public actionBeans: ActionBeans;
+    public events : Events;
     /*=c8o_AppDeclarations*/
     
 	/*Begin_c8o_AppDeclaration*/
@@ -57,6 +59,7 @@ export class MyApp extends C8oPageBase {
         super(injector, router, loader, ref);
         
         this.actionBeans = this.getInstance(ActionBeans);
+        this.events = this.getInstance(Events);
         
         /**
          * declaring page to show in Menu
@@ -105,8 +108,11 @@ export class MyApp extends C8oPageBase {
         settings
             .setLogRemote(true)
             .setLogC8o(true)
-            .setLogLevelLocal(C8oLogLevel.DEBUG);
-
+            .setLogLevelLocal(C8oLogLevel.DEBUG)
+            .setKeepSessionAlive(true);
+        /*Begin_c8o_AppSettings*/
+        /*End_c8o_AppSettings*/
+        
         /**
          * Then we assign C8oSettings to our c8o Object with the init method
          */
@@ -135,7 +141,11 @@ export class MyApp extends C8oPageBase {
         });
 
     }
-
+    
+    instance() {
+        return this;
+    }
+    
 	getRootNav() {
 		let rootNavs = this.app.getRootNavs();
 		return rootNavs.length > 0 ? rootNavs[0]:null;
