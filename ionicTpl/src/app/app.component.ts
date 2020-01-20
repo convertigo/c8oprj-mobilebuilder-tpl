@@ -1,5 +1,6 @@
 import { Component, ViewChild}                              from '@angular/core';
 import { ChangeDetectorRef, Injector}                       from '@angular/core';
+import { enableProdMode}                                    from '@angular/core';
 
 import { Platform, Nav, App, Events, LoadingController}     from 'ionic-angular';
 import { StatusBar }                                        from '@ionic-native/status-bar';
@@ -32,20 +33,15 @@ import { ActionBeans }                                      from '../services/ac
 /*=c8o_PagesImport*/ 
 
 
-/**
- * Disable comments to run in prod mode
- */
-/*import {enableProdMode} from '@angular/core';
- enableProdMode();*/
-
+/*=c8o_AppProdMode*/
 
 @Component({
     templateUrl: 'app.html'
 })
 export class MyApp extends C8oPageBase {
     @ViewChild(Nav) nav: Nav;
-    rootPage = /*=c8o_RootPage*/;
-    pages : Array<{title: string, icon: string, iconPos: string, component: any, includedInAutoMenu?: boolean}>;
+    rootPage : any = /*=c8o_RootPage*/;
+    pages : /*=c8o_PageArrayDef*/;
     pagesKeyValue: any;
     public actionBeans: ActionBeans;
     public events : Events;
@@ -154,7 +150,7 @@ export class MyApp extends C8oPageBase {
     openPage(page) {
 		let rootNav = this.getRootNav();
 		if (rootNav) {
-			rootNav.setRoot(page.component);
+			rootNav.setRoot(page.name);
 		}
     }
 	
