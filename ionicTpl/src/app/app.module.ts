@@ -1,30 +1,23 @@
-import { NgModule, ErrorHandler }		                                      from '@angular/core';
-import { HttpClient, HttpClientModule }                                       from '@angular/common/http';
-import { BrowserModule }                                                      from '@angular/platform-browser';
-import { BrowserAnimationsModule }                                            from '@angular/platform-browser/animations';
-import { FormsModule, ReactiveFormsModule }   								  from '@angular/forms';
+import { NgModule, ErrorHandler } 							from '@angular/core';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } 	from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule }   				from '@angular/forms';
+import { BrowserModule } 									from '@angular/platform-browser';
+import { BrowserAnimationsModule }                          from '@angular/platform-browser/animations';
+import { RouteReuseStrategy } 								from '@angular/router';
 
-import { IonicApp, IonicModule, IonicErrorHandler, DeepLinkConfig }           from 'ionic-angular';
-import { StatusBar }                                                          from '@ionic-native/status-bar';
-import { TranslateModule, TranslateLoader }                                   from '@ngx-translate/core';
-import { TranslateHttpLoader }                                                from '@ngx-translate/http-loader';
-/*=c8o_ModuleTsImports*/
+import { TranslateModule, TranslateLoader } 				from '@ngx-translate/core';
+import { TranslateHttpLoader } 								from '@ngx-translate/http-loader';
 
-import { C8o }                                                                from "c8osdkangular";
-import { C8oRouter } 			                                              from 'c8ocaf';
-import { ActionBeans }                                                        from '../services/actionbeans.service';
+import { IonicModule, IonicRouteStrategy } 					from '@ionic/angular';
+import { SplashScreen } 									from '@ionic-native/splash-screen/ngx';
+import { StatusBar } 										from '@ionic-native/status-bar/ngx';
 
-import { MyApp } 				                                              from './app.component';
-/*=c8o_PagesImport*/
+import { C8o, HttpXsrfInterceptor }                         from "c8osdkangular";
+import { C8oRouter } 			                            from 'c8ocaf';
+import { ActionBeans }                                      from './services/actionbeans.service';
 
-
-/**
- * Deep links to your pages so that the app can rout directly to the page url
- */
-export const deepLinkConfig: DeepLinkConfig = {
-  links: [/*=c8o_PagesLinks*/]
-};
-
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 
 /**
  * Customize the ngx-translate loader for assets/i18n
@@ -34,11 +27,9 @@ export function createTranslateLoader(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [/*Begin_c8o_NgDeclarations*/
-    MyApp,
-    /*=c8o_PagesDeclarations*/
-  /*End_c8o_NgDeclarations*/],
-  imports: [/*Begin_c8o_NgModules*/
+  declarations: [AppComponent],
+  entryComponents: [],
+  imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
@@ -51,20 +42,22 @@ export function createTranslateLoader(http: HttpClient) {
           deps: [HttpClient]
         }
 	}),
-    IonicModule.forRoot(MyApp, {preloadModules: true})
-  /*End_c8o_NgModules*/],
-  bootstrap: [IonicApp],
-  entryComponents: [/*Begin_c8o_NgComponents*/
-    MyApp,
-    /*=c8o_PagesDeclarations*/
-  /*End_c8o_NgComponents*/],
-  providers: [/*Begin_c8o_NgProviders*/
+	IonicModule.forRoot(), 
+	AppRoutingModule
+  ],
+  providers: [
     StatusBar,
+    SplashScreen,
     C8o,
     C8oRouter,
-    ActionBeans,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
-  /*End_c8o_NgProviders*/]
+//    ActionBeans,
+    {
+        provide: HTTP_INTERCEPTORS,
+        useClass: HttpXsrfInterceptor,
+        multi: true
+    },
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+  ],
+  bootstrap: [AppComponent]
 })
-
 export class AppModule {}

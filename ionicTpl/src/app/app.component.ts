@@ -1,19 +1,23 @@
-import { Component, ViewChild}                              from '@angular/core';
-import { ChangeDetectorRef, Injector}                       from '@angular/core';
-import { enableProdMode}                                    from '@angular/core';
+import { Component }                                                                    from '@angular/core';
+import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector, Type}    from "@angular/core";
+import { DomSanitizer }                                                                 from '@angular/platform-browser';
+import { Router, ActivatedRoute }                                          				from '@angular/router';
+import { NavParams, NavController, LoadingController, MenuController, Platform}         from '@ionic/angular';
+import { AlertController, ActionSheetController, ModalController }                      from '@ionic/angular';
+import { PopoverController, ToastController }                                           from '@ionic/angular';
+import { SplashScreen }                                                                 from '@ionic-native/splash-screen/ngx';
+import { StatusBar }                                                                    from '@ionic-native/status-bar/ngx';
+import { TranslateService }                                                             from '@ngx-translate/core';
 
-import { Platform, Nav, App, Events, LoadingController}     from 'ionic-angular';
-import { StatusBar }                                        from '@ionic-native/status-bar';
-import { TranslateService }                                 from '@ngx-translate/core';
-
-// Convertigo CAF Imports
+//Convertigo CAF Imports
 import { C8oRouter }                                        from 'c8ocaf';
-import { C8oRoute, C8oRouteOptions, C8oRouteListener}       from 'c8ocaf'
+//import { C8oRoute, C8oRouteOptions, C8oRouteListener}       from 'c8ocaf'
 import { C8oPage, C8oPageBase, C8oCafUtils}                 from "c8ocaf";
 import { C8o, C8oSettings, C8oLogLevel,C8oProgress }        from "c8osdkangular";
 import { C8oNetworkStatus }                                 from "c8osdkangular";
 
-import { ActionBeans }                                      from '../services/actionbeans.service';
+import { ActionBeans }                                      from './services/actionbeans.service';
+import { Events }                                           from './services/events.service';
 
 /*
 	You can customize your application class by writing code between the :
@@ -32,71 +36,41 @@ import { ActionBeans }                                      from '../services/ac
 
 /*=c8o_PagesImport*/ 
 
-
-/*=c8o_AppProdMode*/
-
 @Component({
-    templateUrl: 'app.html'
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.scss']
 })
-export class MyApp extends C8oPageBase {
-    @ViewChild(Nav) nav: Nav;
-    rootPage : any = /*=c8o_RootPage*/;
-    pages : /*=c8o_PageArrayDef*/;
+export class AppComponent extends C8oPageBase {
+	rootPage : any = /*=c8o_RootPage*/;
+	public appPages : /*=c8o_PageArrayDef*/;
     pagesKeyValue: any;
+	public events: Events;
+	public subscriptions = {};
     public actionBeans: ActionBeans;
-    public events : Events;
+	public selectedPath = '';
     /*=c8o_AppDeclarations*/
     
-	/*Begin_c8o_AppDeclaration*/
-	/*End_c8o_AppDeclaration*/
-
-    constructor(platform: Platform, statusBar: StatusBar, c8o: C8o, router: C8oRouter, loader: LoadingController, private app: App, private translate: TranslateService, ref: ChangeDetectorRef, injector: Injector) {
-        
-        super(injector, router, loader, ref);
-        
-        this.actionBeans = this.getInstance(ActionBeans);
+    /*Begin_c8o_AppDeclaration*/
+    /*End_c8o_AppDeclaration*/
+	
+//  	constructor(private platform: Platform, private splashScreen: SplashScreen, private statusBar: StatusBar) {
+    constructor(private platform: Platform, private splashScreen: SplashScreen, private statusBar: StatusBar, routerProvider: C8oRouter, private route: ActivatedRoute, private angularRouter: Router, loadingCtrl: LoadingController, sanitizer: DomSanitizer, ref: ChangeDetectorRef, injector: Injector, menuCtrl: MenuController, public translate: TranslateService){
+        super(injector, routerProvider, loadingCtrl, ref);
         this.events = this.getInstance(Events);
-        
-        /**
-         * declaring page to show in Menu
-         */
-        this.pages = [/*=c8o_PagesVariables*/];
+        this.actionBeans = this.getInstance(ActionBeans);
+
+		this.angularRouter.events.subscribe((event: any) => {
+			if (event && event.urlAfterRedirects) {
+				this.selectedPath = event.urlAfterRedirects
+			}
+		})
+
+		this.appPages = [/*=c8o_PagesVariables*/];
         this.pagesKeyValue = {/*=c8o_PagesVariablesKeyValue*/}
-        this.router.pagesArray = this.pages;
-        this.router.pagesKeyValue = this.pagesKeyValue;
-
-
-        /* ============================================================================================================
-           Convertigo Angular Framework (CAF) initialization...
-           ============================================================================================================
-         * Thanks to Convertigo CAF router we can manage call and navigation :
-         *
-         * Create a C8orouteOptions in order to define basic and repetitive routes options that will be used in C8oRoute
-         * We can define actions such as beforeCall that allow us to run code before the C8o Call
-         */
-
-        let tableOptions = new C8oRouteOptions()
-            .setBeforeCall(() => {
-                //Do what ever has to be done...
-            })
-            .setAfterCall(()=>{
-                //Do what ever has to be done...
-            })
-            .setDidEnter((page: C8oPage, c8o: C8o) => {
-                c8o.log.trace("DidEnter was called from the new routing table and with page : " + page.constructor.name)
-            })
-            .setDidLeave((page: C8oPage, c8o: C8o) => {
-                c8o.log.trace("DidLeave was called from the new routing table and with page : " + page.constructor.name)
-            })
-            .setTargetAnimate(true)
-            .setTargetDuration(250);
-
-        /**
-         * The generated Routing Table
-         */
-         /*=c8o_RoutingTable*/ 
-        
-
+        this.routerProvider.pagesArray = this.appPages;
+        this.routerProvider.pagesKeyValue = this.pagesKeyValue;
+		
         /**
          *  Define a C8oSettings Object in order to declare settings to be used in the C8oInit method
          */
@@ -120,11 +94,13 @@ export class MyApp extends C8oPageBase {
            ============================================================================================================*/
         /*=c8o_AppConstructors*/
         
-		/*Begin_c8o_AppConstructor*/
-		/*End_c8o_AppConstructor*/
-		   
-        platform.ready().then(() => {
-            statusBar.styleDefault();
+        /*Begin_c8o_AppConstructor*/
+        /*End_c8o_AppConstructor*/
+           
+        this.platform.ready().then(() => {
+            this.statusBar.styleDefault();
+            this.splashScreen.hide();
+            
             /**
              * Then we finalize initialization
              */
@@ -135,44 +111,15 @@ export class MyApp extends C8oPageBase {
             });
 
         });
-
-    }
+        
+  	}
     
     instance() {
         return this;
     }
     
-	getRootNav() {
-		let rootNavs = this.app.getRootNavs();
-		return rootNavs.length > 0 ? rootNavs[0]:null;
-	}
-	
-    openPage(page) {
-		let rootNav = this.getRootNav();
-		if (rootNav) {
-			rootNav.setRoot(page.name);
-		}
-    }
-	
-    openPageWithName(name) {
-		let rootNav = this.getRootNav();
-		if (rootNav) {
-			rootNav.setRoot(name);
-		}
-    }
-    
-    getPagesIncludedInAutoMenu(){
-        let arrayIncluded: Array<any> = [];
-        for (let p of this.pages){
-            if (p["includedInAutoMenu"]) {
-                arrayIncluded.push(p);
-            }
-        }
-        return arrayIncluded;
-    }
-    
-	/*Begin_c8o_AppFunction*/
-	/*End_c8o_AppFunction*/
+    /*Begin_c8o_AppFunction*/
+    /*End_c8o_AppFunction*/
     
     /*=c8o_AppFunctions*/
 }
