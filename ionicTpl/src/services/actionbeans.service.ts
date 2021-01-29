@@ -8,6 +8,8 @@ import {Platform,
 }                               from "ionic-angular";
 import { TranslateService }     from '@ngx-translate/core';
 
+import { Events }               from './events.service';
+
 /*=c8o_ActionTsImports*/
 
 @Injectable()
