@@ -101,8 +101,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "app:build",
-			"progress": true
+            "browserTarget": "app:build"
           },
           "configurations": {
             "production": {
