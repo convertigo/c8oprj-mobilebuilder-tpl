@@ -1,4 +1,4 @@
-import { Component, Input , Output, EventEmitter}										from '@angular/core';
+import { Component, Input , Output, EventEmitter, OnInit, OnDestroy, ElementRef}		from '@angular/core';
 import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector, Type}	from "@angular/core";
 import { Router, ActivatedRoute } 														from '@angular/router';
 import { DomSanitizer }                 												from '@angular/platform-browser';
@@ -26,9 +26,10 @@ import { Events } 																		from '../../services/events.service';
 /*=c8o_CompInterfaces*/
 
 @Component({selector: /*=c8o_CompSelector*/, templateUrl: /*=c8o_CompTplUrl*/, styleUrls: [/*=c8o_CompStyleUrls*/], changeDetection: /*=c8o_CompChangeDetection*/})
-export class /*=c8o_CompName*/ extends C8oPageBase {
+export class /*=c8o_CompName*/ extends C8oPageBase implements OnInit, OnDestroy {
 	/*=c8o_CompDeclarations*/
 
+	public elRef: ElementRef;
 	public events : Events;
 	public subscriptions = {};
 	public actionBeans: ActionBeans;
@@ -36,8 +37,9 @@ export class /*=c8o_CompName*/ extends C8oPageBase {
 	/*Begin_c8o_CompDeclaration*/
 	/*End_c8o_CompDeclaration*/
 
-	constructor(injector: Injector, routerProvider: C8oRouter, loadingCtrl: LoadingController, ref: ChangeDetectorRef, public translate: TranslateService){
+	constructor(private elementRef: ElementRef, injector: Injector, routerProvider: C8oRouter, loadingCtrl: LoadingController, ref: ChangeDetectorRef, public translate: TranslateService){
 		super(injector, routerProvider, loadingCtrl, ref);
+		this.elRef = elementRef;
 		this.events = this.getInstance(Events);
 		this.actionBeans = this.getInstance(ActionBeans);
 		
@@ -47,6 +49,20 @@ export class /*=c8o_CompName*/ extends C8oPageBase {
 		/*End_c8o_CompConstructor*/
 		
     }
+	
+	ngOnInit() {
+		/*=c8o_CompInitializations*/
+		
+		/*Begin_c8o_CompInitialization*/
+		/*End_c8o_CompInitialization*/
+	}
+
+	ngOnDestroy() {
+		super.ngOnDestroy();
+		
+		/*Begin_c8o_CompFinalization*/
+		/*End_c8o_CompFinalization*/
+	}
 	
 	instance() {
 		return this;
