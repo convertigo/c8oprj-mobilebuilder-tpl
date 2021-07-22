@@ -6,7 +6,7 @@ import { AlertController, ActionSheetController, ModalController }						from '@i
 import { PopoverController, ToastController }											from '@ionic/angular';
 import { C8oPage, C8oPageBase, C8oRouter, C8oCafUtils }                      			from 'c8ocaf';
 import { C8oNetworkStatus }                                 							from 'c8osdkangular';
-import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector, Type}	from "@angular/core";
+import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector, Type}	from '@angular/core';
 import { TranslateService }                                 							from '@ngx-translate/core';
 import { ActionBeans } 																	from '../../services/actionbeans.service';
 import { Events } 																		from '../../services/events.service';

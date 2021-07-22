@@ -3,16 +3,13 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": ["node"],
-    "target": "es5"
+    "types": []
   },
-  "include": [
-    "src/**/*.ts"
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts"
   ],
-  "exclude": [
-    "src/test.ts",
-    "src/**/*.spec.ts",
-	"src/**/*.temp.ts",
-	"src/environments/*.ts"
+  "include": [
+    "src/**/*.d.ts"
   ]
 }
