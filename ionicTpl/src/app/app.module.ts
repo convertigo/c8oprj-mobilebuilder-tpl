@@ -14,7 +14,6 @@ import { TranslateHttpLoader }                                                fr
 import { C8o }                                                                from "c8osdkangular";
 import { C8oRouter } 			                                              from 'c8ocaf';
 import { ActionBeans }                                                        from '../services/actionbeans.service';
-import { Events }                                                        	     from '../services/events.service';
 
 import { MyApp } 				                                              from './app.component';
 /*=c8o_PagesImport*/
@@ -66,7 +65,6 @@ export function createTranslateLoader(http: HttpClient) {
     C8o,
     C8oRouter,
     ActionBeans,
-	    Events,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   /*End_c8o_NgProviders*/]
 })

@@ -1,13 +1,12 @@
 import { Component }																	from '@angular/core';
 import { DomSanitizer }                 												from '@angular/platform-browser';
-import { IonicPage, NavParams, LoadingController, MenuController, Platform}				from 'ionic-angular';
+import { IonicPage, NavParams, LoadingController, MenuController, Platform, Events}		from 'ionic-angular';
 import { AlertController, ActionSheetController, ModalController }						from 'ionic-angular';
 import { C8oPage, C8oPageBase, C8oRouter, C8oCafUtils }                      			from 'c8ocaf';
 import { C8oNetworkStatus }                                 							from 'c8osdkangular';
 import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector, Type}	from "@angular/core";
 import { TranslateService }                                 							from '@ngx-translate/core';
 import { ActionBeans } 																	from '../../services/actionbeans.service';
-import { Events }                                           							from '../../services/events.service';
 
 /*
 	You can customize your page class by writing code between the :
@@ -26,7 +25,6 @@ import { Events }                                           							from '../../s
 export class /*=c8o_PageName*/ extends C8oPage  {
 	/*=c8o_PageDeclarations*/
 
-	public subscriptions = {};
 	public events : Events;
 	public actionBeans: ActionBeans;
 	public static nameStatic: string = "/*=c8o_PageName*/";

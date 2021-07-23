@@ -1,7 +1,10 @@
 {
-  "name": "Convertigo-template-app",
-  "author": "Convertigo & Ionic Framework",
+  "name": "convertigo_electron_app",
+  "author": "Convertigo",
+  "version": "1.0.0",
+  "description": "An Electron Convertigo App",
   "homepage": "http://www.convertigo.com/",
+  "main":"main.js",
   "private": true,
   "scripts": {
     "ngsw-config": "node_modules/.bin/ngsw-config ../DisplayObjects/mobile src/ngsw-config.json /convertigo/projects/{{c8o_project}}/DisplayObjects/mobile/",
@@ -11,7 +14,11 @@
     "ionic:build:prod":"node --max_old_space_size=8192 ./node_modules/@ionic/app-scripts/bin/ionic-app-scripts.js  build --prod --enableLint false && npm run ngsw-config",
     "ionic:serve:eval": "ionic-app-scripts serve --enableLint false --sourceMapType eval",
     "ionic:serve:nosourcemap": "ionic-app-scripts serve --enableLint false --generateSourceMap false",
-    "ionic:serve": "ionic-app-scripts serve --enablelint false && npm run ngsw-config"
+    "ionic:serve": "ionic-app-scripts serve --enablelint false && npm run ngsw-config",
+    "electron:start": "asar pack ../../DisplayObjects/mobile C8O.ASAR && electron-forge start",
+    "electron:package": "electron-forge package",
+    "electron:asar": "asar ",
+    "electron:make": "asar pack ../../DisplayObjects/mobile C8O.ASAR && electron-forge make"
   },
   "dependencies": {
     "@angular/animations": "5.2.11",
@@ -36,15 +43,22 @@
     "@ngx-translate/core":"9.0.2",
     "@ngx-translate/http-loader":"2.0.1",
     "animate.css": "3.7.0",  
-    "c8osdkangular": "3.0.13",
+    "c8osdkangular": "3.0.11",
     "c8ocaf": "1.1.15",
-    "@types/node": "12.12.6"
+    "@types/node": "12.12.6",
+    "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.2.4",
-    "typescript": "~2.6.2"
+    "typescript": "~2.6.2",
+    "@electron-forge/cli": "^6.0.0-beta.57",
+    "@electron-forge/maker-deb": "^6.0.0-beta.57",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.57",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.57",
+    "@electron-forge/maker-zip": "^6.0.0-beta.57",
+    "asar": "^3.0.3",
+    "electron": "^13.1.5"
   },
-  "description": "MyApp: An Ionic project",
   "cordovaPlugins": [
     "cordova-plugin-device",
     "cordova-plugin-console",
@@ -56,7 +70,33 @@
   "config": {
     "ionic_copy": "./config/copy.config.js",
     "ionic_watch": "./config/watch.config.js",
-    "ionic_www_dir": "../DisplayObjects/mobile"
+    "ionic_www_dir": "../DisplayObjects/mobile",
+    "forge": {
+        "packagerConfig": {
+        	"prebuiltAsar":"C8O.ASAR"
+        },
+        "makers": [{
+                "name": "@electron-forge/maker-squirrel",
+                "config": {
+                    "name": "electron_app"
+                }
+            },
+            {
+                "name": "@electron-forge/maker-zip",
+                "platforms": [
+                    "darwin"
+                ]
+            },
+            {
+                "name": "@electron-forge/maker-deb",
+                "config": {}
+            },
+            {
+                "name": "@electron-forge/maker-rpm",
+                "config": {}
+            }
+        ]
+    }
   },
   "cordovaPlatforms": []
 }

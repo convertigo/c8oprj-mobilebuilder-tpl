@@ -4,7 +4,7 @@ import { enableProdMode}                                    from '@angular/core'
 import { SwUpdate }                                         from '@angular/service-worker';
 
 import { AlertController }                                  from 'ionic-angular';
-import { Platform, Nav, App, LoadingController}     		from 'ionic-angular';
+import { Platform, Nav, App, Events, LoadingController}     from 'ionic-angular';
 import { StatusBar }                                        from '@ionic-native/status-bar';
 import { TranslateService }                                 from '@ngx-translate/core';
 
@@ -16,8 +16,6 @@ import { C8o, C8oSettings, C8oLogLevel,C8oProgress }        from "c8osdkangular"
 import { C8oNetworkStatus }                                 from "c8osdkangular";
 
 import { ActionBeans }                                      from '../services/actionbeans.service';
-import { Events }                                           from '../services/events.service';
-
 
 /*
 	You can customize your application class by writing code between the :
@@ -49,8 +47,6 @@ export class MyApp extends C8oPageBase {
     pagesKeyValue: any;
     public actionBeans: ActionBeans;
     public events : Events;
-					    public subscriptions = {};
-
     /*=c8o_AppDeclarations*/
     
 	/*Begin_c8o_AppDeclaration*/
