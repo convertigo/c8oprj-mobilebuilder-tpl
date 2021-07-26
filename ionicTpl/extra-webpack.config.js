@@ -3,8 +3,6 @@ const webpack = require('webpack'); //to access built-in plugins
 console.log("!!!! Extra web pack config enabled !!!");
 module.exports = {
     parallelism: 50,
-    mode: "development",
-    
     plugins: [
         new webpack.ProgressPlugin({
             handler(percentage, message, ...args) {
@@ -18,6 +16,12 @@ module.exports = {
                     args[1] != undefined ? ", [" + args[1] + "]" : ""
                 );
             }
-        })
+        }),
+
+		// Disable sourecmap for vendor.js         
+        new webpack.SourceMapDevToolPlugin({
+      		filename: '[file].map',
+      		exclude: ['vendor.js'],
+    	})
     ]
 };
