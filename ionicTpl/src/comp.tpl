@@ -63,6 +63,7 @@ export class /*=c8o_CompName*/ extends C8oPageBase implements OnInit, OnDestroy 
 		/*Begin_c8o_CompFinalization*/
 		/*End_c8o_CompFinalization*/
 		
+		this.subscriptions = {};
 		super.ngOnDestroy();
 	}
 	
