@@ -40,8 +40,8 @@ export class /*=c8o_CompName*/ extends C8oPageBase implements OnInit, OnDestroy 
 	constructor(private elementRef: ElementRef, injector: Injector, routerProvider: C8oRouter, loadingCtrl: LoadingController, ref: ChangeDetectorRef, public translate: TranslateService){
 		super(injector, routerProvider, loadingCtrl, ref);
 		this.elRef = elementRef;
-		this.events = this.getInstance(Events);
-		this.actionBeans = this.getInstance(ActionBeans);
+		//this.events = this.getInstance(Events);
+		//this.actionBeans = this.getInstance(ActionBeans);
 		
 		/*=c8o_CompConstructors*/
 		
@@ -51,6 +51,9 @@ export class /*=c8o_CompName*/ extends C8oPageBase implements OnInit, OnDestroy 
     }
 	
 	ngOnInit() {
+		this.events = this.owner ? this.owner["events"] : this.getInstance(Events);
+		this.actionBeans = this.getInstance(ActionBeans);
+		
 		/*=c8o_CompInitializations*/
 		
 		/*Begin_c8o_CompInitialization*/
