@@ -52,7 +52,7 @@ export class /*=c8o_CompName*/ extends C8oPageBase implements OnInit, OnDestroy 
 	
 	ngOnInit() {
 		this.events = this.owner ? this.owner["events"] : this.getInstance(Events);
-		this.actionBeans = this.getInstance(ActionBeans);
+		this.actionBeans = this.owner ? this.owner["actionBeans"] : this.getInstance(ActionBeans);
 		
 		/*=c8o_CompInitializations*/
 		
