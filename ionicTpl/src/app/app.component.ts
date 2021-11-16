@@ -8,6 +8,7 @@ import { PopoverController, ToastController }                                   
 import { SplashScreen }                                                                 from '@ionic-native/splash-screen/ngx';
 import { StatusBar }                                                                    from '@ionic-native/status-bar/ngx';
 import { TranslateService }                                                             from '@ngx-translate/core';
+import { Subject }                                                                      from 'rxjs';
 
 //Convertigo CAF Imports
 import { C8oRouter }                                        from 'c8ocaf';
@@ -50,6 +51,7 @@ export class AppComponent extends C8oPageBase {
 	public subscriptions = {};
     public actionBeans: ActionBeans;
 	public selectedPath = '';
+	public appInit: Subject<any> = new Subject<any>();
     /*=c8o_AppDeclarations*/
     
     /*Begin_c8o_AppDeclaration*/
@@ -119,6 +121,7 @@ export class AppComponent extends C8oPageBase {
                 this.resetImageCache();
                 /*Begin_c8o_AppInitialization*/
                 /*End_c8o_AppInitialization*/
+                this.appInit.next();
             });
 
         });
