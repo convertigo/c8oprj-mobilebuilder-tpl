@@ -31,6 +31,7 @@ export class /*=c8o_PageName*/  extends C8oPage {
 	public events : Events;
 	public subscriptions = {};
 	public actionBeans: ActionBeans;
+	public JSON: JSON = window.JSON;
 	public static nameStatic: string = "/*=c8o_PageName*/";
 	/*Begin_c8o_PageDeclaration*/
 	/*End_c8o_PageDeclaration*/

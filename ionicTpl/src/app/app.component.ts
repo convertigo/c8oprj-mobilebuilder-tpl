@@ -100,7 +100,13 @@ export class AppComponent extends C8oPageBase {
          * Then we assign C8oSettings to our c8o Object with the init method
          */
         this.c8o.init(settings);
-
+        if (window.location.hostname == "localhost") {
+            var nc = this.getInstance(NavController);
+            window['_c8o_changePage'] = function (segment) {
+                nc.navigateRoot(segment);
+                return "done";
+            };
+        }
         
         /* ============================================================================================================
              End of Convertigo Angular Framework (CAF) initialization...
