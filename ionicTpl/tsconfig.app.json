@@ -6,6 +6,10 @@
     "types": ["node"],
     "target": "es5"
   },
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts"
+  ],
   "include": [
     "src/**/*.ts"
   ],

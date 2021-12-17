@@ -33,6 +33,7 @@ export class /*=c8o_CompName*/ extends C8oPageBase implements OnInit, OnDestroy 
 	public events : Events;
 	public subscriptions = {};
 	public actionBeans: ActionBeans;
+	public JSON: JSON = window.JSON;
 	public static nameStatic: string = "/*=c8o_CompName*/";
 	/*Begin_c8o_CompDeclaration*/
 	/*End_c8o_CompDeclaration*/
