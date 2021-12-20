@@ -1,6 +1,9 @@
 const webpack = require('webpack'); //to access built-in plugins
  
 console.log("!!!! Extra web pack config enabled !!!");
+
+var oldMessage ="";
+
 module.exports = {
     parallelism: 50,
     plugins: [
@@ -11,10 +14,15 @@ module.exports = {
                         args[i] = args[i].substring(args[i].lastIndexOf("\\") + 1);
                     }
                 }
-                console.info(Math.round(percentage * 100) + '%', message,
-                    args[0] != undefined ? ", [" + args[0] + "]" : "",
-                    args[1] != undefined ? ", [" + args[1] + "]" : ""
-                );
+                
+                if (args[1] != oldMessage) {
+                	oldMessage = args[1];
+                	 
+	                console.info(Math.round(percentage * 100) + '%', message,
+	                    args[0] != undefined ? ", [" + args[0] + "]" : "",
+	                    args[1] != undefined ? ", [" + args[1] + "]" : ""
+	                );
+                }
             }
         }),
 
