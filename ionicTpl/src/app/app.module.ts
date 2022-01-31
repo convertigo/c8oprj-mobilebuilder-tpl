@@ -18,6 +18,7 @@ import { ActionBeans }                                      from './services/act
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+/*=c8o_ModuleTsImports*/
 
 /**
  * Customize the ngx-translate loader for assets/i18n
@@ -27,9 +28,12 @@ export function createTranslateLoader(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
-  imports: [
+  declarations: [/*Begin_c8o_NgDeclarations*/
+  	AppComponent,
+  /*End_c8o_NgDeclarations*/],
+  entryComponents: [/*Begin_c8o_NgComponents*/
+  /*End_c8o_NgComponents*/],
+  imports: [/*Begin_c8o_NgModules*/
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
@@ -44,8 +48,8 @@ export function createTranslateLoader(http: HttpClient) {
 	}),
 	IonicModule.forRoot(), 
 	AppRoutingModule
-  ],
-  providers: [
+  /*End_c8o_NgModules*/],
+  providers: [/*Begin_c8o_NgProviders*/
     StatusBar,
     SplashScreen,
     C8o,
@@ -57,7 +61,7 @@ export function createTranslateLoader(http: HttpClient) {
         multi: true
     },
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
-  ],
+  /*End_c8o_NgProviders*/],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
