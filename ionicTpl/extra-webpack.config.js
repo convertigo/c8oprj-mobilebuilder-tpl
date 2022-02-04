@@ -6,6 +6,9 @@ var oldMessage ="";
 
 module.exports = {
     parallelism: 50,
+    module: {
+        strictExportPresence: false,
+    },
     plugins: [
         new webpack.ProgressPlugin({
             handler(percentage, message, ...args) {
