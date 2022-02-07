@@ -12,20 +12,10 @@ module.exports = {
     plugins: [
         new webpack.ProgressPlugin({
             handler(percentage, message, ...args) {
-                for (i = 0; i < args.length; i++) {
-                    if (args[i].indexOf(".js") != -1) {
-                        args[i] = args[i].substring(args[i].lastIndexOf("\\") + 1);
-                    }
-                }
-                
-                if (args[1] != oldMessage) {
-                	oldMessage = args[1];
-                	 
-	                console.info(Math.round(percentage * 100) + '%', message,
-	                    args[0] != undefined ? ", [" + args[0] + "]" : "",
-	                    args[1] != undefined ? ", [" + args[1] + "]" : ""
-	                );
-                }
+                console.info(Math.round(percentage * 100) + '%', message,
+                    args[0] != undefined ? ", [" + args[0] + "]" : "",
+                    args[1] != undefined ? ", [" + args[1] + "]" : ""
+                );
             }
         }),
 
