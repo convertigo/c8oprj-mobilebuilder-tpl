@@ -47,7 +47,7 @@ export function createTranslateLoader(http: HttpClient) {
         }
 	}),
 	IonicModule.forRoot(), 
-	AppRoutingModule
+	AppRoutingModule,
   /*End_c8o_NgModules*/],
   providers: [/*Begin_c8o_NgProviders*/
     StatusBar,
