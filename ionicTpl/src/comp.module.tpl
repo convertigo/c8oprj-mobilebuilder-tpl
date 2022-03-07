@@ -18,7 +18,7 @@ import { TranslateModule } from '@ngx-translate/core';
 	IonicModule,
 	TranslateModule.forChild(),
   /*End_c8o_NgModules*/],
-  exports: [RouterModule, /*=c8o_CompName*/],
+  exports: [RouterModule,/*=c8o_ModuleNgExports*//*=c8o_CompName*/],
   entryComponents: [/*Begin_c8o_NgComponents*/
   /*End_c8o_NgComponents*/],
   providers: [/*Begin_c8o_NgProviders*/
