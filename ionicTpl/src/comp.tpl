@@ -1,15 +1,16 @@
-import { Component, Input , Output, EventEmitter, OnInit, OnDestroy, ElementRef}		from '@angular/core';
-import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector, Type}	from "@angular/core";
-import { Router, ActivatedRoute } 														from '@angular/router';
-import { DomSanitizer }                 												from '@angular/platform-browser';
-import { NavParams, NavController, LoadingController, MenuController, Platform}			from '@ionic/angular';
-import { AlertController, ActionSheetController, ModalController }						from '@ionic/angular';
-import { AnimationController, PopoverController, ToastController }						from '@ionic/angular';
-import { C8oPage, C8oPageBase, C8oRouter, C8oCafUtils }                      			from 'c8ocaf';
-import { C8oNetworkStatus }                                 							from 'c8osdkangular';
-import { TranslateService }                                 							from '@ngx-translate/core';
-import { ActionBeans } 																	from '../../services/actionbeans.service';
-import { Events } 																		from '../../services/events.service';
+import { Component, Input , Output, EventEmitter, OnInit, OnDestroy, ElementRef }	from '@angular/core';
+import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector }		from "@angular/core";
+import { Type, OnChanges, SimpleChanges } 											from "@angular/core";
+import { Router, ActivatedRoute } 													from '@angular/router';
+import { DomSanitizer }                 											from '@angular/platform-browser';
+import { NavParams, NavController, LoadingController, MenuController, Platform }	from '@ionic/angular';
+import { AlertController, ActionSheetController, ModalController }					from '@ionic/angular';
+import { AnimationController, PopoverController, ToastController }					from '@ionic/angular';
+import { C8oPage, C8oPageBase, C8oRouter, C8oCafUtils }                      		from 'c8ocaf';
+import { C8oNetworkStatus }                                 						from 'c8osdkangular';
+import { TranslateService }                                 						from '@ngx-translate/core';
+import { ActionBeans } 																from '../../services/actionbeans.service';
+import { Events } 																	from '../../services/events.service';
 
 /*
 	You can customize your page class by writing code between the :
@@ -26,7 +27,7 @@ import { Events } 																		from '../../services/events.service';
 /*=c8o_CompInterfaces*/
 
 @Component({selector: /*=c8o_CompSelector*/, templateUrl: /*=c8o_CompTplUrl*/, styleUrls: [/*=c8o_CompStyleUrls*/], changeDetection: /*=c8o_CompChangeDetection*/})
-export class /*=c8o_CompName*/ extends C8oPageBase implements OnInit, OnDestroy {
+export class /*=c8o_CompName*/ extends C8oPageBase implements OnInit, OnDestroy, OnChanges {
 	@Input() owner : C8oPageBase = undefined;
 	/*=c8o_CompDeclarations*/
 
@@ -70,6 +71,11 @@ export class /*=c8o_CompName*/ extends C8oPageBase implements OnInit, OnDestroy 
 		
 		this.subscriptions = {};
 		super.ngOnDestroy();
+	}
+	
+	ngOnChanges(changes: SimpleChanges) {
+		/*Begin_c8o_CompChanges*/
+		/*End_c8o_CompChanges*/
 	}
 	
 	instance() {
