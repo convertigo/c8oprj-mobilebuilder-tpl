@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule }   				from '@angular/forms';
 import { BrowserModule } 									from '@angular/platform-browser';
 import { BrowserAnimationsModule }                          from '@angular/platform-browser/animations';
 import { RouteReuseStrategy } 								from '@angular/router';
+import { ServiceWorkerModule }                              from '@angular/service-worker';
 
 import { TranslateModule, TranslateLoader } 				from '@ngx-translate/core';
 import { TranslateHttpLoader } 								from '@ngx-translate/http-loader';
@@ -14,6 +15,7 @@ import { StatusBar } 										from '@ionic-native/status-bar/ngx';
 
 import { C8o, HttpXsrfInterceptor }                         from "c8osdkangular";
 import { C8oRouter } 			                            from 'c8ocaf';
+import { environment } 										from '../environments/environment';
 import { ActionBeans }                                      from './services/actionbeans.service';
 
 import { AppComponent } from './app.component';
@@ -46,6 +48,12 @@ export function createTranslateLoader(http: HttpClient) {
           deps: [HttpClient]
         }
 	}),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
 	IonicModule.forRoot(), 
 	AppRoutingModule,
   /*End_c8o_NgModules*/],
