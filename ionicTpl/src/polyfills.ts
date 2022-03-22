@@ -64,6 +64,39 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+// add support for c8osdk-angular 
 (window as any).global = window;
 (window as any).process = window;
 window["browser"] = true;
+// add support for c8osdk-angular in worker mode
+(window as any).process.nextTick = (function () {
+    var canSetImmediate = typeof window !== 'undefined'
+    && window["setImmediate"];
+    var canPost = typeof window !== 'undefined'
+    && window.postMessage && window.addEventListener;
+    if (canSetImmediate) {
+        return function (f) { return window["setImmediate"](f) };
+    }
+    if (canPost) {
+        var queue = [];
+        window.addEventListener('message', function (ev) {
+            var source = ev.source;
+            if ((source === window || source === null) && ev.data === 'process-tick') {
+                ev.stopPropagation();
+                if (queue.length > 0) {
+                    var fn = queue.shift();
+                    fn();
+                }
+            }
+        }, true);
+        return function nextTick(fn) {
+            queue.push(fn);
+            window.postMessage('process-tick', '*');
+        };
+    }
+    return function nextTick(fn) {
+        setTimeout(fn, 0);
+    };
+})();
+// @ts-ignore
+window["Buffer"] = require('buffer/').Buffer;

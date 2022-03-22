@@ -36,6 +36,7 @@ export class /*=c8o_CompName*/ extends C8oPageBase implements OnInit, OnDestroy,
 	public subscriptions = {};
 	public actionBeans: ActionBeans;
 	public JSON: JSON = window.JSON;
+	public pageOwner: any;
 	public static nameStatic: string = "/*=c8o_CompName*/";
 	/*Begin_c8o_CompDeclaration*/
 	/*End_c8o_CompDeclaration*/
@@ -74,6 +75,9 @@ export class /*=c8o_CompName*/ extends C8oPageBase implements OnInit, OnDestroy,
 	}
 	
 	ngOnChanges(changes: SimpleChanges) {
+		if(changes.owner != undefined && changes.owner.previousValue == undefined){
+			this.pageOwner = this.findPageOwner();
+		}
 		/*Begin_c8o_CompChanges*/
 		/*End_c8o_CompChanges*/
 	}
@@ -88,6 +92,21 @@ export class /*=c8o_CompName*/ extends C8oPageBase implements OnInit, OnDestroy,
 	
 	public log(val) {
 	    console.log(val);
+	}
+
+	public findPageOwner(): C8oPageBase{
+	    let founded = false;
+	    let currentOwner = this.owner;
+	    while(founded == false){
+	      if(currentOwner["owner"] != undefined){
+	        // continue to search
+	        currentOwner = currentOwner["owner"];
+	      }
+	      else{
+	        founded = true;
+	      }
+	    } 
+	    return currentOwner;
 	}
 		
 	/*Begin_c8o_CompFunction*/
