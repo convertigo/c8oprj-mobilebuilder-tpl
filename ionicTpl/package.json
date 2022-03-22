@@ -9,9 +9,9 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "ionic:build:fast": "node --max_old_space_size=8048 node_modules/@angular/cli/bin/ng build app --configuration=fastbuild --deploy-url=./ --base-href=./",
-        "ionic:build:watch": "node --max_old_space_size=8048 node_modules/@angular/cli/bin/ng build app --configuration=fastbuild --watch=true --deploy-url=./ --base-href=./",
-        "ionic:build:prod": "node --max_old_space_size=8048 node_modules/@angular/cli/bin/ng build app --configuration=production --deploy-url=./ --base-href=./",
+        "ionic:build:fast": "node --max_old_space_size=8048 node_modules/@angular/cli/bin/ng build app --configuration=fastbuild",
+        "ionic:build:watch": "node --max_old_space_size=8048 node_modules/@angular/cli/bin/ng build app --configuration=fastbuild --watch=true",
+        "ionic:build:prod": "node --max_old_space_size=8048 node_modules/@angular/cli/bin/ng build app --configuration=production",
         "ionic:serve": "node --max_old_space_size=8048 node_modules/@angular/cli/bin/ng serve app --hmr=true"
     },
     "private": true,
