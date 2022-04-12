@@ -45,7 +45,7 @@ export class /*=c8o_CompName*/ extends C8oPageBase implements OnInit, OnDestroy,
 		super(injector, routerProvider, loadingCtrl, ref);
 		this.elRef = elementRef;
 		//this.events = this.getInstance(Events);
-		//this.actionBeans = this.getInstance(ActionBeans);
+		this.actionBeans = this.getInstance(ActionBeans);
 		
 		/*=c8o_CompConstructors*/
 		
