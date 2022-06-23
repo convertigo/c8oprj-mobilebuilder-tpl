@@ -22,7 +22,7 @@
         "@ngx-translate/core": "14.0.0",
         "@ngx-translate/http-loader": "6.0.0",
         "animate.css": "4.1.1",
-        "c8ocaf": "2.0.6",
+        "c8ocaf": "2.0.7",
         "c8osdkangular": "4.0.17",
         "lodash": "4.17.21",
         "rxjs": "6.6.0",
@@ -5309,9 +5309,9 @@
       }
     },
     "node_modules/c8ocaf": {
-      "version": "2.0.6",
-      "resolved": "https://registry.npmjs.org/c8ocaf/-/c8ocaf-2.0.6.tgz",
-      "integrity": "sha512-9zAZ01q5ePvLjJsZh+WtSU/I8L32/enhHJcWet8wCuzVb+lq0dRHvqAEx6LN55Js583RU4izxnYPpNpDpjK/zg==",
+      "version": "2.0.7",
+      "resolved": "https://registry.npmjs.org/c8ocaf/-/c8ocaf-2.0.7.tgz",
+      "integrity": "sha512-k23cCc3bIF0rIjCXTYRZUHpBNsq+jtbZ8g6pGrZYnDRkItctUZ/LTnFyuwnloZWJOO0IK/Vb8DEdzmxJNyVWYA==",
       "dependencies": {
         "tslib": "^2.3.0"
       },
@@ -20879,9 +20879,9 @@
       "dev": true
     },
     "c8ocaf": {
-      "version": "2.0.6",
-      "resolved": "https://registry.npmjs.org/c8ocaf/-/c8ocaf-2.0.6.tgz",
-      "integrity": "sha512-9zAZ01q5ePvLjJsZh+WtSU/I8L32/enhHJcWet8wCuzVb+lq0dRHvqAEx6LN55Js583RU4izxnYPpNpDpjK/zg==",
+      "version": "2.0.7",
+      "resolved": "https://registry.npmjs.org/c8ocaf/-/c8ocaf-2.0.7.tgz",
+      "integrity": "sha512-k23cCc3bIF0rIjCXTYRZUHpBNsq+jtbZ8g6pGrZYnDRkItctUZ/LTnFyuwnloZWJOO0IK/Vb8DEdzmxJNyVWYA==",
       "requires": {
         "tslib": "^2.3.0"
       }
