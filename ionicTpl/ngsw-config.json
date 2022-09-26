@@ -4,13 +4,15 @@
   "assetGroups": [{
     "name": "app",
     "installMode": "prefetch",
+    "updateMode": "prefetch",
     "resources": {
       "files": [
         "/index.html",
         "/manifest.webmanifest",
         "/*.css",
         "/*.scss",
-        "/*.js"
+        "/*.js",
+        "/ngsw.json"
       ],
       "urls": []
    }
