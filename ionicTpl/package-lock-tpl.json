@@ -15,9 +15,7 @@
         "@angular/platform-browser-dynamic": "14.2.3",
         "@angular/router": "14.2.3",
         "@angular/service-worker": "14.2.3",
-        "@ionic-native/camera": "^5.26.0",
         "@ionic-native/core": "5.36.0",
-        "@ionic-native/file": "^5.26.0",
         "@ionic-native/splash-screen": "5.36.0",
         "@ionic-native/status-bar": "5.36.0",
         "@ionic/angular": "6.2.8",
@@ -25,7 +23,7 @@
         "@ngx-translate/http-loader": "6.0.0",
         "animate.css": "4.1.1",
         "c8ocaf": "2.0.10",
-        "c8osdkangular": "4.0.17",
+        "c8osdkangular": "4.0.18-beta4",
         "lodash": "4.17.21",
         "rxjs": "6.6.7",
         "tslib": "2.4.0",
@@ -3206,18 +3204,6 @@
       "integrity": "sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==",
       "dev": true
     },
-    "node_modules/@ionic-native/camera": {
-      "version": "5.36.0",
-      "resolved": "https://registry.npmjs.org/@ionic-native/camera/-/camera-5.36.0.tgz",
-      "integrity": "sha512-68hdPn0hA7yn4YNTgmLF32x/l7arFulboGhNiyFQ35/QxqrOmppf77p4xaPOyJtNyICKHLaiStC6w1eEAtl9MA==",
-      "dependencies": {
-        "@types/cordova": "latest"
-      },
-      "peerDependencies": {
-        "@ionic-native/core": "^5.1.0",
-        "rxjs": "^5.5.0 || ^6.5.0"
-      }
-    },
     "node_modules/@ionic-native/core": {
       "version": "5.36.0",
       "resolved": "https://registry.npmjs.org/@ionic-native/core/-/core-5.36.0.tgz",
@@ -3226,18 +3212,6 @@
         "@types/cordova": "latest"
       },
       "peerDependencies": {
-        "rxjs": "^5.5.0 || ^6.5.0"
-      }
-    },
-    "node_modules/@ionic-native/file": {
-      "version": "5.36.0",
-      "resolved": "https://registry.npmjs.org/@ionic-native/file/-/file-5.36.0.tgz",
-      "integrity": "sha512-x7yZ4VdC8n8FNlpRmUFtohNlOZnExvoxZ/6oCvGsV+ec8TJXUsDK/BYi1g+lkPTCUY3EmQIeBOe4PLO6fRJ7qg==",
-      "dependencies": {
-        "@types/cordova": "latest"
-      },
-      "peerDependencies": {
-        "@ionic-native/core": "^5.1.0",
         "rxjs": "^5.5.0 || ^6.5.0"
       }
     },
@@ -5860,13 +5834,14 @@
       }
     },
     "node_modules/c8osdkangular": {
-      "version": "4.0.17",
-      "resolved": "https://registry.npmjs.org/c8osdkangular/-/c8osdkangular-4.0.17.tgz",
-      "integrity": "sha512-zLsgMZncMitIqcQk+UrFgd7N8c99hMhfh2hiiCO1YfVSu/WvWBDXat3EsN+9IdN9nZavkvIzRkCoi0qx4S5F4g==",
+      "version": "4.0.18-beta4",
+      "resolved": "https://registry.npmjs.org/c8osdkangular/-/c8osdkangular-4.0.18-beta4.tgz",
+      "integrity": "sha512-QLPzZ+ORsS66S15O62PaqeBkF+36hLtT3joWVp/OPaM65kk/R39drf8O1/ee4hIylodqVLKPS9tAvOE7eQM2aQ==",
       "dependencies": {
         "@types/node": "14.10.1",
         "@types/pouchdb": "6.4.0",
         "@types/pouchdb-core": "7.0.6",
+        "js-sha256": "0.9.0",
         "lodash": "4.17.21",
         "pouchdb-browser": "7.2.2",
         "pouchdb-checkpointer": "7.2.2",
@@ -10600,6 +10575,11 @@
       "version": "1.0.1",
       "resolved": "https://registry.npmjs.org/js-extend/-/js-extend-1.0.1.tgz",
       "integrity": "sha1-UFUasaxx1LswLkBA675ZAzuisfc="
+    },
+    "node_modules/js-sha256": {
+      "version": "0.9.0",
+      "resolved": "https://registry.npmjs.org/js-sha256/-/js-sha256-0.9.0.tgz",
+      "integrity": "sha512-sga3MHh9sgQN2+pJ9VYZ+1LPwXOxuBJBA5nrR5/ofPfuiJBE2hnjsaN8se8JznOmGLN2p49Pe5U/ttafcs/apA=="
     },
     "node_modules/js-tokens": {
       "version": "4.0.0",
@@ -19886,26 +19866,10 @@
       "integrity": "sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==",
       "dev": true
     },
-    "@ionic-native/camera": {
-      "version": "5.36.0",
-      "resolved": "https://registry.npmjs.org/@ionic-native/camera/-/camera-5.36.0.tgz",
-      "integrity": "sha512-68hdPn0hA7yn4YNTgmLF32x/l7arFulboGhNiyFQ35/QxqrOmppf77p4xaPOyJtNyICKHLaiStC6w1eEAtl9MA==",
-      "requires": {
-        "@types/cordova": "latest"
-      }
-    },
     "@ionic-native/core": {
       "version": "5.36.0",
       "resolved": "https://registry.npmjs.org/@ionic-native/core/-/core-5.36.0.tgz",
       "integrity": "sha512-lOrkktadlKYbYf1LrDyAtsu1JnQ0oCCdkOU7iHQ8oXnNOkMwobFfD2m62F1CoOr0u9LIkpYnZSPjng8lZbmbNw==",
-      "requires": {
-        "@types/cordova": "latest"
-      }
-    },
-    "@ionic-native/file": {
-      "version": "5.36.0",
-      "resolved": "https://registry.npmjs.org/@ionic-native/file/-/file-5.36.0.tgz",
-      "integrity": "sha512-x7yZ4VdC8n8FNlpRmUFtohNlOZnExvoxZ/6oCvGsV+ec8TJXUsDK/BYi1g+lkPTCUY3EmQIeBOe4PLO6fRJ7qg==",
       "requires": {
         "@types/cordova": "latest"
       }
@@ -21899,13 +21863,14 @@
       }
     },
     "c8osdkangular": {
-      "version": "4.0.17",
-      "resolved": "https://registry.npmjs.org/c8osdkangular/-/c8osdkangular-4.0.17.tgz",
-      "integrity": "sha512-zLsgMZncMitIqcQk+UrFgd7N8c99hMhfh2hiiCO1YfVSu/WvWBDXat3EsN+9IdN9nZavkvIzRkCoi0qx4S5F4g==",
+      "version": "4.0.18-beta4",
+      "resolved": "https://registry.npmjs.org/c8osdkangular/-/c8osdkangular-4.0.18-beta4.tgz",
+      "integrity": "sha512-QLPzZ+ORsS66S15O62PaqeBkF+36hLtT3joWVp/OPaM65kk/R39drf8O1/ee4hIylodqVLKPS9tAvOE7eQM2aQ==",
       "requires": {
         "@types/node": "14.10.1",
         "@types/pouchdb": "6.4.0",
         "@types/pouchdb-core": "7.0.6",
+        "js-sha256": "0.9.0",
         "lodash": "4.17.21",
         "pouchdb-browser": "7.2.2",
         "pouchdb-checkpointer": "7.2.2",
@@ -25342,6 +25307,11 @@
       "version": "1.0.1",
       "resolved": "https://registry.npmjs.org/js-extend/-/js-extend-1.0.1.tgz",
       "integrity": "sha1-UFUasaxx1LswLkBA675ZAzuisfc="
+    },
+    "js-sha256": {
+      "version": "0.9.0",
+      "resolved": "https://registry.npmjs.org/js-sha256/-/js-sha256-0.9.0.tgz",
+      "integrity": "sha512-sga3MHh9sgQN2+pJ9VYZ+1LPwXOxuBJBA5nrR5/ofPfuiJBE2hnjsaN8se8JznOmGLN2p49Pe5U/ttafcs/apA=="
     },
     "js-tokens": {
       "version": "4.0.0",
