@@ -33,11 +33,6 @@
                 },
                 {
                   "glob": "**/*",
-                  "input": "../../DisplayObjects/mobile/assets",
-                  "output": "assets"
-                },
-                {
-                  "glob": "**/*",
                   "input": "src/assets",
                   "output": "assets"
                 },
