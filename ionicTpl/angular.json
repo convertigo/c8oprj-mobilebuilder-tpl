@@ -60,6 +60,11 @@
                   "glob": "animate.min.css",
                   "input": "node_modules/animate.css",
                   "output": "assets/css"
+                },
+                {
+                  "glob": "plugins.txt",
+                  "input": "src",
+                  "output": "/" 
                 }
               ],
               "styles": ["src/theme/variables.scss", "src/global.scss"],
@@ -149,6 +154,11 @@
                       "glob": "**/*",
                       "input": "../../DisplayObjects/mobile/assets",
                        "output": "assets"
+                    },
+                    {
+                      "glob": "plugins.txt",
+                      "input": "src",
+                      "output": "/" 
                     }
                 ]
               }
