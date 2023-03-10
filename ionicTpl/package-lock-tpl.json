@@ -23,7 +23,7 @@
         "@ngx-translate/http-loader": "6.0.0",
         "animate.css": "4.1.1",
         "c8ocaf": "2.0.10",
-        "c8osdkangular": "4.0.18-beta4",
+        "c8osdkangular": "4.0.18",
         "lodash": "4.17.21",
         "rxjs": "6.6.7",
         "tslib": "2.4.0",
@@ -5834,9 +5834,9 @@
       }
     },
     "node_modules/c8osdkangular": {
-      "version": "4.0.18-beta4",
-      "resolved": "https://registry.npmjs.org/c8osdkangular/-/c8osdkangular-4.0.18-beta4.tgz",
-      "integrity": "sha512-QLPzZ+ORsS66S15O62PaqeBkF+36hLtT3joWVp/OPaM65kk/R39drf8O1/ee4hIylodqVLKPS9tAvOE7eQM2aQ==",
+      "version": "4.0.18",
+      "resolved": "https://registry.npmjs.org/c8osdkangular/-/c8osdkangular-4.0.18.tgz",
+      "integrity": "sha512-F/89jpYOZr4TLu5B52KsT6qI/jStAdDfR2UX3DCe5otIISiz0x2YBMaDlFW8WOipY7TqtbXx2OMb8aPY0J1fGg==",
       "dependencies": {
         "@types/node": "14.10.1",
         "@types/pouchdb": "6.4.0",
@@ -21863,9 +21863,9 @@
       }
     },
     "c8osdkangular": {
-      "version": "4.0.18-beta4",
-      "resolved": "https://registry.npmjs.org/c8osdkangular/-/c8osdkangular-4.0.18-beta4.tgz",
-      "integrity": "sha512-QLPzZ+ORsS66S15O62PaqeBkF+36hLtT3joWVp/OPaM65kk/R39drf8O1/ee4hIylodqVLKPS9tAvOE7eQM2aQ==",
+      "version": "4.0.18",
+      "resolved": "https://registry.npmjs.org/c8osdkangular/-/c8osdkangular-4.0.18.tgz",
+      "integrity": "sha512-F/89jpYOZr4TLu5B52KsT6qI/jStAdDfR2UX3DCe5otIISiz0x2YBMaDlFW8WOipY7TqtbXx2OMb8aPY0J1fGg==",
       "requires": {
         "@types/node": "14.10.1",
         "@types/pouchdb": "6.4.0",
