@@ -128,7 +128,7 @@ export class AppComponent extends C8oPageBase {
                 this.resetImageCache();
                 /*Begin_c8o_AppInitialization*/
                 /*End_c8o_AppInitialization*/
-                this.appInit.next();
+                this.appInit.next(null);
             });
 
         });
