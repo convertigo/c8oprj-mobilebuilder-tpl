@@ -1,7 +1,6 @@
 {
     "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
     "version": 1,
-    "defaultProject": "app",
     "newProjectRoot": "projects",
     "projects": {
       "app": {
@@ -12,11 +11,8 @@
         "schematics": {},
         "architect": {
           "build": {
-            "builder": "@angular-builders/custom-webpack:browser",
+            "builder": "@angular-devkit/build-angular:browser",
             "options": {
-              "customWebpackConfig": {
-                "path": "./extra-webpack.config.js"
-              },
               "outputPath": "./../../DisplayObjects/mobile/",
               "deleteOutputPath": false,
               "index": "src/index.html",
@@ -165,7 +161,7 @@
             }
           },
           "serve": {
-            "builder": "@angular-builders/custom-webpack:dev-server",
+            "builder": "@angular-devkit/build-angular:dev-server",
             "options": {
               "browserTarget": "app:build:serve"
             }
@@ -240,7 +236,7 @@
             }
           },
           "ionic-cordova-serve": {
-            "builder": "@ionic/angular-toolkit:cordova-serve",
+            "builder": "@ionic/angular-toolkit:cordova-server",
             "options": {
               "cordovaBuildTarget": "app:ionic-cordova-build",
               "devServerTarget": "app:serve"
