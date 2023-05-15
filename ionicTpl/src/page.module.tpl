@@ -20,8 +20,6 @@ import { TranslateModule } from '@ngx-translate/core';
 	/*=c8o_PageRoutingModuleName*/,
   /*End_c8o_NgModules*/],
   exports: [RouterModule],
-  entryComponents: [/*Begin_c8o_NgComponents*/
-  /*End_c8o_NgComponents*/],
   providers: [/*Begin_c8o_NgProviders*/
   /*End_c8o_NgProviders*/]
 })

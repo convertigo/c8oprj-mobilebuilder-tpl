@@ -19,9 +19,7 @@ import { TranslateModule } from '@ngx-translate/core';
 	TranslateModule.forChild(),
   /*End_c8o_NgModules*/],
   exports: [RouterModule,/*=c8o_ModuleNgExports*//*=c8o_CompName*/],
-  entryComponents: [/*Begin_c8o_NgComponents*/
-  /*End_c8o_NgComponents*/],
-  providers: [/*Begin_c8o_NgProviders*/
+   providers: [/*Begin_c8o_NgProviders*/
   /*End_c8o_NgProviders*/]
 })
 export class /*=c8o_CompModuleName*/ {}

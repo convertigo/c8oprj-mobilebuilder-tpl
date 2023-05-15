@@ -33,8 +33,6 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [/*Begin_c8o_NgDeclarations*/
   	AppComponent,
   /*End_c8o_NgDeclarations*/],
-  entryComponents: [/*Begin_c8o_NgComponents*/
-  /*End_c8o_NgComponents*/],
   imports: [/*Begin_c8o_NgModules*/
     BrowserModule,
     BrowserAnimationsModule,
