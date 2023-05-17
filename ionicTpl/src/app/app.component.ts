@@ -6,8 +6,8 @@ import { SwUpdate }                                         							from '@angula
 import { NavParams, NavController, LoadingController, MenuController, Platform}         from '@ionic/angular';
 import { AlertController, ActionSheetController, ModalController }                      from '@ionic/angular';
 import { AnimationController, PopoverController, ToastController }                      from '@ionic/angular';
-import { SplashScreen }                                                                 from '@ionic-native/splash-screen/ngx';
-import { StatusBar }                                                                    from '@ionic-native/status-bar/ngx';
+import { SplashScreen }                                                                 from '@awesome-cordova-plugins/splash-screen/ngx';
+import { StatusBar }                                                                    from '@awesome-cordova-plugins/status-bar/ngx';
 import { TranslateService }                                                             from '@ngx-translate/core';
 import { Subject }                                                                      from 'rxjs';
 
