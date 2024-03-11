@@ -1,4 +1,4 @@
-import { NgModule, ErrorHandler } 							from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, ErrorHandler }	from '@angular/core';
 import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } 	from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule }   				from '@angular/forms';
 import { BrowserModule } 									from '@angular/platform-browser';
@@ -10,8 +10,8 @@ import { TranslateModule, TranslateLoader } 				from '@ngx-translate/core';
 import { TranslateHttpLoader } 								from '@ngx-translate/http-loader';
 
 import { IonicModule, IonicRouteStrategy } 					from '@ionic/angular';
-import { SplashScreen } 									from '@ionic-native/splash-screen/ngx';
-import { StatusBar } 										from '@ionic-native/status-bar/ngx';
+//import { SplashScreen } 									from '@ionic-native/splash-screen/ngx';
+//import { StatusBar } 										from '@ionic-native/status-bar/ngx';
 
 import { C8o, HttpXsrfInterceptor }                         from "c8osdkangular";
 import { C8oRouter } 			                            from 'c8ocaf';
@@ -33,8 +33,6 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [/*Begin_c8o_NgDeclarations*/
   	AppComponent,
   /*End_c8o_NgDeclarations*/],
-  entryComponents: [/*Begin_c8o_NgComponents*/
-  /*End_c8o_NgComponents*/],
   imports: [/*Begin_c8o_NgModules*/
     BrowserModule,
     BrowserAnimationsModule,
@@ -58,8 +56,8 @@ export function createTranslateLoader(http: HttpClient) {
 	AppRoutingModule,
   /*End_c8o_NgModules*/],
   providers: [/*Begin_c8o_NgProviders*/
-    StatusBar,
-    SplashScreen,
+//    StatusBar,
+//    SplashScreen,
     C8o,
     C8oRouter,
 //    ActionBeans,
@@ -70,6 +68,7 @@ export function createTranslateLoader(http: HttpClient) {
     },
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   /*End_c8o_NgProviders*/],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

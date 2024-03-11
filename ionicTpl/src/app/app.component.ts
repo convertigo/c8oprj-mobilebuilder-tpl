@@ -6,8 +6,8 @@ import { SwUpdate }                                         							from '@angula
 import { NavParams, NavController, LoadingController, MenuController, Platform}         from '@ionic/angular';
 import { AlertController, ActionSheetController, ModalController }                      from '@ionic/angular';
 import { AnimationController, PopoverController, ToastController }                      from '@ionic/angular';
-import { SplashScreen }                                                                 from '@ionic-native/splash-screen/ngx';
-import { StatusBar }                                                                    from '@ionic-native/status-bar/ngx';
+//import { SplashScreen }                                                                 from '@ionic-native/splash-screen/ngx';
+//import { StatusBar }                                                                    from '@ionic-native/status-bar/ngx';
 import { TranslateService }                                                             from '@ngx-translate/core';
 import { Subject }                                                                      from 'rxjs';
 
@@ -59,7 +59,7 @@ export class AppComponent extends C8oPageBase {
     /*End_c8o_AppDeclaration*/
 	
 //  	constructor(private platform: Platform, private splashScreen: SplashScreen, private statusBar: StatusBar) {
-    constructor(private platform: Platform, private splashScreen: SplashScreen, private statusBar: StatusBar, routerProvider: C8oRouter, private route: ActivatedRoute, private angularRouter: Router, loadingCtrl: LoadingController, sanitizer: DomSanitizer, ref: ChangeDetectorRef, injector: Injector, menuCtrl: MenuController, public translate: TranslateService){
+    constructor(private platform: Platform, /*private splashScreen: SplashScreen, private statusBar: StatusBar, */ routerProvider: C8oRouter, private route: ActivatedRoute, private angularRouter: Router, loadingCtrl: LoadingController, sanitizer: DomSanitizer, ref: ChangeDetectorRef, injector: Injector, menuCtrl: MenuController, public translate: TranslateService){
         super(injector, routerProvider, loadingCtrl, ref);
         this.events = this.getInstance(Events);
         this.actionBeans = this.getInstance(ActionBeans);
@@ -118,8 +118,8 @@ export class AppComponent extends C8oPageBase {
         /*End_c8o_AppConstructor*/
            
         this.platform.ready().then(() => {
-            this.statusBar.styleDefault();
-            this.splashScreen.hide();
+//            this.statusBar.styleDefault();
+//            this.splashScreen.hide();
             
             /**
              * Then we finalize initialization
@@ -128,7 +128,7 @@ export class AppComponent extends C8oPageBase {
                 this.resetImageCache();
                 /*Begin_c8o_AppInitialization*/
                 /*End_c8o_AppInitialization*/
-                this.appInit.next();
+                this.appInit.next(null); //this.appInit.next();
             });
 
         });
