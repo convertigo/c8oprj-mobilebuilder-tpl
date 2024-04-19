@@ -10614,8 +10614,8 @@
 				"module_ng_components": [],
 				"package_dependencies": [
 					{
-						"package": "@circlon/angular-tree-component",
-						"version": "11.0.4"
+						"package": "@ali-hm/angular-tree-component",
+						"version": "12.0.5"
 					}
 				]
 			}
