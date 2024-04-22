@@ -2820,7 +2820,7 @@
 			"icon32": "tooltips_32x32.png",
 			"properties": {
 				"AnimationDuration": {
-					"attr": "animationDuration",
+					"attr": "[animationDuration]",
 					"label": "Animation duration",
 					"description": "The duration controls how long the animation takes to run from start to finish.",
 					"category": "@Properties",
@@ -2832,7 +2832,7 @@
 					]
 				},
 				"AutoPlacement": {
-					"attr": "autoPlacement",
+					"attr": "[autoPlacement]",
 					"label": "Auto placement",
 					"description": "Place the tooltip so that it does not go beyond the borders of the browser window.",
 					"category": "@Properties",
@@ -2843,8 +2843,32 @@
 						"true"
 					]
 				},
+				"Display": {
+					"attr": "[display]",
+					"label": "Display",
+					"description": "The tooltip availability for display.",
+					"category": "@Properties",
+					"type": "boolean",
+					"value": "true",
+					"values": [
+						"false",
+						"true"
+					]
+				},
+				"DisplayTouchscreen": {
+					"attr": "[displayTouchscreen]",
+					"label": "Display on touch screen",
+					"description": "Display the tooltip on mobile devices.",
+					"category": "@Properties",
+					"type": "boolean",
+					"value": "true",
+					"values": [
+						"false",
+						"true"
+					]
+				},
 				"HideDelay": {
-					"attr": "hideDelay",
+					"attr": "[hideDelay]",
 					"label": "Hide delay",
 					"description": "The delay in ms before removing the tooltip.",
 					"category": "@Properties",
@@ -2856,7 +2880,7 @@
 					]
 				},
 				"HideDelayAfterClick": {
-					"attr": "hideDelayAfterClick",
+					"attr": "[hideDelayAfterClick]",
 					"label": "Hide delay (click)",
 					"description": "Tooltip hiding delay for 'click' trigger.",
 					"category": "@Properties",
@@ -2868,7 +2892,7 @@
 					]
 				},
 				"HideDelayTouchscreen": {
-					"attr": "hideDelayTouchscreen",
+					"attr": "[hideDelayTouchscreen]",
 					"label": "Hide delay (touch)",
 					"description": "Delay in milliseconds before hiding the tooltip (for mobile devices).",
 					"category": "@Properties",
@@ -2880,7 +2904,7 @@
 					]
 				},
 				"Offset": {
-					"attr": "offset",
+					"attr": "[offset]",
 					"label": "Offset",
 					"description": "Offset the tooltip relative to the item.",
 					"category": "@Properties",
@@ -2892,7 +2916,7 @@
 					]
 				},
 				"Shadow": {
-					"attr": "shadow",
+					"attr": "[shadow]",
 					"label": "Shadow",
 					"description": "Shadow of the tooltip.",
 					"category": "@Properties",
@@ -2904,7 +2928,7 @@
 					]
 				},
 				"ShowDelay": {
-					"attr": "showDelay",
+					"attr": "[showDelay]",
 					"label": "Show delay",
 					"description": "The delay in ms before showing the tooltip.",
 					"category": "@Properties",
@@ -2916,7 +2940,7 @@
 					]
 				},
 				"Placement": {
-					"attr": "placement",
+					"attr": "[placement]",
 					"label": "Position",
 					"description": "The position of the tooltip.",
 					"category": "@Properties",
@@ -2929,7 +2953,7 @@
 					]
 				},
 				"PointerEvents": {
-					"attr": "pointerEvents",
+					"attr": "[pointerEvents]",
 					"label": "Pointer events",
 					"description": "Defines whether or not an element reacts to pointer events.",
 					"category": "@Properties",
@@ -2953,7 +2977,7 @@
 					]
 				},
 				"Theme": {
-					"attr": "theme",
+					"attr": "[theme]",
 					"label": "Theme",
 					"description": "Theme of tooltip background and text.",
 					"category": "@Properties",
@@ -2983,7 +3007,7 @@
 					]
 				},
 				"TooltipClass": {
-					"attr": "tooltipClass",
+					"attr": "[tooltipClass]",
 					"label": "Tooltip classes",
 					"description": "Comma separated class names to be passed to the tooltip.",
 					"category": "@Properties",
@@ -2994,7 +3018,7 @@
 					]
 				},
 				"TooltipContent": {
-					"attr": "contentType",
+					"attr": "[contentType]",
 					"label": "Tooltip content type",
 					"description": "The content type passed to the tooltip.",
 					"category": "@Properties",
@@ -3007,7 +3031,7 @@
 					]
 				},
 				"Trigger": {
-					"attr": "trigger",
+					"attr": "[trigger]",
 					"label": "Trigger event",
 					"description": "Specifies how the tooltip is triggered. Control the closing time with 'Hide delay' property.",
 					"category": "@Properties",
@@ -3019,7 +3043,7 @@
 					]
 				},
 				"Width": {
-					"attr": "width",
+					"attr": "[width]",
 					"label": "Width",
 					"description": "Width of the tooltip in pixels.",
 					"category": "@Properties",
@@ -3031,7 +3055,7 @@
 					]
 				},
 				"MaxWidth": {
-					"attr": "maxWidth",
+					"attr": "[maxWidth]",
 					"label": "Max width",
 					"description": "Maximum width of the tooltip in pixels.",
 					"category": "@Properties",
@@ -3043,7 +3067,7 @@
 					]
 				},
 				"ZIndex": {
-					"attr": "zIndex",
+					"attr": "[zIndex]",
 					"label": "Z-index",
 					"description": "Z-index of the tooltip.",
 					"category": "@Properties",
