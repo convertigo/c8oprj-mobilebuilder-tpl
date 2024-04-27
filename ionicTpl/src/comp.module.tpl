@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -22,6 +22,7 @@ import { TranslateModule } from '@ngx-translate/core';
   entryComponents: [/*Begin_c8o_NgComponents*/
   /*End_c8o_NgComponents*/],
   providers: [/*Begin_c8o_NgProviders*/
-  /*End_c8o_NgProviders*/]
+  /*End_c8o_NgProviders*/],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class /*=c8o_CompModuleName*/ {}

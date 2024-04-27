@@ -1,4 +1,4 @@
-import { NgModule, ErrorHandler } 							from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, ErrorHandler } 							from '@angular/core';
 import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } 	from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule }   				from '@angular/forms';
 import { BrowserModule } 									from '@angular/platform-browser';
@@ -70,6 +70,7 @@ export function createTranslateLoader(http: HttpClient) {
     },
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   /*End_c8o_NgProviders*/],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
