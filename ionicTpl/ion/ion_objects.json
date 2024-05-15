@@ -10644,6 +10644,134 @@
 				]
 			}
 		},
+
+	/*
+	 * CDK Components
+	 */
+		"CdkVirtualScrollViewport": {
+			"tag": "cdk-virtual-scroll-viewport",
+			"displayName": "CdkVirtualScrollViewport",
+			"label": "Virtual Scroll Viewport",
+			"description": [
+				"cdk-virtual-scroll-viewport| Defines a <i>Virtual Scroll Viewport</i> component.<br/>",
+				"This component helps displaying large lists of elements performantly by only rendering the items that fit on-screen.<br/>",
+				"Loading hundreds of elements can be slow in any browser; virtual scrolling enables a performant way to simulate all items being rendered by making the height of the container element the same as the height of total number of elements to be rendered, and then only rendering the items in view.<br/>",
+				"Virtual scrolling is different from strategies like infinite scroll where it renders a set amount of elements and then when you hit the end renders the rest.<br/>",
+				"This component works with the <i>CdkVirtualFor</i> Directive to specify scrollable items to render.<br/>",
+				" For more information: <a href='https://material.angular.io/cdk/scrolling/overview'>Virtual scrolling</a>."
+			],
+			"group": "Component Dev Kit (CDK)",
+			"icon16": "cdk_virtualscrollviewport_16x16.png",
+			"icon32": "cdk_virtualscrollviewport_32x32.png",
+			"properties": {
+				"appendOnly": {
+					"mode": "plain",
+					"label": "Append only",
+					"description": "Whether rendered items should persist in the DOM after scrolling out of view. By default, items will be removed.",
+					"category": "@Properties",
+					"value": false,
+					"values": [
+						false,
+						"appendOnly"
+					]
+				},
+				"itemSize": {
+					"mode": "plain",
+					"attr": "[itemSize]",
+					"label": "Item size",
+					"description": "The size of the items in the list (in pixels).",
+					"category": "@Properties",
+					"type": "number",
+					"value": "50"
+				},
+				"maxBufferPx": {
+					"mode": "plain",
+					"attr": "[maxBufferPx]",
+					"label": "Buffer max",
+					"description": "The number of pixels worth of buffer to render for when rendering new items. Defaults to 200.",
+					"category": "@Properties",
+					"type": "number",
+					"value": false
+				},
+				"minBufferPx": {
+					"mode": "plain",
+					"attr": "[minBufferPx]",
+					"label": "Buffer min",
+					"description": "The minimum amount of buffer rendered beyond the viewport (in pixels). If the amount of buffer dips below this number, more items will be rendered. Defaults to 100.",
+					"category": "@Properties",
+					"type": "number",
+					"value": false
+				},
+				"orientation": {
+					"mode": "plain",
+					"attr": "[orientation]",
+					"label": "Orientation",
+					"description": "The direction the viewport scrolls.",
+					"category": "@Properties",
+					"type": "string",
+					"value": false,
+					"values": [
+						false,
+						"horizontal",
+						"vertical"
+					]
+				}
+			},
+			"events": {
+				"scrolledIndexChange": {
+					"attr": "(scrolledIndexChange)",
+					"description": "Emits when the index of the first element visible in the viewport changes."
+				}
+			},
+			"config": {
+				"module_ts_imports": [
+					{
+						"from": "@angular/cdk/scrolling",
+						"components": [
+							"ScrollingModule"
+						]
+					}
+				],
+				"module_ng_imports": [
+					"ScrollingModule"
+				],
+				"package_dependencies": [
+					{
+						"package": "@angular/cdk",
+						"version": "17.3.6"
+					}
+				]
+			},
+			"hint": {
+				"CdkVirtualScrollViewport": {
+					"com.twinsoft.convertigo.beans.ngx.components.UIStyle": {
+						"properties": {
+							"styleContent": "\theight: 200px;\n\twidth: 200px;\n\tborder: 1px solid black;\n"
+						}
+					},
+					"com.twinsoft.convertigo.beans.ngx.components.UIControlDirective": {
+						"properties": {
+							"directiveName": "CdkVirtualFor",
+							"directiveItemName": "item",
+							"directiveIndexName": "idx",
+							"directiveSource": "TS=[{text: 'item1'},{text: 'item2'},{text: 'item3'},{text: 'item4'},{text: 'item5'},{text: 'item6'},{text: 'item7'},{text: 'item8'},{text: 'item9'},{text: 'item10'}]"
+						},
+						"DivTag": {
+							"com.twinsoft.convertigo.beans.ngx.components.UIStyle": {
+								"properties": {
+									"styleContent": "\theight: 50px;\n"
+								}
+							},
+							"com.twinsoft.convertigo.beans.ngx.components.UIText": {
+								"properties": {
+									"textValue": "TS=item.text"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
 		
 	
 	/*
