@@ -9303,10 +9303,12 @@
 				"//--color\t//Color of the card subtitle"
 			]
 		},
-		/*
-     * Google Maps AGM
+		
+	/*
+     * Google Maps AGM - DEPRECATED
      */
 		"GoogleMap": {
+			"deprecatedTplVersion": "8.3.0.0",
 			"tag": "agm-map",
 			"displayName": "GoogleMap",
 			"label": "Google Map",
@@ -9416,6 +9418,7 @@
 			}
 		},
 		"MapMarker": {
+			"deprecatedTplVersion": "8.3.0.0",
 			"tag": "agm-marker",
 			"displayName": "MapMarker",
 			"label": "Map Marker",
@@ -9482,6 +9485,7 @@
 			}
 		},
 		"MapInfoWindow": {
+			"deprecatedTplVersion": "8.3.0.0",
 			"tag": "agm-info-window",
 			"displayName": "MapInfoWindow",
 			"label": "Information Window",
@@ -9498,6 +9502,7 @@
 			"properties": {}
 		},
 		"MapCircle": {
+			"deprecatedTplVersion": "8.3.0.0",
 			"tag": "agm-circle",
 			"displayName": "MapCircle",
 			"label": "Map Circle",
@@ -9683,7 +9688,8 @@
 				}
 			}
 		},
-		/*
+		
+	/*
      * Video
      */
 		"Video": {
