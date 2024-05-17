@@ -3045,9 +3045,9 @@
 				"Width": {
 					"attr": "[width]",
 					"label": "Width",
-					"description": "Width of the tooltip in pixels.",
+					"description": "Width of the tooltip in pixels. E.g: 150px",
 					"category": "@Properties",
-					"type": "number",
+					"type": "string",
 					"value": false,
 					"values": [
 						false,
@@ -3057,10 +3057,10 @@
 				"MaxWidth": {
 					"attr": "[maxWidth]",
 					"label": "Max width",
-					"description": "Maximum width of the tooltip in pixels.",
+					"description": "Maximum width of the tooltip in pixels (default: 200px)",
 					"category": "@Properties",
-					"type": "number",
-					"value": "200",
+					"type": "string",
+					"value": "200px",
 					"values": [
 						false,
 						true
