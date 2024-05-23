@@ -10688,7 +10688,7 @@
 					"description": "The size of the items in the list (in pixels).",
 					"category": "@Properties",
 					"type": "number",
-					"value": "50"
+					"value": "10"
 				},
 				"maxBufferPx": {
 					"mode": "plain",
@@ -10752,7 +10752,7 @@
 				"CdkVirtualScrollViewport": {
 					"com.twinsoft.convertigo.beans.ngx.components.UIStyle": {
 						"properties": {
-							"styleContent": "\theight: 200px;\n\twidth: 200px;\n\tborder: 1px solid black;\n"
+							"styleContent": "\theight: 100%;\n"
 						}
 					},
 					"com.twinsoft.convertigo.beans.ngx.components.UIControlDirective": {
@@ -10760,17 +10760,14 @@
 							"directiveName": "CdkVirtualFor",
 							"directiveItemName": "item",
 							"directiveIndexName": "idx",
-							"directiveSource": "TS=[{text: 'item1'},{text: 'item2'},{text: 'item3'},{text: 'item4'},{text: 'item5'},{text: 'item6'},{text: 'item7'},{text: 'item8'},{text: 'item9'},{text: 'item10'}]"
+							"directiveSource": "TS=[{text: 'item1'},{text: 'item2'},{text: 'item3'},{text: 'item4'},{text: 'item5'},{text: 'item6'},{text: 'item7'},{text: 'item8'},{text: 'item9'},{text: 'item10'},{text: 'item11'},{text: 'item12'},{text: 'item13'},{text: 'item14'},{text: 'item15'},{text: 'item16'},{text: 'item17'},{text: 'item18'},{text: 'item19'},{text: 'item20'},{text: 'item21'},{text: 'item22'},{text: 'item23'},{text: 'item24'},{text: 'item25'},{text: 'item26'},{text: 'item27'},{text: 'item28'},{text: 'item29'},{text: 'item30'},{text: 'item31'},{text: 'item32'},{text: 'item33'},{text: 'item34'},{text: 'item35'},{text: 'item36'},{text: 'item37'},{text: 'item38'},{text: 'item39'},{text: 'item40'},{text: 'item41'},{text: 'item42'},{text: 'item43'},{text: 'item44'},{text: 'item45'},{text: 'item46'},{text: 'item47'},{text: 'item48'},{text: 'item49'},{text: 'item50'}]"
 						},
-						"DivTag": {
-							"com.twinsoft.convertigo.beans.ngx.components.UIStyle": {
-								"properties": {
-									"styleContent": "\theight: 50px;\n"
-								}
-							},
-							"com.twinsoft.convertigo.beans.ngx.components.UIText": {
-								"properties": {
-									"textValue": "TS=item.text"
+						"ListItem": {
+							"Label": {
+								"com.twinsoft.convertigo.beans.ngx.components.UIText": {
+									"properties": {
+										"textValue": "TS=item.text"
+									}
 								}
 							}
 						}
