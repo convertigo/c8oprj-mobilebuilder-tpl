@@ -14582,7 +14582,7 @@
 				"cordova_plugins": [
 					{
 						"plugin": "cordova-plugin-file",
-						"version": "^6.0.2"
+						"version": "^8.0.1"
 					}
 				]
 			}
@@ -16443,7 +16443,7 @@
 				"cordova_plugins": [
 					{
 						"plugin": "cordova-plugin-camera",
-						"version": "4.1.0",
+						"version": "7.0.0",
 						"variables": {
 							"CAMERA_USAGE_DESCRIPTION": "To capture photos",
 							"PHOTOLIBRARY_USAGE_DESCRIPTION": "To access photo gallery"
