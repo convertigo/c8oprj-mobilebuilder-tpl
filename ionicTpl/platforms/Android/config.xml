@@ -33,6 +33,7 @@
 	<preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
 	<preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
 	<preference name="fullscreen"                 value="false" />          <!-- all: hides the status bar at the top of the screen -->
+	<preference name="StatusBarOverlaysWebView"   value="false" />
 	<preference name="SplashScreen"               value="screen" />         <!-- all: the splash screen resource if built without phonegap build -->
 	<preference name="ShowSplashScreenSpinner"    value="false"/>           <!-- all: show the splash screen spinner -->
 	<preference name="AutoHideSplashScreen"       value="false" />
