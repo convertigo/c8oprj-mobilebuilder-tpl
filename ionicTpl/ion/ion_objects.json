@@ -13,7 +13,7 @@
 			"label": "Binding",
 			"description": "The object or variable to bind with the control.",
 			"category": "@Control",
-			"mode": "script",
+			"mode": "plain",
 			"value": false
 		},
 		"Disabled": {
