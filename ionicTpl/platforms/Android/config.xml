@@ -10,6 +10,8 @@
 	<!-- $(ApplicationAuthorName)$ : your name -->
 	<!-- $(ApplicationAuthorEmail)$ : your email -->
 	<!-- $(ApplicationAuthorWebsite)$ : your website -->
+	<!-- $(ApplicationBackgroundColor)$ : the application background color -->
+	<!-- $(ApplicationThemeColor)$ : the application theme color -->
 	<!-- $(PlatformName)$ : current platform name -->
 	<!-- $(PlatformType)$ : current platform's target os -->
 	<!-- $(EndpointHostname)$ : extracted hostname of the current endpoint -->
@@ -58,7 +60,7 @@
 	</platform>
 	<icon src="res/icon.png"/>
 	<preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/icon.png" />
-	<preference name="AndroidWindowSplashScreenBackground" value="#01ccfc" />
+	<preference name="AndroidWindowSplashScreenBackground" value="$(ApplicationBackgroundColor)$" />
 	
 	<!-- If you do not want any permissions to be added to your app, add the
 	following tag to your config.xml; you will still have the INTERNET

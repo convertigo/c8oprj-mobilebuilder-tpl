@@ -10,6 +10,8 @@
 	<!-- $(ApplicationAuthorName)$ : your name -->
 	<!-- $(ApplicationAuthorEmail)$ : your email -->
 	<!-- $(ApplicationAuthorWebsite)$ : your website -->
+	<!-- $(ApplicationBackgroundColor)$ : the application background color -->
+	<!-- $(ApplicationThemeColor)$ : the application theme color -->
 	<!-- $(PlatformName)$ : current platform name -->
 	<!-- $(PlatformType)$ : current platform's target os -->
 	<!-- $(EndpointHostname)$ : extracted hostname of the current endpoint -->
