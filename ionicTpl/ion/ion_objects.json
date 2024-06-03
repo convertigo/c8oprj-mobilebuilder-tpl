@@ -17419,6 +17419,16 @@
 				}
 			}
 		},
-		"UIControlEvent": {}
+		"UIControlEvent": {},
+		"PageComponent": {
+			"classname": "com.twinsoft.convertigo.beans.ngx.components.PageComponent",
+			"hint": {
+				"PageComponent": {
+					"Header": {},
+					"Content": {},
+					"Footer": {}
+				}
+			}
+		}
 	}
 }
