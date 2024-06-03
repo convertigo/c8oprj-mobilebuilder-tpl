@@ -592,7 +592,7 @@ var F = {
 				F.mkParentDirs(file.uri, function (parentDir, fileName) {
 					var source;
 					if (fromApp) {
-						source = cordova.file.applicationDirectory + "www/" + file.uri;
+						source = decodeURI(cordova.file.applicationDirectory) + "www/" + file.uri;
 					} else {
 						source = F.env.remoteBase + "/" + file.uri + "?" + F.startTime;
 					}
