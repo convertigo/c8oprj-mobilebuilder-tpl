@@ -91,8 +91,8 @@ var F = {
 		}
 		console.log("error: " + msg);
 		var alertContent = F.debugStream;
-		var lines = F.debugStream.split("\n");
-		if (lines > 60) {
+		var lines = alertContent.split("\n");
+		if (lines.length > 60) {
 			alertContent = lines.slice(0, 30).join("\n") + "\n\n... " + (lines.length - 60) + " lines ...\n\n" + lines.slice(-30).join("\n");
 		}
 		alert(alertContent+ "\n" + msg);
