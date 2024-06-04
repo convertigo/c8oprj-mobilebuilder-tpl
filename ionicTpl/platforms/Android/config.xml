@@ -88,6 +88,7 @@
 	<allow-intent href="mailto:*" />
 	<allow-intent href="geo:*" />
 	<allow-navigation href="*://*/*" />
-	
+
+	<!-- DON'T REMOVE THE COMMENT BELLOW -->
 	<!-- Application mandatory plugins -->
 </widget>
