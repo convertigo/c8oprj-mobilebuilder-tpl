@@ -17424,9 +17424,90 @@
 			"classname": "com.twinsoft.convertigo.beans.ngx.components.PageComponent",
 			"hint": {
 				"PageComponent": {
-					"Header": {},
+					"Header": {
+						"ToolBar": {
+							"ButtonSet": [
+								{
+									"properties": {
+										"SetPosition": "start"
+									},
+									"BackButton": {},
+									"MenuButton": {}
+								},
+								{
+									"properties": {
+										"SetPosition": "end"
+									},
+									"Button": [
+										{
+											"Icon": {
+												"properties": {
+													"IconName": "ellipsis-vertical"
+												}
+											},
+											"com.twinsoft.convertigo.beans.ngx.components.UIControlEvent": {
+												"properties": {
+													"eventName": "onClick"
+												}
+											}
+										}
+									]
+								}
+							],
+							"BarTitle": {
+								"com.twinsoft.convertigo.beans.ngx.components.UIText": {
+									"properties": {
+										"textValue": "ToolBar title"
+									}
+								}
+							}
+						}
+					},
 					"Content": {},
-					"Footer": {}
+					"Footer": {
+						"ToolBar": {
+							"ButtonSet": [
+								{
+									"properties": {
+										"SetPosition": "start"
+									},
+									"Button": [
+										{
+											"com.twinsoft.convertigo.beans.ngx.components.UIText": {
+												"properties": {
+													"textValue": "Action1"
+												}
+											},
+											"com.twinsoft.convertigo.beans.ngx.components.UIControlEvent": {
+												"properties": {
+													"eventName": "onClick"
+												}
+											}
+										}
+									]
+								},
+								{
+									"properties": {
+										"SetPosition": "end"
+									},
+									"Button": [
+										{
+											"com.twinsoft.convertigo.beans.ngx.components.UIText": {
+												"properties": {
+													"textValue": "Action2"
+												}
+											},
+											"com.twinsoft.convertigo.beans.ngx.components.UIControlEvent": {
+												"properties": {
+													"eventName": "onClick"
+												}
+											}
+										}
+									]
+								}
+							]
+						}
+					}
 				}
 			}
 		}
