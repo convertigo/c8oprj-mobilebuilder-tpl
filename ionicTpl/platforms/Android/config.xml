@@ -30,7 +30,7 @@
 	<content src="$(EndpointScheme)$://$(EndpointHostname)$:1234/index-fu.html" />
 	
 	<!-- Customize your app and platform with the preference element. -->
-	<preference name="nodejs-version"             value="v20.13.1" />       <!-- all: version of NodeJS that run Cordova -->
+	<preference name="nodejs-version"             value="v20.14.0" />       <!-- all: version of NodeJS that run Cordova -->
 	<preference name="cordova-version"            value="12.0.0" />         <!-- all: version of Cordova CLI -->
 	<preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
 	<preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->

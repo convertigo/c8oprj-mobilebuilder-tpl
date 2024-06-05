@@ -34,7 +34,7 @@
 	<content src="ionic://$(EndpointHostname)$/index-fu.html" />
 	
 	<!-- Customize your app and platform with the preference element. -->
-	<preference name="nodejs-version"             value="v20.13.1" />       <!-- all: version of NodeJS that run Cordova -->
+	<preference name="nodejs-version"             value="v20.14.0" />       <!-- all: version of NodeJS that run Cordova -->
 	<preference name="cordova-version"            value="12.0.0" />         <!-- all: version of Cordova CLI -->
 <!--<preference name="target-device"              value="universal" />      all: possible values handset, tablet, or universal -->
 	<preference name="fullscreen"                 value="false" />          <!-- all: hides the status bar at the top of the screen -->
