@@ -22,10 +22,11 @@
         "@ngx-translate/core": "14.0.0",
         "@ngx-translate/http-loader": "6.0.0",
         "animate.css": "4.1.1",
-        "c8ocaf": "2.0.10",
+        "c8ocaf": "2.0.13",
         "c8osdkangular": "4.0.20",
         "ionicons": "7.2.2",
         "lodash": "4.17.21",
+        "lodash-es": "4.17.21",
         "rxjs": "7.8.0",
         "tslib": "2.4.0",
         "zone.js": "0.14.2"
@@ -6420,9 +6421,9 @@
       }
     },
     "node_modules/c8ocaf": {
-      "version": "2.0.10",
-      "resolved": "https://registry.npmjs.org/c8ocaf/-/c8ocaf-2.0.10.tgz",
-      "integrity": "sha512-/QX956o+oOXIqvUxOwCVKFXMDYWj+6vmP4be13/WNb18SPO9EgRscmVx1vLx81FyQ4YaQ0mJR7f6Fls4ZzpJxQ==",
+      "version": "2.0.13",
+      "resolved": "https://registry.npmjs.org/c8ocaf/-/c8ocaf-2.0.13.tgz",
+      "integrity": "sha512-ooTjNHi2OmhiyWHtR1Pkvp9/j8j+qpz0jdlEQi8r0S6EpB0Q4NOGTnSWH3t4QnPsoEH6BeTrVrvahPo0flADhA==",
       "dependencies": {
         "tslib": "^2.3.0"
       },
@@ -6432,7 +6433,7 @@
         "@angular/router": ">= 13.0.0",
         "@ionic/angular": ">= 6.0.0",
         "c8osdkangular": ">= 4.0.17",
-        "lodash": ">= 4.17.20"
+        "lodash-es": ">= 4.17.20"
       }
     },
     "node_modules/c8osdkangular": {
@@ -11878,6 +11879,11 @@
       "version": "4.17.21",
       "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
       "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
+    },
+    "node_modules/lodash-es": {
+      "version": "4.17.21",
+      "resolved": "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz",
+      "integrity": "sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw=="
     },
     "node_modules/lodash.debounce": {
       "version": "4.0.8",
@@ -23744,9 +23750,9 @@
       "dev": true
     },
     "c8ocaf": {
-      "version": "2.0.10",
-      "resolved": "https://registry.npmjs.org/c8ocaf/-/c8ocaf-2.0.10.tgz",
-      "integrity": "sha512-/QX956o+oOXIqvUxOwCVKFXMDYWj+6vmP4be13/WNb18SPO9EgRscmVx1vLx81FyQ4YaQ0mJR7f6Fls4ZzpJxQ==",
+      "version": "2.0.13",
+      "resolved": "https://registry.npmjs.org/c8ocaf/-/c8ocaf-2.0.13.tgz",
+      "integrity": "sha512-ooTjNHi2OmhiyWHtR1Pkvp9/j8j+qpz0jdlEQi8r0S6EpB0Q4NOGTnSWH3t4QnPsoEH6BeTrVrvahPo0flADhA==",
       "requires": {
         "tslib": "^2.3.0"
       }
@@ -27693,6 +27699,11 @@
       "version": "4.17.21",
       "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
       "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
+    },
+    "lodash-es": {
+      "version": "4.17.21",
+      "resolved": "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz",
+      "integrity": "sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw=="
     },
     "lodash.debounce": {
       "version": "4.0.8",
