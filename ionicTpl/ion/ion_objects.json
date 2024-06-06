@@ -17425,6 +17425,7 @@
 			"classname": "com.twinsoft.convertigo.beans.ngx.components.PageComponent",
 			"hint": {
 				"PageComponent": {
+					"com.twinsoft.convertigo.beans.ngx.components.UIPageEvent": {},
 					"Header": {
 						"ToolBar": {
 							"ButtonSet": [
