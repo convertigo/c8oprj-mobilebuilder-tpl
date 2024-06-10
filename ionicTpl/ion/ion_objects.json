@@ -376,7 +376,7 @@
 				"Accordions make it possible to organize large amounts of content in an easy-to-understand way.<br/>",
 				"They provide collapsible sections in your content to reduce vertical space while providing a way of organizing and grouping information.<br/>",
 				"<i>Accordion</i> components should be grouped inside an <i>Accordion Group</i>.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/accordion'>Accordion</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/accordion'>Accordion</a>."
 			],
 			"group": "Containers",
 			"icon16": "accordion_16x16.png",
@@ -489,7 +489,7 @@
 				"ion-accordion-group| Defines an <i>Accordion Group</i> component.<br/>",
 				"It is a container for <i>Accordion</i> instances. It manages the state of the accordions and provides keyboard navigation.<br/>",
 				"<i>Accordion</i> components components should be grouped inside an <i>Accordion Group</i>.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/accordion-group'>Accordion group</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/accordion-group'>Accordion group</a>."
 			],
 			"group": "Containers",
 			"icon16": "accordiongroup_16x16.png",
@@ -675,7 +675,7 @@
 				"Breadcrumbs are navigation items that are used to indicate where a user is on an app or site. They should be used for large sites and apps with hierarchically arranged pages.<br/>",
 				"Breadcrumbs can be collapsed based on the maximum number that can show, and the collapsed indicator can be clicked on to present a popover with more information or expand the collapsed breadcrumbs.<br/>",
 				"A <i>Breadcrumbs</i> component may contain multiple <i>Breadcrumb</i> components.",
-				" For more information: <a href='https://ionicframework.com/docs/api/breadcrumbs'>Breadcrumbs</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/breadcrumbs'>Breadcrumbs</a>."
 			],
 			"group": "Containers",
 			"icon16": "breadcrumbs_16x16.png",
@@ -787,7 +787,7 @@
 				"ion-breadcrumb| Defines a <i>Breadcrumb</i> component.<br/>",
 				"A <i>Breadcrumb</i> is a single navigation item that is a child of the a <i>Breadcrumbs</i> component.<br/>",
 				"It can link elsewhere in an app or it can be plain text. Each breadcrumb has a separator between it and the next breadcrumb and can optionally contain an icon.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/breadcrumb'>Breadcrumb</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/breadcrumb'>Breadcrumb</a>."
 			],
 			"group": "Containers",
 			"icon16": "breadcrumb_16x16.png",
@@ -862,7 +862,7 @@
 			"description": [
 				" | Defines a <i>Format &amp; Layout</i> component.<br/>",
 				"This component can be used on any component in order to modify the text, element placement or adjust the padding and margin.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/layout/css-utilities'>CSS Utilities</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/layout/css-utilities'>CSS Utilities</a>."
 			],
 			"group": "Miscellaneous",
 			"icon16": "formatlayout_16x16.png",
@@ -1337,7 +1337,7 @@
 				"Buttons are an essential way to interact with and navigate through a mobile application, and should clearly communicate what action will occur after the user taps them.<br/>",
 				"<i>Button</i> can consist of <i>Text</i> and/or <i>Icon</i>, and can be enhanced with a wide variety of properties/attributes.<br/>",
 				"You can add <i>Event</i> component with chained <i>Actions</i> to a <i>Button</i> to handle button click.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/button'>Buttons</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/button'>Buttons</a>."
 			],
 			"group": "Buttons",
 			"icon16": "button_16x16.png",
@@ -1420,7 +1420,7 @@
 			"description": [
 				"ion-menu-button| Defines a <i>Menu Button</i> component.<br/>",
 				"A <i>Menu Button</i> component automatically creates the icon and functionality to open a menu on a page.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/menu-button'>MenuButton</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/menu-button'>MenuButton</a>."
 			],
 			"group": "Menus",
 			"icon16": "menubutton_16x16.png",
@@ -1482,7 +1482,7 @@
 				"By default, it's only visible when the selected menu is active. A menu is active when it can be opened/closed.<br/>",
 				"If the menu is disabled or it's being presented as a split-pane, the menu is marked as non-active and <i>MenuToggle</i> hides itself.<br/>",
 				"In case it's desired to keep <i>MenuToggle</i> always visible, the AutoHide property can be set to false.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/menu-toggle'>MenuToggle</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/menu-toggle'>MenuToggle</a>."
 			],
 			"group": "Menus",
 			"icon16": "menutoggle_16x16.png",
@@ -1524,7 +1524,7 @@
 				"ion-back-button| Defines a <i>Back Button</i> component.<br/>",
 				"A <i>Back Button</i> helps navigating back in the app's history upon click.</br>",
 				"It is smart enough to know what to render based on the mode and when to show based on the navigation stack.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/back-button'>Avatar</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/back-button'>Avatar</a>."
 			],
 			"group": "Menus",
 			"icon16": "backbutton_16x16.png",
@@ -1765,7 +1765,7 @@
 				"When pressed, it may contain more related actions.<br/>",
 				"FABs as its name suggests are floating over the content in a fixed position.<br/>",
 				"You can add <i>Icon</i> in the <i>FAB Button</i> to represent a given function.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/fab-button'>FabButton</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/fab-button'>FabButton</a>."
 			],
 			"group": "Buttons",
 			"icon16": "fab_16x16.png",
@@ -1888,7 +1888,7 @@
 			"description": [
 				"ion-fab| Defines a <i>FAB Container</i> component.<br/>",
 				"Place your <i>FAB Button</i> components in this container to make them non scrollable with <i>Content</i>.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/fab'>FabContainer</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/fab'>FabContainer</a>."
 			],
 			"group": "Buttons",
 			"icon16": "containerfab_16x16.png",
@@ -1982,7 +1982,7 @@
 				"ion-fab-list| Defines a <i>FAB List</i> component.<br/>",
 				"The <i>FAB List</i> is a container for multiple <i>FAB Button</i>s. It contains actions related to the main fab button and is flung out on click.<br/>",
 				" To specify what side the buttons should appear on, set the side property to 'start', 'end', 'top', 'bottom'.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/fab-list'>FabList</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/fab-list'>FabList</a>."
 			],
 			"group": "Buttons",
 			"icon16": "fablist_16x16.png",
@@ -2091,7 +2091,7 @@
 				"This component acts as a set of buttons to be used within other components.<br/>",
 				"For example, buttons can be added to a <i>Generic Item</i> or a <i>NavBar</i> component.<br/>",
 				"You can define whether buttons are aligned left: <code>start</code> or right: <code>end</code>.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/buttons'>Button Set</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/buttons'>Button Set</a>."
 			],
 			"group": "Buttons",
 			"icon16": "buttonset_16x16.png",
@@ -2193,7 +2193,7 @@
 				"There should only be one <i>Content</i> per page, as for <i>Header</i> and <i>Footer</i>.<br/>",
 				"This is the main space where other components will be inserted.<br/>",
 				"You can use the <i>padding</i> property to automatically define some margins.<br/>",
-				"For more information: <a href='https://ionicframework.com/docs/api/content'>Content</a>."
+				"For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/content'>Content</a>."
 			],
 			"group": "Containers",
 			"icon16": "content_16x16.png",
@@ -2325,7 +2325,7 @@
 				"ion-footer| Defines a <i>Footer</i> component.<br/>",
 				"There should only be one <i>Footer</i> per page, as for <i>Header</i> and <i>Content</i>.<br/>",
 				"The <i>Footer</i> is a root component of a page that sits at the bottom of the page. Footer can be a wrapper for <i>ToolBar</i> to make sure the content area is sized correctly.<br/>",
-				"For more information: <a href='https://ionicframework.com/docs/api/footer'>Footer</a>."
+				"For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/footer'>Footer</a>."
 			],
 			"group": "Containers",
 			"icon16": "footer_16x16.png",
@@ -2413,7 +2413,7 @@
 				"There should only be one <i>Header</i> per page, as for <i>Content</i> and <i>Footer</i>.<br/>",
 				"Header is a root component of a page that holds the <i>Toolbar</i> component.<br/>",
 				"It's important to note that <i>Header</i> needs to be the one of the three root elements of a page.<br/>",
-				"For more information: <a href='https://ionicframework.com/docs/api/header'>Header</a>."
+				"For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/header'>Header</a>."
 			],
 			"group": "Containers",
 			"icon16": "header_16x16.png",
@@ -3113,7 +3113,7 @@
 			"description": [
 				"ion-progress-bar| Defines a ProgressBar component. This component is a horizontal progress bar to visualize the progression of an operation and activity.<br/>",
 				"You can choose between two types: determinate and indeterminate.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/progress-bar'>ProgressBar</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/progress-bar'>ProgressBar</a>."
 			],
 			"group": "Forms",
 			"icon16": "progressbar_16x16.png",
@@ -3181,7 +3181,7 @@
 			"label": "Skeleton Text",
 			"description": [
 				"ion-skeleton-text | The <i>Skeleton Text</i> is a component for rendering placeholder content. The element will render a gray block at the specified width.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/skeleton-text'>Skeleton Text</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/skeleton-text'>Skeleton Text</a>."
 			],
 			"group": "Miscellaneous",
 			"icon16": "skeleton_16x16.png",
@@ -3248,7 +3248,7 @@
 			"label": "Spinner",
 			"description": [
 				"ion-spinner| The ion-spinner component provides a variety of animated SVG spinners. Spinners enables you to give users feedback that the app is actively processing/thinking/waiting/chillin’ out, or whatever you’d like it to indicate.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/spinner'>Spinner</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/spinner'>Spinner</a>."
 			],
 			"group": "Miscellaneous",
 			"icon16": "spinner_16x16.png",
@@ -3583,7 +3583,7 @@
 				"ion-tabs| Defines a <i>Tabs Container</i> component.<br/>",
 				"The <i>Tabs Container</i> is a top level navigation component to implement a tab-based navigation. It is a container of individual Tab components.<br/>",
 				"The <i>Tabs Container</i> does not have any styling and works as a router outlet in order to handle navigation. It does not provide any UI feedback or mechanism to switch between tabs. In order to do so, a <i>Tab Bar</i> should be provided as a direct child.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/tabs'>Tabs</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/tabs'>Tabs</a>."
 			],
 			"group": "Components",
 			"icon16": "tabscontainer_16x16.png",
@@ -3607,7 +3607,7 @@
 			"description": [
 				"ion-tab-bar| Defines a <i>Tab Bar</i> component.<br/>",
 				"A <i>Tab Bar</i> is component that contains a set of <i>Tab Button</i>s. It must be provided inside of a <i>Tabs Container</i> to communicate with each tab.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/tab-bar'>Tab Bar</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/tab-bar'>Tab Bar</a>."
 			],
 			"group": "Components",
 			"icon16": "tabbar_16x16.png",
@@ -3652,7 +3652,7 @@
 				"A <i>Tab Button</i> has to be inserted in a <i>Tab Bar</i> component.<br/>",
 				"It is associated to a page you can specify through its properties.<br/><br/>",
 				"<span class='orangetwinsoft'><u>Note:</u></span> Make sure the page you associate contains a <i>Content</i> or <code>&lt;ion-content&gt;</code> to make it work properly in a <i>Tab Button</i>.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/tab-button'>Tab Button</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/tab-button'>Tab Button</a>."
 			],
 			"group": "Components",
 			"icon16": "tab_16x16.png",
@@ -3718,7 +3718,7 @@
 				" \u2022 several <i>MenuItem</i> components to add specific pages.<br/><br/>",
 				"<span class='orangetwinsoft'><u>Note:</u></span> different menus may be added to an application but only the first one is used by default.<br/>",
 				"If you'd like to use a specific menu for a given page, simply specify it in the <i>Menu id</i> property of your <i>Page</i> component.<br/>",
-				"For more information: <a href='https://ionicframework.com/docs/api/menu'>Menu</a>."
+				"For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/menu'>Menu</a>."
 			],
 			"group": "Menus",
 			"icon16": "menu_16x16.png",
@@ -3856,7 +3856,7 @@
 				"ion-toolbar| Defines a <i>ToolBar</i> component.<br/>",
 				"A <i>ToolBar</i> is a generic bar that can be used in an application as a header, sub-header, footer, or even sub-footer.<br/>",
 				"Since it is based on flexbox, no matter how many toolbars you have in your page, they will be displayed correctly and content will adjust accordingly.<br/>",
-				"For more information: <a href='https://ionicframework.com/docs/api/toolbar'>Toolbar</a>."
+				"For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/toolbar'>Toolbar</a>."
 			],
 			"group": "Containers",
 			"icon16": "toolbar_color_16x16.png",
@@ -3953,7 +3953,7 @@
 				"Place the <i>Refresher</i> as the first child of your <i>Content</i>.<br/>",
 				"Pages can then listen to the refresher's various output events. The refresh output event is fired when the user has pulled down far enough to kick off the refreshing process.<br/>",
 				" Once the async operation has completed and the refreshing should end, call complete().<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/refresher'>Refresher</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/refresher'>Refresher</a>."
 			],
 			"group": "Forms",
 			"icon16": "refresher_16x16.png",
@@ -4023,7 +4023,7 @@
 			"description": [
 				"ion-refresher-content| Defines a <i>Content Refresher</i> component.<br/>",
 				"By default, Ionic provides the pulling icon and refreshing spinner that looks best for the platform the user is on. However, you can change the default icon and spinner, along with adding text for each state by adding properties to the child <i>Content Refresher</i> component.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/refresher-content'>RefresherContent</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/refresher-content'>RefresherContent</a>."
 			],
 			"group": "Forms",
 			"icon16": "refreshercontent_16x16.png",
@@ -4075,7 +4075,7 @@
 			"description": [
 				"ion-searchbar| Defines a <i>Search Bar</i> component.<br/>",
 				"This component manages the display of a searchbar which can be used to search or filter items.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/searchbar'>Searchbar</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/searchbar'>Searchbar</a>."
 			],
 			"group": "Forms",
 			"icon16": "searchbar_16x16.png",
@@ -4322,7 +4322,7 @@
 			"description": [
 				"ion-title| Defines a <i>Bar Title</i> component.<br/>",
 				"<i>Bar Title</i> is a component that sets the title of a <i>ToolBar</i> or <i>NavBar</i> component.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/title'>Title</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/title'>Title</a>."
 			],
 			"group": "Components",
 			"icon16": "bartitle_16x16.png",
@@ -4355,7 +4355,7 @@
 				"A <i>Backdrop</i> is transparent by default, so you should include CSS to make it visible.<br>",
 				"It can be customized by assigning common CSS properties including <code>background-color</code>, <code>background</code> and <code>opacity</code>.<br>",
 				"Content can be displayed above the backdrop by setting a <code>z-index</code> on the content, higher than the backdrop (defaults to 2).<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/backdrop'>Backdrop</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/backdrop'>Backdrop</a>."
 			],
 			"group": "Miscellaneous",
 			"icon16": "backdrop_16x16.png",
@@ -4422,7 +4422,7 @@
 				"ion-badge| Defines a <i>Badge</i> component.<br/>",
 				"Badges are small components that typically communicate a numerical value to the user.<br/>",
 				"They are typically used within an <i>Generic Item</i>.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/badge'>Badge</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/badge'>Badge</a>."
 			],
 			"group": "Components",
 			"icon16": "badge_16x16.png",
@@ -4452,7 +4452,7 @@
 				"ion-slides| Defines a <i>Slides Container</i> component.<br/>",
 				"Slides make it easy to create galleries, tutorials, and page-based layouts. Slides take a number of configuration options.<br/>",
 				"The <i>Slides Container</i> component is a multi-section container. Each section can be swiped or dragged between. It contains any number of <i>Slide Item</i> components.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/slides'>Slides</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/slides'>Slides</a>."
 			],
 			"group": "Slides",
 			"icon16": "slides_16x16.png",
@@ -4589,7 +4589,7 @@
 			"description": [
 				"ion-slide| Defines a <i>Slide Item</i> component.<br/>",
 				"Add <i>Slide Item</i> components inside a <i>Slides</i> component. Any slide content should be written in this component.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/slide'>Slide</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/slide'>Slide</a>."
 			],
 			"group": "Slides",
 			"icon16": "slide_16x16.png",
@@ -4609,7 +4609,7 @@
 				"Slides make it easy to create galleries, tutorials, and page-based layouts.<br/>",
 				"By setting the <i>Identifier</i> property you can access from your typescript code the swiper instance through <code>page['my-identifier'].swiper</code><br/>",
 				" For more information: <a href='https://swiperjs.com/'>Swiper</a> library.<br/>",
-				" See also <a href='https://ionicframework.com/docs/angular/slides'>Migrating from ion-slides to Swiper.js</a><br/>"
+				" See also <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/angular/slides'>Migrating from ion-slides to Swiper.js</a><br/>"
 			],
 			"group": "Slides",
 			"icon16": "slides_16x16.png",
@@ -4934,7 +4934,7 @@
 			"description": [
 				"ion-chip| Defines a <i>Chip</i> component.<br/>",
 				"Chips represent complex entities in small blocks, such as a contact. A chip can contain several different elements such as avatars, text, and icons.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/chip'>Chip</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/chip'>Chip</a>."
 			],
 			"group": "Containers",
 			"icon16": "chip_16x16.png",
@@ -4982,7 +4982,7 @@
 				"A Segment is a group of buttons, sometimes known as segmented controls, that allow the user to interact with a compact group of a number of controls.<br/>",
 				"Segments provide functionality similar to tabs, selecting one will unselect all others.<br/>",
 				"Like any other form's inputs, it has a <i>Control name</i> property you may change for a more friendly name to use in a custom validation function.<br/>",
-				"For more information: <a href='https://ionicframework.com/docs/api/segment'>Segment</a>.<br/><br/>",
+				"For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/segment'>Segment</a>.<br/><br/>",
 				"<span class='orangetwinsoft'><u>Note:</u></span> Make sure to add your component under a <i>Generic Item</i> or <code>&lt;ion-item&gt;</code> to make it work properly in form."
 			],
 			"group": "Forms",
@@ -5098,7 +5098,7 @@
 			"description": [
 				"ion-segment-button| Defines a <i>Segment Button</i> component.<br/>",
 				"Add some <i>Segment Button</i> to a <i>Segment Container</i> component and assign them a value through their <i>Value</i> property.<br/>",
-				"For more information: <a href='https://ionicframework.com/docs/api/segment-button'>SegmentButton</a>."
+				"For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/segment-button'>SegmentButton</a>."
 			],
 			"group": "Forms",
 			"icon16": "segment-button_color_16x16.png",
@@ -5175,7 +5175,7 @@
 				"The <i>Reorder Group</i> is a container for items using the <i>Reorder</i> component that is used to drag items within the group.<br/>",
 				"Once the user drags an item and drops it in a new position, the ionItemReorder event is dispatched. A handler for it should be implemented that calls the event.target.complete() method.<br/>",
 				"The detail property of the ionItemReorder event includes all of the relevant information about the reorder operation, including the 'from' and 'to' indexes.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/reorder-group'>Reorder Group</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/reorder-group'>Reorder Group</a>."
 			],
 			"group": "Lists",
 			"icon16": "reordergroup_16x16.png",
@@ -5245,7 +5245,7 @@
 				"ion-reorder| Defines a <i>Reorder</i> component.<br/>",
 				"The <i>Reorder</i> is the anchor component used to drag and drop the items inside of the <i>Reorder Group</i>.<br/>",
 				"It allows an item in a group of items to be dragged to change its order within that group. It must be used within a <i>Reorder Group</i> to provide a visual drag and drop interface.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/reorder'>Reorder</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/reorder'>Reorder</a>."
 			],
 			"group": "Lists",
 			"icon16": "reorder_16x16.png",
@@ -5263,7 +5263,7 @@
 				"ion-list| Defines a <i>List Container</i> component.<br/>",
 				"Lists are used to display rows of information.<br/>",
 				"You can insert items or buttons in lists to make list items clickable. You can also add to list items many other components such as icons, avatars or thumbnails.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/list'>List</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/list'>List</a>."
 			],
 			"group": "Lists",
 			"icon16": "list_16x16.png",
@@ -5338,7 +5338,7 @@
 				"ion-list| Defines a <i>Avatar List</i> component.<br/>",
 				"Lists are used to display rows of information.<br/>",
 				"You can insert items or buttons in lists to make list items clickable. You can also add to list items many other components such as icons, avatars or thumbnails.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/list'>List</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/list'>List</a>."
 			],
 			"group": "Lists",
 			"icon16": "avatarlist_16x16.png",
@@ -5454,7 +5454,7 @@
 			"description": [
 				"ion-list-header| Defines a <i>List Header Item</i> component.<br/>",
 				"Each list can include a header at the top of the list.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/list-header'>List Header</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/list-header'>List Header</a>."
 			],
 			"group": "Lists",
 			"icon16": "listheader_16x16.png",
@@ -5507,7 +5507,7 @@
 				"To make groups of items,<br/>",
 				" \u2022 use <i>Group Item</i> instead of <i>List Container</i><br/>",
 				" \u2022 use <i>Divider Item</i> components to divide the group in to multiple sections.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/item-group'>Group Item</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/item-group'>Group Item</a>."
 			],
 			"group": "Lists",
 			"icon16": "listgroup_16x16.png",
@@ -5568,7 +5568,7 @@
 				"To make groups of items,<br/>",
 				" \u2022 use <i>Group Item</i> instead of <i>List Container</i><br/>",
 				" \u2022 use <i>Divider Item</i> components to divide the group in to multiple sections.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/item-divider'>Divider Item</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/item-divider'>Divider Item</a>."
 			],
 			"group": "Lists",
 			"icon16": "listdivider_16x16.png",
@@ -5625,7 +5625,7 @@
 				"A <i>Sliding Container</i> contains an item that can be dragged to reveal buttons.<br/>",
 				"It requires a <i>List Item</i> or a <Generic Item</i> component as a child.<br/>",
 				"All <i>Sliding Button</i>s to reveal should be placed in a <i>Sliding ButtonSet</i> component.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/item-sliding'>Sliding item</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/item-sliding'>Sliding item</a>."
 			],
 			"group": "Lists",
 			"icon16": "slidingcontainer_16x16.png",
@@ -5647,7 +5647,7 @@
 			"description": [
 				"ion-item-options| Defines a <i>Sliding ButtonSet</i> component.<br/>",
 				"A <i>Sliding ButtonSet</i> contains one or more <i>Sliding Button</i>s which reveals while sliding.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/item-options'>Sliding options</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/item-options'>Sliding options</a>."
 			],
 			"group": "Lists",
 			"icon16": "slidingbuttonset_16x16.png",
@@ -5679,7 +5679,7 @@
 			"description": [
 				"ion-item-option| Defines a <i>Sliding Button</i> component.<br/>",
 				"A <i>Sliding Button</i> must be place inside a <i>Sliding ButtonSet</i> of a <i>Sliding Container</i>.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/item-option'>Sliding option</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/item-option'>Sliding option</a>."
 			],
 			"group": "Lists",
 			"icon16": "slidingbutton_16x16.png",
@@ -5721,7 +5721,7 @@
 				"Avatars are circular components that usually wrap an image or icon. They can be used to represent a person or an object.<br/>",
 				"Avatars can be used by themselves or inside of any element. If placed inside of a <i>Chip</i> or <i>List item</i>, the avatar will resize to fit the parent component.",
 				"To position an avatar on the left or right side of an item, set its Slot property to 'start' or 'end', respectively.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/avatar'>Avatar</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/avatar'>Avatar</a>."
 			],
 			"group": "Lists",
 			"icon16": "avataritem_16x16.png",
@@ -5751,7 +5751,7 @@
 				"Thumbnails are square components that usually wrap an image or icon. They can be used to make it easier to display a group of larger images or provide a preview of the full-size image.<br/>",
 				"Thumbnails can be used by themselves or inside of any element. If placed inside of a <i>List item</i>, the thumbnail will resize to fit the parent component.",
 				"To position a thumbnail on the left or right side of an item, set its Slot property to 'start' or 'end', respectively.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/thumbnail'>Thumbnail</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/thumbnail'>Thumbnail</a>."
 			],
 			"group": "Lists",
 			"icon16": "thumbnail_16x16.png",
@@ -5772,7 +5772,7 @@
 				"ion-img| Defines a <i>Lazy Image</i> component.<br/>",
 				"This component will lazily load an image when ever it is in the viewport.<br/>",
 				"This is extremely useful when generating a large list as images are only loaded when they're visible.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/img'>Img</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/img'>Img</a>."
 			],
 			"group": "Lists",
 			"icon16": "lazyimage_16x16.png",
@@ -5832,7 +5832,7 @@
 			"description": [
 				"ion-text| Defines a <i>Text Item</i> component.<br/>",
 				"A <i>Text Item</i> is a simple component that can be used to style the text color of an inner <i>Text</i> component.<br/>",
-				"For more information: <a href='https://ionicframework.com/docs/api/text'>Text Item</a>."
+				"For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/text'>Text Item</a>."
 			],
 			"group": "Containers",
 			"icon16": "textitem_16x16.png",
@@ -5859,7 +5859,7 @@
 				"ion-item| Defines a <i>Generic Item</i> component.<br/>",
 				"A <i>Generic Item</i> can be replaced by a <i>Button</i> with its <i>button type</i> property set to <code>ion-item</code> to make the item clickable.<br/>",
 				"It can also contain <i>Sliding Options</i> to reveal buttons when swiped left or right.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/item'>Generic Item</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/item'>Generic Item</a>."
 			],
 			"group": "Containers",
 			"icon16": "genericitem_16x16.png",
@@ -5996,7 +5996,7 @@
 				"ion-item| Defines a <i>List Item</i> component.<br/>",
 				"A <i>List Item</i> can be replaced by a <i>Button</i> with its <i>button type</i> property set to <code>ion-item</code> to make the item clickable.<br/>",
 				"It can also contain <i>Sliding Options</i> to reveal buttons when swiped left or right.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/item'>List Item</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/item'>List Item</a>."
 			],
 			"group": "Lists",
 			"icon16": "listitem_16x16.png",
@@ -6133,7 +6133,7 @@
 			"description": [
 				"ion-item| Defines a <i>Form Item</i> component.<br/>",
 				"A <i>Form Item</i> may be used to contain form's input components such as <i>Label</i> or <i>Text Input</i>.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/item'>Form Item</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/item'>Form Item</a>."
 			],
 			"group": "Forms",
 			"icon16": "formitem_16x16.png",
@@ -6269,7 +6269,7 @@
 				"ion-label| Defines a <i>Label</i> component.<br/>",
 				"This component acts as the standard HTML label tag.<br/>",
 				"It lets you give a label to a form field.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/label'>Label</a>.<br/><br/>",
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/label'>Label</a>.<br/><br/>",
 				"<span class='orangetwinsoft'><u>Note:</u></span> Make sure to add your component under a <i>Generic Item</i> or <code>&lt;ion-item&gt;</code> to make it work properly in form."
 			],
 			"group": "Forms",
@@ -6327,7 +6327,7 @@
 				"ion-note| Defines a <i>Note</i> component.<br/>",
 				"Notes are text elements generally used as subtitles that provide more information.<br/>",
 				"Notes are styled to appear grey by default. Notes can be used in an item as metadata text.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/note'>Note</a>.<br/>"
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/note'>Note</a>.<br/>"
 			],
 			"group": "Forms",
 			"icon16": "note_16x16.png",
@@ -6353,7 +6353,7 @@
 				"Each option component must be placed under a <i>Select Container</i> component to give a list of selectable options.<br/>",
 				"To set the name or label of the option add a <i>Text</i> component to it.<br/>",
 				"Use the <i>Value</i> property to set its value, and the <i>Disabled</i> property to prevent the user from changing the value.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/select-option'>SelectOption</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/select-option'>SelectOption</a>."
 			],
 			"group": "Forms",
 			"icon16": "option_color_16x16.png",
@@ -6379,7 +6379,7 @@
 				"Add as many <i>Select Option</i> you want under a <i>Select Container</i> component.<br/>",
 				"Use the <i>Default value</i> property to set its default value. If an option has the same value it will be selected by default, otherwise the first option is selected.<br/>",
 				"Like any other form's inputs, it has a <i>Control name</i> property you may change for a more friendly name to use in a custom validation function.<br/>",
-				"For more information: <a href='https://ionicframework.com/docs/api/select'>Select</a>.<br/><br/>",
+				"For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/select'>Select</a>.<br/><br/>",
 				"<span class='orangetwinsoft'><u>Note:</u></span> Make sure to add your component under a <i>Generic Item</i> or <code>&lt;ion-item&gt;</code> to make it work properly in form."
 			],
 			"group": "Forms",
@@ -6630,7 +6630,7 @@
 				"This component is a container for a set of radio buttons. It allows a user to select at most one radio button from the set. Checking one radio button that belongs to a <i>Radio Group</i> unchecks any previous checked radio button within the same group.<br/>",
 				"Add as many <i>Radio Button</i> you want under your <i>Radio Group</i> component.<br/>",
 				"Use the <i>Default value</i> property to set its default value. If a radio button has the same value it will be checked by default.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/radio-group'>Radio Group</a>.<br/><br/>",
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/radio-group'>Radio Group</a>.<br/><br/>",
 				"<span class='orangetwinsoft'><u>Note:</u></span> Make sure to add each <i>Radio Button</i> under a <i>Generic Item</i> or <code>&lt;ion-item&gt;</code> to make it work properly in form."
 			],
 			"group": "Forms",
@@ -6728,7 +6728,7 @@
 				"ion-radio| Defines a <i>Radio Button</i> component.<br/>",
 				"When radio buttons are inside a <i>Radio List</i> component, exactly one <i>Radio Button</i> in the list can be checked at any time.<br/>",
 				"Use the <i>Value</i> property to set its value, and the <i>Disabled</i> property to prevent the user from checking it.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/radio'>Radio</a>.<br/><br/>",
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/radio'>Radio</a>.<br/><br/>",
 				"<span class='orangetwinsoft'><u>Note:</u></span> Make sure to add your component under a <i>Generic Item</i> or <code>&lt;ion-item&gt;</code> to make it work properly in form."
 			],
 			"group": "Forms",
@@ -6856,7 +6856,7 @@
 				"ion-toggle| Defines a <i>Toggle Button</i> component.<br/>",
 				"This component is technically the same thing as an HTML checkbox input, except it looks different and is easier to use on a touch device. Toggles can also have colors assigned to them, by adding any color attribute.<br/>",
 				"Like any other form's inputs, it has a <i>Control name</i> property you may change for a more friendly name to use in a custom validation function.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/toggle'>Toggle</a>.<br/><br/>",
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/toggle'>Toggle</a>.<br/><br/>",
 				"<span class='orangetwinsoft'><u>Note:</u></span> Make sure to add your component under a <i>Generic Item</i> or <code>&lt;ion-item&gt;</code> to make it work properly in form."
 			],
 			"group": "Forms",
@@ -7041,7 +7041,7 @@
 				"<i>Text Input</i> is meant for text type inputs only, such as text, password, email, number, search, tel, and url.<br/>",
 				"Use the <i>Value</i> property to set its value, and the <i>Disabled</i> property to prevent the user from changing the value.<br/>",
 				"Like any other form's inputs, it has a <i>Control name</i> property you may change for a more friendly name to use in a custom validation function.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/input'>Input</a>.<br/><br/>",
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/input'>Input</a>.<br/><br/>",
 				"<span class='orangetwinsoft'><u>Note:</u></span> Make sure to add your component under a <i>Generic Item</i> or <code>&lt;ion-item&gt;</code> to make it work properly in form."
 			],
 			"group": "Forms",
@@ -7146,7 +7146,7 @@
 					"label": "Counter formatter",
 					"description": [
 						"A callback used to format the counter text. By default the counter text is set to 'itemLength / maxLength'.",
-						"See https://ionicframework.com/docs/troubleshooting/runtime#accessing-this if you need to access <b>this</b> from within the callback."
+						"See https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/troubleshooting/runtime#accessing-this if you need to access <b>this</b> from within the callback."
 					],
 					"category": "@Properties",
 					"type": "string",
@@ -7524,7 +7524,7 @@
 				"ion-textarea| Defines a <i>Text Area</i> component.<br/>",
 				"This component is meant for multiline text type inputs only, such as text, password, email, number, search, tel, and url.<br/>",
 				"Like any other form's inputs, it has a <i>Control name</i> property you may change for a more friendly name to use in a custom validation function.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/textarea'>TextArea</a>.<br/><br/>",
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/textarea'>TextArea</a>.<br/><br/>",
 				"<span class='orangetwinsoft'><u>Note:</u></span> Make sure to add your component under a <i>Generic Item</i> or <code>&lt;ion-item&gt;</code> to make it work properly in form."
 			],
 			"group": "Forms",
@@ -7607,7 +7607,7 @@
 					"label": "Counter formatter",
 					"description": [
 						"A callback used to format the counter text. By default the counter text is set to 'itemLength / maxLength'.",
-						"See https://ionicframework.com/docs/troubleshooting/runtime#accessing-this if you need to access <b>this</b> from within the callback."
+						"See https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/troubleshooting/runtime#accessing-this if you need to access <b>this</b> from within the callback."
 					],
 					"category": "@Properties",
 					"type": "string",
@@ -7919,7 +7919,7 @@
 				"Checkboxes are no different than HTML checkbox inputs. However, like other Ionic components, checkboxes are styled differently on each platform.<br/>",
 				"Use the <i>Checked</i> property to set its default value, and the <i>Disabled</i> property to prevent the user from changing the value.<br/>",
 				"Like any other form's inputs, it has a <i>Control name</i> property you may change for a more friendly name to use in a custom validation function.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/checkbox'>Checkbox</a>.<br/><br/>",
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/checkbox'>Checkbox</a>.<br/><br/>",
 				"<span class='orangetwinsoft'><u>Note:</u></span> Make sure to add your component under a <i>Generic Item</i> or <code>&lt;ion-item&gt;</code> to make it work properly in form."
 			],
 			"group": "Forms",
@@ -8083,7 +8083,7 @@
 				"The <i>DateTime</i> component is similar to the native <code>&lt;input type='datetime-local'&gt;</code> element, however, Ionic&apos;s DateTime component makes it easy to display the date and time in a preferred format, and manage the datetime values.<br/>",
 				"Use the <i>Value</i> property to set its value.<br/>",
 				"Like any other form's inputs, it has a <i>Control name</i> property you may change for a more friendly name to use in a custom validation function.<br/>",
-				"For more information: <a href='https://ionicframework.com/docs/api/datetime'>DateTime</a>.<br/><br/>",
+				"For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/datetime'>DateTime</a>.<br/><br/>",
 				"<span class='orangetwinsoft'><u>Note:</u></span> Make sure to add your component under a <i>Generic Item</i> or <code>&lt;ion-item&gt;</code> to make it work properly in form."
 			],
 			"group": "Forms",
@@ -8363,7 +8363,7 @@
 				"ion-datetime-button| Defines a <i>DateTimeButton</i> component.<br/>",
 				"<i>DatetimeButton</i> links with a <i>DateTime</i> component to display the formatted date and time.<br/>",
 				"This component displays buttons which show the current date and time values. When the buttons are tapped, the date or time pickers open in the overlay.<br/>",
-				"For more information: <a href='https://ionicframework.com/docs/api/datetime-button'>DateTime Button</a>.<br/><br/>"
+				"For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/datetime-button'>DateTime Button</a>.<br/><br/>"
 			],
 			"group": "Buttons",
 			"icon16": "datetimebutton_16x16.png",
@@ -8411,7 +8411,7 @@
 				"The Range slider lets users select from a range of values by moving the slider knob.<br/>",
 				"It can accept dual knobs, but by default one knob controls the value of the range.<br/>",
 				"Like any other form's inputs, it has a <i>Control name</i> property you may change for a more friendly name to use in a custom validation function.<br/>",
-				"For more information: <a href='https://ionicframework.com/docs/api/range'>Range</a>.<br/><br/>",
+				"For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/range'>Range</a>.<br/><br/>",
 				"<span class='orangetwinsoft'><u>Note:</u></span> Make sure to add your component under a <i>Generic Item</i> or <code>&lt;ion-item&gt;</code> to make it work properly in form."
 			],
 			"group": "Forms",
@@ -8540,7 +8540,7 @@
 					"label": "Pin formatter",
 					"description": [
 						"A callback used to format the pin text. By default the pin text is set to Math.round(value).<br/>",
-						"See https://ionicframework.com/docs/troubleshooting/runtime#accessing-this if you need to access this from within the callback."
+						"See https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/troubleshooting/runtime#accessing-this if you need to access this from within the callback."
 					],
 					"category": "@Properties",
 					"type": "string",
@@ -8635,7 +8635,7 @@
 				"ion-grid| Defines a <i>Grid</i> component.<br/>",
 				"Grid system is based on flexbox, a CSS feature supported by all devices.<br/>",
 				"The grid is composed of three units : grid, rows and columns.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/grid'>Grid</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/grid'>Grid</a>."
 			],
 			"group": "Grid System",
 			"icon16": "grid_16x16.png",
@@ -8729,7 +8729,7 @@
 				"ion-row| Defines a <i>Grid Row</i> component.<br/>",
 				"This component must be inserted in a <i>Grid</i> and contains <i>Grid Column</i> components.<br/>",
 				"A <i>Grid Row</i> is composed of 12 slots that can be filled with <i>Grid Column</i>s.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/row'>GridRow</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/row'>GridRow</a>."
 			],
 			"group": "Grid System",
 			"icon16": "gridrow_16x16.png",
@@ -8838,7 +8838,7 @@
 			"description": [
 				"ion-col| Defines a <i>Grid Column</i> component.<br/>",
 				"This component must be inserted in a <i>Grid Row</i> and contains other components or HTML.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/col'>GridCol</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/col'>GridCol</a>."
 			],
 			"group": "Grid System",
 			"icon16": "gridcolumn_16x16.png",
@@ -9162,7 +9162,7 @@
 				"Cards are a great way to display important pieces of content, and are quickly emerging as a core design pattern for application.<br/>",
 				"They're are a great way to contain and organize information, while also setting up predictable expectations for the user.<br/>",
 				"With so much content to display at once, and often so little screen realestate, cards have fast become the design pattern of choice for many companies, including the likes of Google, Twitter, and Spotify.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/card'>Card</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/card'>Card</a>."
 			],
 			"group": "Cards",
 			"icon16": "card_16x16.png",
@@ -9243,7 +9243,7 @@
 				"ion-card-header| Defines a <i>Card Header</i> component.<br/>",
 				"Just like a page, cards can be customized to include headers.<br/>",
 				"Use a <i>Card Header</i> component inside of a <i>Card Container</i>.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/card-header'>Card Header</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/card-header'>Card Header</a>."
 			],
 			"group": "Cards",
 			"icon16": "cardheader_16x16.png",
@@ -9273,7 +9273,7 @@
 				"ion-card-content| Defines a <i>Card Content</i> component.<br/>",
 				"This component is the content part of the card.<br/>",
 				"Use a <i>Card Content</i> component inside of a <i>Card Container</i>.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/card-content'>CardContent</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/card-content'>CardContent</a>."
 			],
 			"group": "Cards",
 			"icon16": "cardcontent_16x16.png",
@@ -9289,7 +9289,7 @@
 			"description": [
 				"ion-card-title| Defines a <i>Card Title</i> component.<br/>",
 				"Use a <i>Card Title</i> component inside of a <i>Card Header</i> component.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/card-title'>CardTitle</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/card-title'>CardTitle</a>."
 			],
 			"group": "Cards",
 			"icon16": "cardtitle_16x16.png",
@@ -9309,7 +9309,7 @@
 			"description": [
 				"ion-card-subtitle| Defines a <i>Card SubTitle</i> component.<br/>",
 				"Use a <i>Card SubTitle</i> component inside of a <i>Card Header</i> component.<br/>",
-				" For more information: <a href='https://ionicframework.com/docs/api/card-subtitle'>CardSubTitle</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/card-subtitle'>CardSubTitle</a>."
 			],
 			"group": "Cards",
 			"icon16": "cardsubtitle_16x16.png",
@@ -10150,7 +10150,7 @@
 				"To do so, add the <b>ionInfinite</b> <i>Event</i> to your <i>InfiniteScroll</i> with a <i>CustomAction</i> inside.<br/>",
 				"Copy/paste below code in your action and add yours.<br/>",
 				"<code><pre>//disable scroll\nevent.target.disabled = true;\n\nlet isOK = true;\n//TODO: add your code\n//get next items and push them\n//...\nif (isOK) {\n\t//enable scroll\n\tevent.target.disabled = false;\n}\n\n//specify loading is complete\nevent.target.complete();\nresolve();\n</pre></code><br/>",
-				"For more information: <a href='https://ionicframework.com/docs/api/infinite-scroll'>InfiniteScroll</a>."
+				"For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/infinite-scroll'>InfiniteScroll</a>."
 			],
 			"group": "Lists",
 			"icon16": "infinitescroll_16x16.png",
@@ -10210,7 +10210,7 @@
 			"description": [
 				"ion-infinite-scroll-content. | The <i>InfiniteScrollContent</i> component displays its <b>parent</b> infinite scroll.<br/>",
 				"You may add it under a <i>InfiniteScroll</i> component.<br/>",
-				"For more information: <a href='https://ionicframework.com/docs/api/infinite-scroll-content'>InfiniteScrollContent</a>."
+				"For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/infinite-scroll-content'>InfiniteScrollContent</a>."
 			],
 			"group": "Lists",
 			"icon16": "infinitescrollcontent_16x16.png",
@@ -10935,7 +10935,7 @@
 						"Determines whether or not a modal can dismiss when calling the dismiss method.",
 						"If the value is true or the value's function returns true, the modal will close when trying to dismiss.",
 						"If the value is false or the value's function returns false, the modal will not close when trying to dismiss.",
-						"See https://ionicframework.com/docs/troubleshooting/runtime#accessing-this if you need to access this from within the callback.",
+						"See https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/troubleshooting/runtime#accessing-this if you need to access this from within the callback.",
 						"Type: ((data?: any, role?: string ｜ undefined) => Promise<boolean>) ｜ boolean"
 					],
 					"category": "@Expert",
@@ -11058,7 +11058,7 @@
 				" \u2022 then add a <i>Popover</i> component and set its <b>trigger</b> property with the previous <b>id</b><br/>",
 				" \u2022 finally add any component you'd like to show, under the <i>Popover</i> component<br/>",
 				"You can use the <i>Close Popover</i> action to dismiss a Popover.",
-				" For more information: <a href='https://ionicframework.com/docs/api/popover'>Popover</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/popover'>Popover</a>."
 			],
 			"group": "Containers",
 			"icon16": "popover_16x16.png",
@@ -11359,7 +11359,7 @@
 				" \u2022 then add a <i>Modal</i> component and set its <b>trigger</b> property with the previous <b>id</b><br/>",
 				" \u2022 finally add any component you'd like to show, under the <i>Modal</i> component.<br/>",
 				"You can use the <i>Close Modal</i> action to dismiss a Modal.",
-				" For more information: <a href='https://ionicframework.com/docs/api/modal'>Modal</a>."
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/modal'>Modal</a>."
 			],
 			"group": "Containers",
 			"icon16": "modalaction_16x16.png",
@@ -11385,7 +11385,7 @@
 						"Determines whether or not a modal can dismiss when calling the dismiss method.",
 						"If the value is true or the value's function returns true, the modal will close when trying to dismiss.",
 						"If the value is false or the value's function returns false, the modal will not close when trying to dismiss.",
-						"See https://ionicframework.com/docs/troubleshooting/runtime#accessing-this if you need to access this from within the callback.",
+						"See https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/troubleshooting/runtime#accessing-this if you need to access this from within the callback.",
 						"Type: ((data?: any, role?: string ｜ undefined) => Promise<boolean>) ｜ boolean"
 					],
 					"category": "@Expert",
@@ -11635,7 +11635,7 @@
 				"ion-action-sheet | Defines an inline <i>ActionSheet</i> component.<br/>",
 				"An Action Sheet is a dialog that displays a set of options. It appears on top of the app's content,",
 				" and must be manually dismissed by the user before they can resume interaction with the app.<br/>",
-				" For more information : <a href='https://ionicframework.com/docs/api/action-sheet'>Inline Action Sheet</a>."
+				" For more information : <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/action-sheet'>Inline Action Sheet</a>."
 			],
 			"group": "Components",
 			"icon16": "actionsheetaction_16x16.png",
@@ -11687,7 +11687,7 @@
 					"label": "Alert buttons",
 					"description": [
 						"(TS mode) Array of buttons to be added to the action sheet. Type: (string ｜ ActionSheetButton)[]<br/>",
-						" See: https://ionicframework.com/docs/api/action-sheet#actionsheetbutton"
+						" See: https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/action-sheet#actionsheetbutton"
 					],
 					"category": "@Expert",
 					"type": "array",
@@ -11884,7 +11884,7 @@
 				"ion-alert | Defines an inline <i>Alert</i> component.<br/>",
 				"Alerts are dialogs that presents users with information or collects information from the user using inputs.<br/>",
 				"The <i>Alert</i> is presented following an action on a trigger component.<br/>",
-				" For more information : <a href='https://ionicframework.com/docs/api/alert#inline-alerts-recommended'>Inline Alerts</a>."
+				" For more information : <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/alert#inline-alerts-recommended'>Inline Alerts</a>."
 			],
 			"group": "Components",
 			"icon16": "alertaction_16x16.png",
@@ -11936,7 +11936,7 @@
 					"label": "Alert buttons",
 					"description": [
 						"(TS mode) Array of buttons to be added to the alert. Type: (string ｜ AlertButton)[]<br/>",
-						" See: https://ionicframework.com/docs/api/alert#alertbutton"
+						" See: https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/alert#alertbutton"
 					],
 					"category": "@Expert",
 					"type": "array",
@@ -11963,7 +11963,7 @@
 					"label": "Alert inputs",
 					"description": [
 						"(TS mode) Array of input to show in the alert. Type: AlertInput[]<br/>",
-						" See: https://ionicframework.com/docs/api/alert#alertinput"
+						" See: https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/alert#alertinput"
 					],
 					"category": "@Expert",
 					"type": "array",
@@ -12119,7 +12119,7 @@
 				"ion-picker | Defines an inline <i>Picker</i> component.<br/>",
 				"A Picker is a dialog that displays a row of buttons and columns underneath.<br>",
 				"It appears on top of the app's content, and at the bottom of the viewport.<br/>",
-				" For more information : <a href='https://ionicframework.com/docs/api/picker#inline-pickers-recommended'>Inline Pickers</a>."
+				" For more information : <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/picker#inline-pickers-recommended'>Inline Pickers</a>."
 			],
 			"group": "Components",
 			"icon16": "picker_16x16.png",
@@ -12171,7 +12171,7 @@
 					"label": "Picker buttons",
 					"description": [
 						"(TS mode) Array of buttons to be displayed at the top of the picker. Type: PickerButton[]<br/>",
-						" See: https://ionicframework.com/docs/api/picker#pickerbutton"
+						" See: https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/picker#pickerbutton"
 					],
 					"category": "@Expert",
 					"type": "array",
@@ -12183,7 +12183,7 @@
 					"label": "Picker columns",
 					"description": [
 						"(TS mode) Array of columns to be displayed in the picker. Type: PickerColumn[]<br/>",
-						" See: https://ionicframework.com/docs/api/picker#pickercolumn"
+						" See: https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/picker#pickercolumn"
 					],
 					"category": "@Expert",
 					"type": "array",
@@ -12341,7 +12341,7 @@
 				"A <i>Toast</i> is a subtle notification commonly used in modern applications. It can be used to provide feedback about an operation or to display a system message.",
 				"The toast appears on top of the applications content, and can be dismissed to resume user interaction with the application.<br/>",
 				"<i>Toast</i> is presented following an action on a trigger component.<br/>",
-				"For more information : <a href='https://ionicframework.com/docs/api/toast#inline-toasts-recommended'>Inline Toasts</a>."
+				"For more information : <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/toast#inline-toasts-recommended'>Inline Toasts</a>."
 			],
 			"group": "Components",
 			"icon16": "toastaction_16x16.png",
@@ -12637,7 +12637,7 @@
 				"ion-loading | Defines an inline <i>Loading</i> component. | An overlay that can be used to indicate activity.<br/>",
 				"Once presented, the loading indicator will automatically dismiss after a <code>duration</code> of 3s by default.<br>",
 				"If the <i>Duration</i> property is set to <code>false</code>, the loading will display indefinitely until dismissed by clicking on the backdrop or by a calling the <code>dismiss()</code> method.<br/>",
-				"For more information : <a href='https://ionicframework.com/docs/api/loading#inline-recommended'>Inline Loading</a>"
+				"For more information : <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/loading#inline-recommended'>Inline Loading</a>"
 			],
 			"group": "Miscellaneous",
 			"icon16": "showloadingaction_16x16.png",
@@ -13080,7 +13080,7 @@
 				"Defines a <i>Toast</i> action component. | This component helps displaying some informations.<br/>",
 				"A <i>Toast</i> is a subtle notification commonly used in modern applications. It can be used to provide feedback about an operation or to display a system message. The toast appears on top of the applications content, and can be dismissed to resume user interaction with the application.<br/>",
 				"<i>Toast</i> action component can be added under an <i>Event</i> or another action.<br/>",
-				"For more information : <a href='https://ionicframework.com/docs/api/toast#controller-toasts'>Controller Toasts</a>."
+				"For more information : <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/toast#controller-toasts'>Controller Toasts</a>."
 			],
 			"group": "Actions",
 			"icon16": "toastaction_16x16.png",
@@ -13397,7 +13397,7 @@
 				"If the <i>Duration</i> property is set to <code>false</code>, the loading will display indefinitely until dismissed by a <i>Close Loading</i> action or a backdrop click.<br/>",
 				"Place a <i>Show Loading</i> action at the very beginning of an action chain, under an <i>Event</i> or <i>Shared action</i>.<br>",
 				"Place a <i>Close Loading</i> action under a <i>Finally handler</i>.<br/>",
-				"For more information : <a href='https://ionicframework.com/docs/api/loading#controller'>Controller</a>"
+				"For more information : <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/loading#controller'>Controller</a>"
 			],
 			"group": "Actions",
 			"icon16": "showloadingaction_16x16.png",
@@ -13776,7 +13776,7 @@
 			"label": "NavigatePage",
 			"description": [
 				"Defines a <i>NavigatePage</i> action component. | This component helps navigating to a page giving its URL.<br/>",
-				"For more information : <a href='https://ionicframework.com/docs/angular/navigation'>Navigation</a>."
+				"For more information : <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/angular/navigation'>Navigation</a>."
 			],
 			"group": "Actions",
 			"icon16": "navigatepageaction_16x16.png",
@@ -13808,7 +13808,7 @@
 			"label": "RootPage",
 			"description": [
 				"Defines a <i>RootPage</i> action component. | This component helps setting a page as the root one. Setting a page as root will place it as the first page in the stack, ie. the page where we will return when the user hits the back button for each of the pages present on the stack.<br/>",
-				"For more information : <a href='https://ionicframework.com/docs/angular/navigation'>Navigation</a>."
+				"For more information : <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/angular/navigation'>Navigation</a>."
 			],
 			"group": "Actions",
 			"icon16": "rootpageaction_16x16.png",
@@ -13842,7 +13842,7 @@
 			"label": "PopPage",
 			"description": [
 				"Defines a <i>PopPage</i> action component. | This component helps navigating back to last page. Popping a page will return to the previous page in the stack, as if the user had clicked on the back button.<br/>",
-				"For more information : <a href='https://ionicframework.com/docs/angular/navigation'>Navigation</a>."
+				"For more information : <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/angular/navigation'>Navigation</a>."
 			],
 			"group": "Actions",
 			"icon16": "poppageaction_16x16.png",
@@ -14158,7 +14158,7 @@
 				"<br/>",
 				"Use <a href='https://developers.google.com/mobile/add?platform=ios&cntapi=signin'>https://developers.google.com/mobile/add?platform=ios&cntapi=signin</a> for iOS apps.<br/>",
 				"<br/>",
-				"See also some documentation on <a href='https://ionicframework.com/docs/native/google-plus'>https://ionicframework.com/docs/native/google-plus</a> about the Cordova plugin used.<br/>",
+				"See also some documentation on <a href='https://www.npmjs.com/package/@ionic-native/google-plus'>https://www.npmjs.com/package/@ionic-native/google-plus</a> about the Cordova plugin used.<br/>",
 				" You can access the data from the next action in the chain in (TS) mode with:<br/>",
 				"<br/>",
 				"<code><br/>",
@@ -15028,7 +15028,7 @@
 				"Whenever cordova platform is not available, the value defined in mocking option is returned.<br/>",
 				" Default mocked value is <code>'https://www.convertigo.com/wp-content/uploads/2015/01/logoStudio.png'</code>.<br/>",
 				"It uses the native Android file picker for the user to select a file.<br/>",
-				"For more information : <a href='https://ionicframework.com/docs/native/file-chooser'>File Chooser</a>."
+				"For more information : <a href='https://www.npmjs.com/package/@ionic-native/file-chooser'>File Chooser</a>."
 			],
 			"group": "Native Actions",
 			"icon16": "filechooseraction_16x16.png",
@@ -15118,7 +15118,7 @@
 				"Whenever cordova platform is not available, the value defined in mocking option is returned.<br/>",
 				" Default mocked value is <code>'https://www.convertigo.com/wp-content/uploads/2015/01/logoStudio.png'</code>.<br/>",
 				"It uses the native Chooser to select a file.<br/>",
-				"For more information : <a href='https://ionicframework.com/docs/native/chooser'>Chooser</a>."
+				"For more information : <a href='https://www.npmjs.com/package/@ionic-native/chooser'>Chooser</a>."
 			],
 			"group": "Native Actions",
 			"icon16": "filechooseraction_16x16.png",
@@ -15188,7 +15188,7 @@
 "<u>Supported platorm(s):</u> <br/>",
 " \u2022 Android<br/>",
 " \u2022 iOS<br/>",
-" \u2022 BrowserFor more information : <a href='https://ionicframework.com/docs/native/speech-recognition'>SpeechRecognition</a>."],
+" \u2022 BrowserFor more information : <a href='https://www.npmjs.com/package/@ionic-native/speech-recognition'>SpeechRecognition</a>."],
       "group": "Native Actions",
         "icon16": "speechtoeventaction_color_16x16.png",
         "icon32": "speechtoeventaction_color_32x32.png",
@@ -15267,7 +15267,7 @@
 				"<br/>",
 				"You can access data from the next action in the chain in (TS) mode with: <code><br/>",
 				" \u2022 out: A concatenation of spoken string(s) if the action succeed</code><br/>",
-				"For more information : <a href='https://ionicframework.com/docs/native/speech-recognition'>SpeechRecognition</a>."
+				"For more information : <a href='https://www.npmjs.com/package/@ionic-native/speech-recognition'>SpeechRecognition</a>."
 			],
 			"group": "Native Actions",
 			"icon16": "speechtotextaction_16x16.png",
@@ -15385,7 +15385,7 @@
 				"<br/>",
 				"You can access data from the next action in the chain in (TS) mode with: <code><br/>",
 				" \u2022 out: A boolean thats indicates if the action succeed</code><br/>",
-				"For more information : <a href='https://ionicframework.com/docs/native/text-to-speech'>TextToSpeech</a>."
+				"For more information : <a href='https://www.npmjs.com/package/@ionic-native/text-to-speech'>TextToSpeech</a>."
 			],
 			"group": "Native Actions",
 			"icon16": "texttospeechaction_16x16.png",
@@ -15661,7 +15661,7 @@
 				"Defines a controller <i>Alert</i> action component. | The Alerts are a great way to offer the user the ability to choose a specific action or list of actions.",
 				"They also can provide the user with important information, or require them to make a decision.<br/>",
 				"<i>Alert</i> action component can be added under an <i>Event</i> or another action. Its returned value can be accessed by the navigation stack, using <code> parent.out </code> for example.<br/>",
-				" For more information : <a href='https://ionicframework.com/docs/api/alert#controller-alerts'>Controller Alerts</a>."
+				" For more information : <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/alert#controller-alerts'>Controller Alerts</a>."
 			],
 			"group": "Actions",
 			"icon16": "alertaction_16x16.png",
@@ -15936,7 +15936,7 @@
 			"label": "Action Sheet",
 			"description": [
 				"Defines an <i>Action Sheet</i> component. | An Action Sheet is a dialog that displays a set of options. It appears on top of the app's content, and must be manually dismissed by the user before they can resume interaction with the app.<br/>",
-				" For more information : <a href='https://ionicframework.com/docs/api/action-sheet'>Action sheet</a>."
+				" For more information : <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/action-sheet'>Action sheet</a>."
 			],
 			"group": "Actions",
 			"icon16": "actionsheetaction_16x16.png",
@@ -16165,7 +16165,7 @@
 				" \u2022 out: a boolean thats indicates if the file has been opened</code><br/><br/>",
 				"Whenever cordova platform is not available, the value defined in mocking options is returned.<br/>",
 				" Default value is <code>true</code>.<br/>",
-				"For more information : <a href='https://ionicframework.com/docs/native/file-opener'>File Opener</a>."
+				"For more information : <a href='https://www.npmjs.com/package/@ionic-native/file-opener'>File Opener</a>."
 			],
 			"group": "Native Actions",
 			"icon16": "fileopeneraction_16x16.png",
@@ -16679,7 +16679,7 @@
 				"Whenever cordova platform is not available, the value defined in mocking options is returned.<br/>",
 				" Default mocked value is <code>true</code>.<br/>",
 				" It uses the native Cordova plugin which allows you to uninstall any application giving its package ID.<br/>",
-				" For more information : <a href='https://ionicframework.com/docs/native/file-opener'>File Opener</a>."
+				" For more information : <a href='https://www.npmjs.com/package/@ionic-native/file-opener'>File Opener</a>."
 			],
 			"group": "Native Actions",
 			"icon16": "uninstallaction_16x16.png",
@@ -16885,7 +16885,7 @@
 				"Whenever cordova platform is not available, the value defined in mocking option is returned.<br/>",
 				" Default mocked value is <code>true</code>.<br/>",
 				"It uses the native Cordova plugin which allows you to check if an application is installed giving its package ID.<br/>",
-				"For more information : <a href='https://ionicframework.com/docs/native/file-opener'>File Opener</a>."
+				"For more information : <a href='https://www.npmjs.com/package/@ionic-native/file-opener'>File Opener</a>."
 			],
 			"group": "Native Actions",
 			"icon16": "checkinstallaction_16x16.png",
