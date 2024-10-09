@@ -7053,6 +7053,17 @@
 				"Disabled": "false",
 				"IonColor": false,
 				"IonMode": false,
+		        "Accept": {
+		          "attr": "accept",
+		          "label": "Accept",
+		          "description": "If the value of the type attribute is 'file', then this attribute will indicate the types of files that the server accepts, otherwise it will be ignored. The value must be a comma-separated list of unique content type specifiers.",
+		          "category": "@Properties",
+		          "value": false,
+		          "values": [
+		            false,
+		            true
+		          ]
+		        },
 				"Autocapitalize": {
 					"attr": "autocapitalize",
 					"label": "Autocapitalize",
