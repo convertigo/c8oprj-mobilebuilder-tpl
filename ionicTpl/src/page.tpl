@@ -1,15 +1,18 @@
 import { Component }																	from '@angular/core';
 import { Router, ActivatedRoute } 														from '@angular/router';
 import { DomSanitizer }                 												from '@angular/platform-browser';
-import { NavParams, NavController, LoadingController, MenuController, Platform}			from '@ionic/angular';
-import { AlertController, ActionSheetController, ModalController }						from '@ionic/angular';
-import { AnimationController, PopoverController, ToastController }						from '@ionic/angular';
+import { NavParams, NavController, LoadingController, MenuController, Platform}			from '@ionic/angular/standalone';
+import { AlertController, ActionSheetController, ModalController }						from '@ionic/angular/standalone';
+import { AnimationController, PopoverController, ToastController }						from '@ionic/angular/standalone';
 import { C8oPage, C8oPageBase, C8oRouter, C8oCafUtils }                      			from 'c8ocaf';
 import { C8oNetworkStatus }                                 							from 'c8osdkangular';
 import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector, Type}	from "@angular/core";
 import { TranslateService }                                 							from '@ngx-translate/core';
 import { ActionBeans } 																	from '../../services/actionbeans.service';
 import { Events } 																		from '../../services/events.service';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 /*
 	You can customize your page class by writing code between the :
@@ -23,7 +26,24 @@ import { Events } 																		from '../../services/events.service';
 /*Begin_c8o_PageImport*/
 /*End_c8o_PageImport*/
 
-@Component({selector: /*=c8o_PageSelector*/, templateUrl: /*=c8o_PageTplUrl*/, styleUrls: [/*=c8o_PageStyleUrls*/], changeDetection: /*=c8o_PageChangeDetection*/})
+@Component({
+	standalone: true,
+	imports: [
+		CommonModule,
+		FormsModule,
+		TranslateModule,
+		/*c8o_StandAloneNgModules*/
+	],
+	providers: [
+		/*Begin_c8o_NgProviders*/
+		/*End_c8o_NgProviders*/
+	],
+	selector: /*=c8o_PageSelector*/,
+	templateUrl: /*=c8o_PageTplUrl*/,
+	styleUrls: [/*=c8o_PageStyleUrls*/],
+	changeDetection: /*=c8o_PageChangeDetection*/
+})
+
 export class /*=c8o_PageName*/  extends C8oPage {
 	/*=c8o_PageDeclarations*/
 

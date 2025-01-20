@@ -1,14 +1,14 @@
 import { Component }                                                                    from '@angular/core';
 import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector, Type}    from "@angular/core";
-import { DomSanitizer }                                                                 from '@angular/platform-browser';
+import { BrowserModule, DomSanitizer }                                                                 from '@angular/platform-browser';
 import { Router, ActivatedRoute }                                          				from '@angular/router';
-import { SwUpdate }                                         							from '@angular/service-worker';
-import { NavParams, NavController, LoadingController, MenuController, Platform}         from '@ionic/angular';
-import { AlertController, ActionSheetController, ModalController }                      from '@ionic/angular';
-import { AnimationController, PopoverController, ToastController }                      from '@ionic/angular';
+import { ServiceWorkerModule, SwUpdate }                                         							from '@angular/service-worker';
+import { NavParams, NavController, LoadingController, Platform}         from '@ionic/angular/standalone';
+import { AlertController, ActionSheetController, ModalController, MenuController }                      from '@ionic/angular/standalone';
+import { AnimationController, PopoverController, ToastController }                      from '@ionic/angular/standalone';
 import { SplashScreen }                                                                 from '@ionic-native/splash-screen/ngx';
 import { StatusBar }                                                                    from '@ionic-native/status-bar/ngx';
-import { TranslateService }                                                             from '@ngx-translate/core';
+import { TranslateLoader, TranslateModule, TranslateService }                                                             from '@ngx-translate/core';
 import { Subject }                                                                      from 'rxjs';
 
 //Convertigo CAF Imports
@@ -20,6 +20,15 @@ import { C8oNetworkStatus }                                 from "c8osdkangular"
 
 import { ActionBeans }                                      from './services/actionbeans.service';
 import { Events }                                           from './services/events.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { CommonModule } from '@angular/common';
+import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
+import * as icons from "ionicons/icons";
+import { addIcons } from 'ionicons';
+
 
 /*
 	You can customize your application class by writing code between the :
@@ -39,6 +48,15 @@ import { Events }                                           from './services/eve
 /*=c8o_PagesImport*/ 
 
 @Component({
+  standalone: true, 
+  imports: [/*Begin_c8o_NgModules*/
+    CommonModule,
+    FormsModule,
+    IonApp,
+    IonRouterOutlet,
+    TranslateModule,
+    /*End_c8o_NgModules*/
+  ],
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss']
@@ -79,6 +97,8 @@ export class AppComponent extends C8oPageBase {
 			}
 		})
 
+        addIcons(icons);
+        
 		this.appPages = [/*=c8o_PagesVariables*/];
         this.pagesKeyValue = {/*=c8o_PagesVariablesKeyValue*/}
         this.routerProvider.pagesArray = this.appPages;

@@ -8,19 +8,25 @@
         "sourceRoot": "src",
         "projectType": "application",
         "prefix": "app",
-        "schematics": {},
+        "schematics": {
+          "@ionic/angular-toolkit:page": {
+            "styleext": "scss",
+            "standalone": true
+          }
+        },
         "architect": {
           "build": {
-            "builder": "@angular-builders/custom-webpack:browser",
+            "builder": "@angular-devkit/build-angular:application",
             "options": {
-              "customWebpackConfig": {
-                "path": "./extra-webpack.config.js"
+              "statsJson": true,
+              "outputPath": {
+                "base": "./../../DisplayObjects/mobile/",
+                "browser": ""
               },
-              "outputPath": "./../../DisplayObjects/mobile/",
               "deleteOutputPath": false,
               "index": "src/index.html",
-              "main": "src/main.ts",
-              "polyfills": "src/polyfills.ts",
+              "browser": "src/main.ts",
+              "polyfills": ["src/polyfills.ts"],
               "tsConfig": "tsconfig.app.json",
               "allowedCommonJsDependencies": ["chart.js","ion2-calendar"],
               "progress": true,
@@ -66,12 +72,10 @@
                   "output": "/" 
                 }
               ],
-              "styles": ["src/theme/variables.scss", "src/global.scss"],
+              "styles": ["src/global.scss", "src/theme/variables.scss"],
               "scripts": [],
               "aot": true,
-              "vendorChunk": true,
               "extractLicenses": false,
-              "buildOptimizer": false,
               "sourceMap": true,
               "optimization": false,
               "namedChunks": true
@@ -98,8 +102,7 @@
                   }
                 ],
                 "deleteOutputPath": false,
-                "serviceWorker": true,
-                "ngswConfigPath": "ngsw-config.json"
+                "serviceWorker": "ngsw-config.json"
               },
               "fastbuild": {
                 "fileReplacements": [
@@ -164,10 +167,19 @@
             }
           },
           "serve": {
-            "builder": "@angular-builders/custom-webpack:dev-server",
-            "options": {
-              "browserTarget": "app:build:serve"
-            }
+            "builder": "@angular-devkit/build-angular:dev-server",
+            "configurations": {
+              "production": {
+                "buildTarget": "app:build:production"
+              },
+              "serve": {
+                "buildTarget": "app:build:serve"
+              },
+              "ci": {
+                "progress": false
+              }
+            },
+            "defaultConfiguration": "serve"
           },
           "extract-i18n": {
             "builder": "@angular-devkit/build-angular:extract-i18n",

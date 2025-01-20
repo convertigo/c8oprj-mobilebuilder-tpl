@@ -36,8 +36,8 @@
             
             let toastController = page.getInstance(ToastController)
             const toast = await toastController.create({
-              mode              : props.IonMode ? props.IonMode : undefined,
-              color             : props.IonColor,
+              mode              : props.mode ? props.mode : undefined,
+              color             : props.color,
               header            : props.header,
               message           : props.message,
               duration          : props.duration,

@@ -75,7 +75,7 @@
             
             let alertController = page.getInstance(AlertController)
             const alert = await alertController.create({
-                mode              : props.IonMode ? props.IonMode : undefined,
+                mode              : props.mode ? props.mode : undefined,
                 header            : props.header,
                 subHeader         : props.subHeader,
                 message           : props.message,

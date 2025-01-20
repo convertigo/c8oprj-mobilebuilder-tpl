@@ -22,7 +22,7 @@
         const openLoading = async (resolve) => {
             let loadingController = page.getInstance(LoadingController)
             const loading  = await loadingController.create({
-              mode              : props.IonMode ? props.IonMode : undefined,
+              mode              : props.mode ? props.mode : undefined,
               spinner           : props.spinner,
               message           : props.message,
               duration          : props.duration,

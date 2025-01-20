@@ -1,8 +1,12 @@
-import {Input, Output, AfterViewInit, Component, forwardRef, ElementRef, Renderer2, OnInit, ViewChild, EventEmitter} from '@angular/core';
+import {Input, Output, AfterViewInit, Component, forwardRef, ElementRef, Renderer2, OnInit, ViewChild, EventEmitter, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor }  from '@angular/forms';
 import SignaturePad from 'signature_pad';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true, 
+  imports:[CommonModule],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   selector: 'c8o-signature',
   templateUrl: './SignatureComponent.html',
   styleUrls: ['./SignatureComponent.scss'],
