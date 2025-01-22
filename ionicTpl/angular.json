@@ -92,8 +92,6 @@
                 "namedChunks": false,
                 "aot": true,
                 "extractLicenses": true,
-                "vendorChunk": false,
-                "buildOptimizer": true,
                 "budgets": [
                   {
                     "type": "initial",
@@ -102,6 +100,10 @@
                   }
                 ],
                 "deleteOutputPath": false,
+                "outputPath": {
+                  "base": "./../../DisplayObjects/mobile/",
+                  "browser": ""
+                },
                 "serviceWorker": "ngsw-config.json"
               },
               "fastbuild": {

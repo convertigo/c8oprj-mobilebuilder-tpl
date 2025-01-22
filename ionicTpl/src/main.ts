@@ -10,7 +10,6 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HTTP_INTERCEPTORS, HttpClient, provideHttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { APP_BASE_HREF } from '@angular/common';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { C8o, HttpXsrfInterceptor } from 'c8osdkangular';
@@ -51,7 +50,6 @@ bootstrapApplication(AppComponent, {
 				registrationStrategy: 'registerWhenStable:30000'
 			  }),
 		),
-		{provide: APP_BASE_HREF, useValue:window.location.href.indexOf("DisplayObjects") != -1 ? window.location.href.indexOf("DisplayObjects/mobile") != -1 ? "/convertigo/projects/C8Oforms/DisplayObjects/mobile/" : "/" + window.location.href.split("/").slice(window.location.href.split("/").indexOf("convertigo"),window.location.href.split("/").indexOf("DisplayObjects") +3).join("/")+"/": "/"},
 		StatusBar,
 		SplashScreen,
 		C8o,
