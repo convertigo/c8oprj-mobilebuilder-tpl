@@ -3087,15 +3087,15 @@
 				}
 			},
 			"config": {
-				"module_ts_imports": [
+				"local_module_ts_imports": [
 					{
 						"from": "ng2-tooltip-directive",
 						"components": [
-							"TooltipModule"
+							"{ TooltipModule }"
 						]
 					}
 				],
-				"module_ng_imports": [
+				"local_module_ng_imports": [
 					"TooltipModule"
 				],
 				"package_dependencies": [
@@ -4843,19 +4843,17 @@
 				}
 			},
 			"config": {
-				"module_ts_imports": [
+				"local_module_ts_imports": [
 					{
 						"from": "../components/SlidesComponent/SlidesModule",
 						"components": [
-							"SlidesModule"
+							"{ SlidesModule }"
 						]
 					}
 				],
-				"module_ng_imports": [
+				"local_module_ng_imports": [
 					"SlidesModule"
 				],
-				"module_ng_declarations": [],
-				"module_ng_components": [],
 				"package_dependencies": [
 					{
 						"package": "swiper",
@@ -9422,15 +9420,15 @@
 				}
 			},
 			"config": {
-				"module_ts_imports": [
+				"local_module_ts_imports": [
 					{
 						"from": "@agm/core",
 						"components": [
-							"AgmCoreModule"
+							"{ AgmCoreModule }"
 						]
 					}
 				],
-				"module_ng_imports": [
+				"local_module_ng_imports": [
 					"AgmCoreModule.forRoot({apiKey: 'AIzaSyB0Nl1dX0kEsB5QZaNf6m-tnb1N-U5dpXs'})"
 				],
 				"package_dependencies": [
@@ -9905,15 +9903,15 @@
 				}
 			},
 			"config": {
-				"module_ts_imports": [
+				"local_module_ts_imports": [
 					{
 						"from": "ng2-charts",
 						"components": [
-							"NgChartsModule"
+							"{ NgChartsModule }"
 						]
 					}
 				],
-				"module_ng_imports": [
+				"local_module_ng_imports": [
 					"NgChartsModule"
 				],
 				"package_dependencies": [
@@ -10103,15 +10101,15 @@
 				}
 			},
 			"config": {
-				"module_ts_imports": [
+				"local_module_ts_imports": [
 					{
 						"from": "ion7-calendar",
 						"components": [
-							"CalendarModule"
+							"{ CalendarModule }"
 						]
 					}
 				],
-				"module_ng_imports": [
+				"local_module_ng_imports": [
 					"CalendarModule"
 				],
 				"package_dependencies": [
@@ -10485,19 +10483,17 @@
 				}
 			},
 			"config": {
-				"module_ts_imports": [
+				"local_module_ts_imports": [
 					{
 						"from": "../components/SignatureComponent/SignatureModule",
 						"components": [
-							"SignatureModule"
+							"{ SignatureModule }"
 						]
 					}
 				],
-				"module_ng_imports": [
+				"local_module_ng_imports": [
 					"SignatureModule"
 				],
-				"module_ng_declarations": [],
-				"module_ng_components": [],
 				"package_dependencies": [
 					{
 						"package": "signature_pad",
@@ -10659,19 +10655,17 @@
 				}
 			},
 			"config": {
-				"module_ts_imports": [
+				"local_module_ts_imports": [
 					{
 						"from": "../components/TreeviewComponent/TreeviewModule",
 						"components": [
-							"TreeviewModule"
+							"{ TreeviewModule }"
 						]
 					}
 				],
-				"module_ng_imports": [
+				"local_module_ng_imports": [
 					"TreeviewModule"
 				],
-				"module_ng_declarations": [],
-				"module_ng_components": [],
 				"package_dependencies": [
 					{
 						"package": "@ali-hm/angular-tree-component",
@@ -10760,15 +10754,15 @@
 				}
 			},
 			"config": {
-				"module_ts_imports": [
+				"local_module_ts_imports": [
 					{
 						"from": "@angular/cdk/scrolling",
 						"components": [
-							"ScrollingModule"
+							"{ ScrollingModule }"
 						]
 					}
 				],
-				"module_ng_imports": [
+				"local_module_ng_imports": [
 					"ScrollingModule"
 				],
 				"package_dependencies": [
@@ -14299,7 +14293,7 @@
 					{
 						"from": "@ionic-native/google-plus/ngx",
 						"components": [
-							"GooglePlus"
+							"{ GooglePlus }"
 						]
 					}
 				],
@@ -14307,7 +14301,7 @@
 					{
 						"from": "@ionic-native/google-plus/ngx",
 						"components": [
-							"GooglePlus"
+							"{ GooglePlus }"
 						]
 					}
 				],
@@ -14594,7 +14588,7 @@
 					{
 						"from": "@ionic-native/file/ngx",
 						"components": [
-							"File"
+							"{ File }"
 						]
 					}
 				],
@@ -14602,7 +14596,7 @@
 					{
 						"from": "@ionic-native/file/ngx",
 						"components": [
-							"File"
+							"{ File }"
 						]
 					}
 				],
@@ -15069,13 +15063,13 @@
 					{
 						"from": "@ionic-native/file-path/ngx",
 						"components": [
-							"FilePath"
+							"{ FilePath }"
 						]
 					},
 					{
 						"from": "@ionic-native/file-chooser/ngx",
 						"components": [
-							"FileChooser"
+							"{ FileChooser }"
 						]
 					}
 				],
@@ -15083,13 +15077,13 @@
 					{
 						"from": "@ionic-native/file-chooser/ngx",
 						"components": [
-							"FileChooser"
+							"{ FileChooser }"
 						]
 					},
 					{
 						"from": "@ionic-native/file-path/ngx",
 						"components": [
-							"FilePath"
+							"{ FilePath }"
 						]
 					}
 				],
@@ -15167,7 +15161,7 @@
 					{
 						"from": "@ionic-native/chooser/ngx",
 						"components": [
-							"Chooser"
+							"{ Chooser }"
 						]
 					}
 				],
@@ -15175,7 +15169,7 @@
 					{
 						"from": "@ionic-native/chooser/ngx",
 						"components": [
-							"Chooser"
+							"{ Chooser }"
 						]
 					}
 				],
@@ -15358,7 +15352,7 @@
 					{
 						"from": "@ionic-native/speech-recognition/ngx",
 						"components": [
-							"SpeechRecognition"
+							"{ SpeechRecognition }"
 						]
 					}
 				],
@@ -15366,7 +15360,7 @@
 					{
 						"from": "@ionic-native/speech-recognition/ngx",
 						"components": [
-							"SpeechRecognition"
+							"{ SpeechRecognition }"
 						]
 					}
 				],
@@ -15454,13 +15448,13 @@
 					{
 						"from": "@ionic-native/globalization/ngx",
 						"components": [
-							"Globalization"
+							"{ Globalization }"
 						]
 					},
 					{
 						"from": "@ionic-native/text-to-speech/ngx",
 						"components": [
-							"TextToSpeech"
+							"{ TextToSpeech }"
 						]
 					}
 				],
@@ -15468,13 +15462,13 @@
 					{
 						"from": "@ionic-native/globalization/ngx",
 						"components": [
-							"Globalization"
+							"{ Globalization }"
 						]
 					},
 					{
 						"from": "@ionic-native/text-to-speech/ngx",
 						"components": [
-							"TextToSpeech"
+							"{ TextToSpeech }"
 						]
 					}
 				],
@@ -15635,13 +15629,13 @@
 					{
 						"from": "@ionic-native/action-sheet/ngx",
 						"components": [
-							"ActionSheet"
+							"{ ActionSheet }"
 						]
 					},
 					{
 						"from": "@ionic-native/action-sheet/ngx",
 						"components": [
-							"ActionSheetOptions"
+							"{ ActionSheetOptions }"
 						]
 					}
 				],
@@ -15649,7 +15643,7 @@
 					{
 						"from": "@ionic-native/action-sheet/ngx",
 						"components": [
-							"ActionSheet"
+							"{ ActionSheet }"
 						]
 					}
 				],
@@ -16217,7 +16211,7 @@
 					{
 						"from": "@ionic-native/file-opener/ngx",
 						"components": [
-							"FileOpener"
+							"{ FileOpener }"
 						]
 					}
 				],
@@ -16225,7 +16219,7 @@
 					{
 						"from": "@ionic-native/file-opener/ngx",
 						"components": [
-							"FileOpener"
+							"{ FileOpener }"
 						]
 					}
 				],
@@ -16444,19 +16438,19 @@
 					{
 						"from": "@ionic-native/camera/ngx",
 						"components": [
-							"Camera"
+							"{ Camera }"
 						]
 					},
 					{
 						"from": "@ionic-native/camera/ngx",
 						"components": [
-							"CameraOptions"
+							"{ CameraOptions }"
 						]
 					},
 					{
 						"from": "@ionic-native/camera/ngx",
 						"components": [
-							"CameraPopoverOptions"
+							"{ CameraPopoverOptions }"
 						]
 					}
 				],
@@ -16464,7 +16458,7 @@
 					{
 						"from": "@ionic-native/camera/ngx",
 						"components": [
-							"Camera"
+							"{ Camera }"
 						]
 					}
 				],
@@ -16648,7 +16642,7 @@
 					{
 						"from": "@ionic-native/barcode-scanner/ngx",
 						"components": [
-							"BarcodeScanner"
+							"{ BarcodeScanner }"
 						]
 					}
 				],
@@ -16656,7 +16650,7 @@
 					{
 						"from": "@ionic-native/barcode-scanner/ngx",
 						"components": [
-							"BarcodeScanner"
+							"{ BarcodeScanner }"
 						]
 					}
 				],
@@ -16731,7 +16725,7 @@
 					{
 						"from": "@ionic-native/file-opener/ngx",
 						"components": [
-							"FileOpener"
+							"{ FileOpener }"
 						]
 					}
 				],
@@ -16739,7 +16733,7 @@
 					{
 						"from": "@ionic-native/file-opener/ngx",
 						"components": [
-							"FileOpener"
+							"{ FileOpener }"
 						]
 					}
 				],
@@ -16937,7 +16931,7 @@
 					{
 						"from": "@ionic-native/file-opener/ngx",
 						"components": [
-							"FileOpener"
+							"{ FileOpener }"
 						]
 					}
 				],
@@ -16945,7 +16939,7 @@
 					{
 						"from": "@ionic-native/file-opener/ngx",
 						"components": [
-							"FileOpener"
+							"{ FileOpener }"
 						]
 					}
 				],
