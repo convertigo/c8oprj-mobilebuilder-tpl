@@ -39,6 +39,7 @@ import { Events }                                           from './services/eve
 /*=c8o_PagesImport*/ 
 
 @Component({
+  standalone: false,
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss']

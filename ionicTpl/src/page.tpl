@@ -23,7 +23,7 @@ import { Events } 																		from '../../services/events.service';
 /*Begin_c8o_PageImport*/
 /*End_c8o_PageImport*/
 
-@Component({selector: /*=c8o_PageSelector*/, templateUrl: /*=c8o_PageTplUrl*/, styleUrls: [/*=c8o_PageStyleUrls*/], changeDetection: /*=c8o_PageChangeDetection*/})
+@Component({standalone: false, selector: /*=c8o_PageSelector*/, templateUrl: /*=c8o_PageTplUrl*/, styleUrls: [/*=c8o_PageStyleUrls*/], changeDetection: /*=c8o_PageChangeDetection*/})
 export class /*=c8o_PageName*/  extends C8oPage {
 	/*=c8o_PageDeclarations*/
 
