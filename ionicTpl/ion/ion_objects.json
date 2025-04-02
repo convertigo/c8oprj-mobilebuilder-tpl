@@ -3805,6 +3805,29 @@
 					"description": "This event is emitted when the menu is about to be opened."
 				}
 			},
+			"hint": {
+				"Menu": {
+					"properties" : {
+						"comment": "A menu with all pages added automatically"
+					},
+					"Header": {
+						"ToolBar": {
+							"BarTitle": {
+								"com.twinsoft.convertigo.beans.ngx.components.UIText": {
+									"properties": {
+										"textValue": "My Menu"
+									}
+								}
+							}
+						}
+					},
+					"Content":{
+						"List": {
+							"MenuAutoItems": {}
+						}
+					}
+				}
+			},
 			"scss": [
 				"//--background\t//Background of the menu",
 				"//--height\t//Height of the menu",
