@@ -3,6 +3,7 @@ import { NG_VALUE_ACCESSOR, ControlValueAccessor }  from '@angular/forms';
 import SignaturePad from 'signature_pad';
 
 @Component({
+  standalone: false,
   selector: 'c8o-signature',
   templateUrl: './SignatureComponent.html',
   styleUrls: ['./SignatureComponent.scss'],

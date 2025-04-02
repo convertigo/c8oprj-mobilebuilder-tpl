@@ -7,6 +7,7 @@ import Swiper from 'swiper';
 register();
 
 @Component({
+  standalone: false,
   selector: 'c8o-slides',
   templateUrl: './SlidesComponent.html',
   styleUrls: ['./SlidesComponent.scss']

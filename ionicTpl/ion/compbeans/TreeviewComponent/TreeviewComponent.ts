@@ -4,6 +4,7 @@ import { TreeComponent, TreeNode, TreeModel, TREE_ACTIONS, KEYS, IActionMapping,
 // Note: due to styleUrls path problems, we use embedded styles notation  
 
 @Component({
+    standalone: false,
     selector: 'c8o-treeview',
     styles: [
     `   
