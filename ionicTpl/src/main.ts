@@ -60,6 +60,5 @@ bootstrapApplication(AppComponent, {
 			multi: true
 		},
 		{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
-		/*End_c8o_NgProviders*/
-	],
+	/*End_c8o_NgProviders*/]
 });

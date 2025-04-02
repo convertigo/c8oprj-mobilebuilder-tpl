@@ -1,4 +1,4 @@
-import { Component }                                                                    from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA }                                            from '@angular/core';
 import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector, Type}    from "@angular/core";
 import { BrowserModule, DomSanitizer }                                                                 from '@angular/platform-browser';
 import { Router, ActivatedRoute }                                          				from '@angular/router';
@@ -59,7 +59,8 @@ import { addIcons } from 'ionicons';
   ],
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss']
+  styleUrls: ['app.component.scss'],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppComponent extends C8oPageBase {
 	rootPage : any = /*=c8o_RootPage*/;

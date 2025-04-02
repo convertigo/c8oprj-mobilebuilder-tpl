@@ -478,15 +478,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonAccordion"
+                            "{ IonAccordion }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonAccordion"
                 ]
             }
@@ -675,15 +675,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonAccordionGroup"
+                            "{ IonAccordionGroup }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonAccordionGroup"
                 ]
             }
@@ -801,15 +801,15 @@
                 "//--color\t//Text color of the breadcrumbs"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonBreadcrumbs"
+                            "{ IonBreadcrumbs }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonBreadcrumbs"
                 ]
             }
@@ -889,15 +889,15 @@
                 "//--color-hover\t//Text color of the breadcrumb on hover"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonBreadcrumb"
+                            "{ IonBreadcrumb }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonBreadcrumb"
                 ]
             }
@@ -1459,15 +1459,15 @@
                 "//--transition\t//Transition of the button"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonButton"
+                            "{ IonButton }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonButton"
                 ]
             }
@@ -1531,15 +1531,15 @@
                 "//--padding-top\t//Top padding of the button"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonMenuButton"
+                            "{ IonMenuButton }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonMenuButton"
                 ]
             }
@@ -1588,15 +1588,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonMenuToggle"
+                            "{ IonMenuToggle }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonMenuToggle"
                 ]
             }
@@ -1695,15 +1695,15 @@
                 "//--transition\t//Transition of the button"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonBackButton"
+                            "{ IonBackButton }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonBackButton"
                 ]
             }
@@ -1786,15 +1786,15 @@
                 "//--transition\t//Transition of the button"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonButton"
+                            "{ IonButton }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonButton"
                 ]
             }
@@ -1865,15 +1865,15 @@
                 "//--transition\t//Transition of the button"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonButton"
+                            "{ IonButton }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonButton"
                 ]
             }
@@ -2005,15 +2005,15 @@
                 "//--transition\t//Transition of the button"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonFabButton"
+                            "{ IonFabButton }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonFabButton"
                 ]
             }
@@ -2111,15 +2111,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonFab"
+                            "{ IonFab }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonFab"
                 ]
             }
@@ -2166,15 +2166,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonFabList"
+                            "{ IonFabList }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonFabList"
                 ]
             }
@@ -2245,15 +2245,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonIcon"
+                            "{ IonIcon }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonIcon"
                 ]
             }
@@ -2360,15 +2360,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonButtons"
+                            "{ IonButtons }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonButtons"
                 ]
             }
@@ -2506,15 +2506,15 @@
                 "//--padding-top\t//Top padding of the content"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonContent"
+                            "{ IonContent }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonContent"
                 ]
             }
@@ -2606,15 +2606,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonFooter"
+                            "{ IonFooter }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonFooter"
                 ]
             }
@@ -2701,15 +2701,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonHeader"
+                            "{ IonHeader }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonHeader"
                 ]
             }
@@ -3315,15 +3315,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "ng2-tooltip-directive",
                         "components": [
-                            "TooltipModule"
+                            "{ TooltipModule }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "TooltipModule"
                 ],
                 "package_dependencies": [
@@ -3403,15 +3403,15 @@
                 "//--progress-background\t//Color of the progress bar"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonProgressBar"
+                            "{ IonProgressBar }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonProgressBar"
                 ]
             }
@@ -3483,15 +3483,15 @@
                 "//--border-radius\t//Border radius of the skeleton text"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonSkeletonText"
+                            "{ IonSkeletonText }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonSkeletonText"
                 ]
             }
@@ -3550,15 +3550,15 @@
                 "//--color\t//Color of the spinner"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonSpinner"
+                            "{ IonSpinner }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonSpinner"
                 ]
             }
@@ -3695,15 +3695,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonTabs"
+                            "{ IonTabs }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonTabs"
                 ]
             }
@@ -3750,15 +3750,15 @@
                 "//--color\t//Color of the tab bar"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonTabBar"
+                            "{ IonTabBar }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonTabBar"
                 ]
             }
@@ -3827,15 +3827,15 @@
                 "//--ripple-color\t//Color of the button ripple effect"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonTabButton"
+                            "{ IonTabButton }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonTabButton"
                 ]
             }
@@ -3949,15 +3949,15 @@
                 "//--width\t//Width of the menu"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonMenu"
+                            "{ IonMenu }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonMenu"
                 ]
             }
@@ -3978,15 +3978,15 @@
             "icon32": "menuitem_32x32.png",
             "properties": {},
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonMenuToggle"
+                            "{ IonMenuToggle }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonMenuToggle"
                 ]
             }
@@ -4008,15 +4008,15 @@
             "icon32": "menuautoitem_32x32.png",
             "properties": {},
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonMenuToggle"
+                            "{ IonMenuToggle }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonMenuToggle"
                 ]
             }
@@ -4116,15 +4116,15 @@
                 "//--padding-top\t//Top padding of the toolbar"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonToolbar"
+                            "{ IonToolbar }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonToolbar"
                 ]
             }
@@ -4202,15 +4202,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonRefresher"
+                            "{ IonRefresher }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonRefresher"
                 ]
             }
@@ -4267,15 +4267,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonRefresherContent"
+                            "{ IonRefresherContent }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonRefresherContent"
                 ]
             }
@@ -4527,15 +4527,15 @@
                 "//--placeholder-opacity\t//Opacity of the searchbar placeholder"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonSearchbar"
+                            "{ IonSearchbar }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonSearchbar"
                 ]
             }
@@ -4569,15 +4569,15 @@
                 "//--color\t//Text color of the title"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonTitle"
+                            "{ IonTitle }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonTitle"
                 ]
             }
@@ -4652,15 +4652,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonBackdrop"
+                            "{ IonBackdrop }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonBackdrop"
                 ]
             }
@@ -4692,15 +4692,15 @@
                 "//--padding-top\t//Top padding of the badge"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonBadge"
+                            "{ IonBadge }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonBadge"
                 ]
             }
@@ -4841,15 +4841,15 @@
                 "//--scroll-bar-background-active\t//Background of the active pagination scroll-bar"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonSlides"
+                            "{ IonSlides }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonSlides"
                 ]
             }
@@ -4868,15 +4868,15 @@
             "icon16": "slide_16x16.png",
             "icon32": "slide_32x32.png",
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonSlide"
+                            "{ IonSlide }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonSlide"
                 ]
             }
@@ -5128,19 +5128,17 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "../components/SlidesComponent/SlidesComponent",
                         "components": [
-                            "SlidesComponent"
+                            "{ SlidesComponent }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "SlidesComponent"
                 ],
-                "module_ng_declarations": [],
-                "module_ng_components": [],
                 "package_dependencies": [
                     {
                         "package": "swiper",
@@ -5255,15 +5253,15 @@
                 "//--color\t//Color of the chip"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonChip"
+                            "{ IonChip }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonChip"
                 ]
             }
@@ -5386,15 +5384,15 @@
                 "//--background\t//Background of the segment button"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonSegment"
+                            "{ IonSegment }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonSegment"
                 ]
             }
@@ -5473,15 +5471,15 @@
                 "//--transition\t//Transition of the segment button"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonSegmentButton"
+                            "{ IonSegmentButton }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonSegmentButton"
                 ]
             }
@@ -5557,15 +5555,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonReorderGroup"
+                            "{ IonReorderGroup }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonReorderGroup"
                 ]
             }
@@ -5587,15 +5585,15 @@
                 "IonSlot": false
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonReorder"
+                            "{ IonReorder }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonReorder"
                 ]
             }
@@ -5675,15 +5673,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonList"
+                            "{ IonList }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonList"
                 ]
             }
@@ -5805,15 +5803,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonList"
+                            "{ IonList }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonList"
                 ]
             }
@@ -5869,15 +5867,15 @@
                 "//--inner-border-width\t//Width of the inner list header border"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonListHeader"
+                            "{ IonListHeader }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonListHeader"
                 ]
             }
@@ -5943,15 +5941,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonItemGroup"
+                            "{ IonItemGroup }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonItemGroup"
                 ]
             }
@@ -6013,15 +6011,15 @@
                 "//--padding-top\t//Top padding of the item divider"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonItemDivider"
+                            "{ IonItemDivider }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonItemDivider"
                 ]
             }
@@ -6050,15 +6048,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonItemSliding"
+                            "{ IonItemSliding }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonItemSliding"
                 ]
             }
@@ -6095,15 +6093,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonItemOptions"
+                            "{ IonItemOptions }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonItemOptions"
                 ]
             }
@@ -6148,15 +6146,15 @@
                 "//--color\t//Color of the button"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonItemOption"
+                            "{ IonItemOption }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonItemOption"
                 ]
             }
@@ -6191,15 +6189,15 @@
                 "//--border-radius\t//Border radius of the avatar and inner image"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonAvatar"
+                            "{ IonAvatar }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonAvatar"
                 ]
             }
@@ -6226,15 +6224,15 @@
                 "//--size\t//Size of the thumbnail"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonThumbnail"
+                            "{ IonThumbnail }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonThumbnail"
                 ]
             }
@@ -6300,15 +6298,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonImg"
+                            "{ IonImg }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonImg"
                 ]
             }
@@ -6339,15 +6337,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonText"
+                            "{ IonText }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonText"
                 ]
             }
@@ -6489,15 +6487,15 @@
                 "//--transition\t//Transition of the item"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonItem"
+                            "{ IonItem }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonItem"
                 ]
             }
@@ -6639,15 +6637,15 @@
                 "//--transition\t//Transition of the item"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonItem"
+                            "{ IonItem }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonItem"
                 ]
             }
@@ -6787,15 +6785,15 @@
                 "//--transition\t//Transition of the item"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonItem"
+                            "{ IonItem }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonItem"
                 ]
             }
@@ -6858,15 +6856,15 @@
                 "//--color\t//Color of the label"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonLabel"
+                            "{ IonLabel }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonLabel"
                 ]
             }
@@ -6893,15 +6891,15 @@
                 "//--color\t//Color of the note"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonNote"
+                            "{ IonNote }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonNote"
                 ]
             }
@@ -6931,15 +6929,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonSelectOption"
+                            "{ IonSelectOption }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonSelectOption"
                 ]
             }
@@ -7193,15 +7191,15 @@
                 "//--ripple-color\t//The color of the ripple effect on MD mode"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonSelect"
+                            "{ IonSelect }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonSelect"
                 ]
             }
@@ -7305,15 +7303,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonRadioGroup"
+                            "{ IonRadioGroup }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonRadioGroup"
                 ]
             }
@@ -7443,15 +7441,15 @@
                 "//--inner-border-radius\t//Border radius of the inner checked radio"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonRadio"
+                            "{ IonRadio }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonRadio"
                 ]
             }
@@ -7637,15 +7635,15 @@
                 "//--track-background-checked\t//Background of the toggle when checked"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonToggle"
+                            "{ IonToggle }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonToggle"
                 ]
             }
@@ -8134,15 +8132,15 @@
                 "//--placeholder-opacity\t//Opacity of the input placeholder text"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonInput"
+                            "{ IonInput }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonInput"
                 ]
             }
@@ -8540,15 +8538,15 @@
                 "//--placeholder-opacity\t//Opacity of the placeholder text"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonTextarea"
+                            "{ IonTextarea }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonTextarea"
                 ]
             }
@@ -8717,15 +8715,15 @@
                 "//--transition\t//Transition of the checkbox icon"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonCheckbox"
+                            "{ IonCheckbox }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonCheckbox"
                 ]
             }
@@ -9012,15 +9010,15 @@
                 "//--title-color\t//The text color of the datetime's 'title"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonDatetime"
+                            "{ IonDatetime }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonDatetime"
                 ]
             }
@@ -9072,15 +9070,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonDatetimeButton"
+                            "{ IonDatetimeButton }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonDatetimeButton"
                 ]
             }
@@ -9309,15 +9307,15 @@
                 "//--pin-color\t//Color of the range pin"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonRange"
+                            "{ IonRange }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonRange"
                 ]
             }
@@ -9416,15 +9414,15 @@
                 "//--ion-grid-width-xs\t//Width of the fixed Grid on xs screens"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonGrid"
+                            "{ IonGrid }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonGrid"
                 ]
             }
@@ -9539,15 +9537,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonRow"
+                            "{ IonRow }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonRow"
                 ]
             }
@@ -9873,15 +9871,15 @@
                 "//--ion-grid-columns\t//The number of total Columns in the Grid"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonCol"
+                            "{ IonCol }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonCol"
                 ]
             }
@@ -9968,15 +9966,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonCard"
+                            "{ IonCard }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonCard"
                 ]
             }
@@ -10011,15 +10009,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonCardHeader"
+                            "{ IonCardHeader }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonCardHeader"
                 ]
             }
@@ -10041,15 +10039,15 @@
                 "IonMode": false
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonCardContent"
+                            "{ IonCardContent }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonCardContent"
                 ]
             }
@@ -10074,15 +10072,15 @@
                 "//--color\t//Color of the card title"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonCardTitle"
+                            "{ IonCardTitle }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonCardTitle"
                 ]
             }
@@ -10107,15 +10105,15 @@
                 "//--color\t//Color of the card subtitle"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonCardSubtitle"
+                            "{ IonCardSubtitle }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonCardSubtitle"
                 ]
             }
@@ -10205,15 +10203,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@agm/core",
                         "components": [
-                            "AgmCoreModule"
+                            "{ AgmCoreModule }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "AgmCoreModule.forRoot({apiKey: 'AIzaSyB0Nl1dX0kEsB5QZaNf6m-tnb1N-U5dpXs'})"
                 ],
                 "package_dependencies": [
@@ -10681,15 +10679,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "ng2-charts",
                         "components": [
-                            "NgChartsModule"
+                            "{ NgChartsModule }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "NgChartsModule"
                 ],
                 "package_dependencies": [
@@ -10876,15 +10874,15 @@
                 }
             },
             "config": {
-				"module_ts_imports": [
+				"local_module_ts_imports": [
 					{
 						"from": "ion7-calendar",
 						"components": [
-							"CalendarModule"
+							"{ CalendarModule }"
 						]
 					}
 				],
-				"module_ng_imports": [
+				"local_module_ng_imports": [
 					"CalendarModule"
 				],
 				"package_dependencies": [
@@ -10981,15 +10979,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonInfiniteScroll"
+                            "{ IonInfiniteScroll }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonInfiniteScroll"
                 ]
             }
@@ -11033,15 +11031,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonInfiniteScrollContent"
+                            "{ IonInfiniteScrollContent }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonInfiniteScrollContent"
                 ]
             }
@@ -11192,19 +11190,17 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "../components/SignatureComponent/SignatureComponent",
                         "components": [
-                            "SignatureComponent"
+                            "{ SignatureComponent }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "SignatureComponent"
                 ],
-                "module_ng_declarations": [],
-                "module_ng_components": [],
                 "package_dependencies": [
                     {
                         "package": "signature_pad",
@@ -11362,19 +11358,17 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
-                        "from": "../components/TreeviewComponent/TreeviewModule",
+                        "from": "../components/TreeviewComponent/TreeviewComponent",
                         "components": [
-                            "TreeviewModule"
+                            "{ TreeviewComponent }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
-                    "TreeviewModule"
+                "local_module_ng_imports": [
+                    "TreeviewComponent"
                 ],
-                "module_ng_declarations": [],
-                "module_ng_components": [],
                 "package_dependencies": [
                     {
                         "package": "@ali-hm/angular-tree-component",
@@ -11459,15 +11453,15 @@
                 }
             },
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@angular/cdk/scrolling",
                         "components": [
-                            "ScrollingModule"
+                            "{ ScrollingModule }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "ScrollingModule"
                 ],
                 "package_dependencies": [
@@ -12062,15 +12056,15 @@
                 "//--width\t//Width of the popover"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonPopover"
+                            "{ IonPopover }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonPopover"
                 ]
             }
@@ -12355,15 +12349,15 @@
                 "//--width\t//Width of the modal"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonModal"
+                            "{ IonModal }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonModal"
                 ]
             }
@@ -12617,15 +12611,15 @@
                 "//--width\t//Width of the action sheet"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonActionSheet"
+                            "{ IonActionSheet }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonActionSheet"
                 ]
             }
@@ -12865,15 +12859,15 @@
                 "//--width\t//Width of the alert"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonAlert"
+                            "{ IonAlert }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonAlert"
                 ]
             }
@@ -13100,15 +13094,15 @@
                 "//--width\t//Width of the picker"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonPicker"
+                            "{ IonPicker }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonPicker"
                 ]
             }
@@ -13410,15 +13404,15 @@
                 "//--width\t//Width of the toast"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonToast"
+                            "{ IonToast }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonToast"
                 ]
             }
@@ -13648,15 +13642,15 @@
                 "//--width\t//Width of the loading dialog"
             ],
             "config": {
-                "module_ts_imports": [
+                "local_module_ts_imports": [
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "IonLoading"
+                            "{ IonLoading }"
                         ]
                     }
                 ],
-                "module_ng_imports": [
+                "local_module_ng_imports": [
                     "IonLoading"
                 ]
             }
@@ -14854,7 +14848,7 @@
                     {
                         "from": "@ionic-native/google-plus/ngx",
                         "components": [
-                            "GooglePlus"
+                            "{ GooglePlus }"
                         ]
                     }
                 ],
@@ -14862,7 +14856,7 @@
                     {
                         "from": "@ionic-native/google-plus/ngx",
                         "components": [
-                            "GooglePlus"
+                            "{ GooglePlus }"
                         ]
                     }
                 ],
@@ -15149,7 +15143,7 @@
                     {
                         "from": "@ionic-native/file/ngx",
                         "components": [
-                            "File"
+                            "{ File }"
                         ]
                     }
                 ],
@@ -15157,7 +15151,7 @@
                     {
                         "from": "@ionic-native/file/ngx",
                         "components": [
-                            "File"
+                            "{ File }"
                         ]
                     }
                 ],
@@ -15624,13 +15618,13 @@
                     {
                         "from": "@ionic-native/file-path/ngx",
                         "components": [
-                            "FilePath"
+                            "{ FilePath }"
                         ]
                     },
                     {
                         "from": "@ionic-native/file-chooser/ngx",
                         "components": [
-                            "FileChooser"
+                            "{ FileChooser }"
                         ]
                     }
                 ],
@@ -15638,13 +15632,13 @@
                     {
                         "from": "@ionic-native/file-chooser/ngx",
                         "components": [
-                            "FileChooser"
+                            "{ FileChooser }"
                         ]
                     },
                     {
                         "from": "@ionic-native/file-path/ngx",
                         "components": [
-                            "FilePath"
+                            "{ FilePath }"
                         ]
                     }
                 ],
@@ -15722,7 +15716,7 @@
                     {
                         "from": "@ionic-native/chooser/ngx",
                         "components": [
-                            "Chooser"
+                            "{ Chooser }"
                         ]
                     }
                 ],
@@ -15730,7 +15724,7 @@
                     {
                         "from": "@ionic-native/chooser/ngx",
                         "components": [
-                            "Chooser"
+                            "{ Chooser }"
                         ]
                     }
                 ],
@@ -15837,7 +15831,7 @@
                     {
                         "from": "@ionic-native/speech-recognition/ngx",
                         "components": [
-                            "SpeechRecognition"
+                            "{ SpeechRecognition }"
                         ]
                     }
                 ],
@@ -15845,7 +15839,7 @@
                     {
                         "from": "@ionic-native/speech-recognition/ngx",
                         "components": [
-                            "SpeechRecognition"
+                            "{ SpeechRecognition }"
                         ]
                     }
                 ],
@@ -15933,13 +15927,13 @@
                     {
                         "from": "@ionic-native/globalization/ngx",
                         "components": [
-                            "Globalization"
+                            "{ Globalization }"
                         ]
                     },
                     {
                         "from": "@ionic-native/text-to-speech/ngx",
                         "components": [
-                            "TextToSpeech"
+                            "{ TextToSpeech }"
                         ]
                     }
                 ],
@@ -15947,13 +15941,13 @@
                     {
                         "from": "@ionic-native/globalization/ngx",
                         "components": [
-                            "Globalization"
+                            "{ Globalization }"
                         ]
                     },
                     {
                         "from": "@ionic-native/text-to-speech/ngx",
                         "components": [
-                            "TextToSpeech"
+                            "{ TextToSpeech }"
                         ]
                     }
                 ],
@@ -16114,13 +16108,13 @@
                     {
                         "from": "@ionic-native/action-sheet/ngx",
                         "components": [
-                            "ActionSheet"
+                            "{ ActionSheet }"
                         ]
                     },
                     {
                         "from": "@ionic-native/action-sheet/ngx",
                         "components": [
-                            "ActionSheetOptions"
+                            "{ ActionSheetOptions }"
                         ]
                     }
                 ],
@@ -16128,7 +16122,7 @@
                     {
                         "from": "@ionic-native/action-sheet/ngx",
                         "components": [
-                            "ActionSheet"
+                            "{ ActionSheet }"
                         ]
                     }
                 ],
@@ -16696,7 +16690,7 @@
                     {
                         "from": "@ionic-native/file-opener/ngx",
                         "components": [
-                            "FileOpener"
+                            "{ FileOpener }"
                         ]
                     }
                 ],
@@ -16704,7 +16698,7 @@
                     {
                         "from": "@ionic-native/file-opener/ngx",
                         "components": [
-                            "FileOpener"
+                            "{ FileOpener }"
                         ]
                     }
                 ],
@@ -16923,19 +16917,19 @@
                     {
                         "from": "@ionic-native/camera/ngx",
                         "components": [
-                            "Camera"
+                            "{ Camera }"
                         ]
                     },
                     {
                         "from": "@ionic-native/camera/ngx",
                         "components": [
-                            "CameraOptions"
+                            "{ CameraOptions }"
                         ]
                     },
                     {
                         "from": "@ionic-native/camera/ngx",
                         "components": [
-                            "CameraPopoverOptions"
+                            "{ CameraPopoverOptions }"
                         ]
                     }
                 ],
@@ -16943,7 +16937,7 @@
                     {
                         "from": "@ionic-native/camera/ngx",
                         "components": [
-                            "Camera"
+                            "{ Camera }"
                         ]
                     }
                 ],
@@ -17127,7 +17121,7 @@
                     {
                         "from": "@ionic-native/barcode-scanner/ngx",
                         "components": [
-                            "BarcodeScanner"
+                            "{ BarcodeScanner }"
                         ]
                     }
                 ],
@@ -17135,7 +17129,7 @@
                     {
                         "from": "@ionic-native/barcode-scanner/ngx",
                         "components": [
-                            "BarcodeScanner"
+                            "{ BarcodeScanner }"
                         ]
                     }
                 ],
@@ -17210,7 +17204,7 @@
                     {
                         "from": "@ionic-native/file-opener/ngx",
                         "components": [
-                            "FileOpener"
+                            "{ FileOpener }"
                         ]
                     }
                 ],
@@ -17218,7 +17212,7 @@
                     {
                         "from": "@ionic-native/file-opener/ngx",
                         "components": [
-                            "FileOpener"
+                            "{ FileOpener }"
                         ]
                     }
                 ],
@@ -17416,7 +17410,7 @@
                     {
                         "from": "@ionic-native/file-opener/ngx",
                         "components": [
-                            "FileOpener"
+                            "{ FileOpener }"
                         ]
                     }
                 ],
@@ -17424,7 +17418,7 @@
                     {
                         "from": "@ionic-native/file-opener/ngx",
                         "components": [
-                            "FileOpener"
+                            "{ FileOpener }"
                         ]
                     }
                 ],

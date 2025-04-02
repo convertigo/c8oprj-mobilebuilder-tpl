@@ -1,6 +1,6 @@
 import { Component, Input , Output, EventEmitter, OnInit, OnDestroy, ElementRef }	from '@angular/core';
 import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector }		from "@angular/core";
-import { Type, OnChanges, SimpleChanges } 											from "@angular/core";
+import { Type, OnChanges, SimpleChanges, CUSTOM_ELEMENTS_SCHEMA }					from "@angular/core";
 import { Router, ActivatedRoute } 													from '@angular/router';
 import { DomSanitizer }                 											from '@angular/platform-browser';
 import { NavParams, NavController, LoadingController, MenuController, Platform }	from '@ionic/angular/standalone';
@@ -45,6 +45,7 @@ import { TranslateModule } from '@ngx-translate/core';
 	selector: /*=c8o_CompSelector*/,
 	templateUrl: /*=c8o_CompTplUrl*/,
 	styleUrls: [/*=c8o_CompStyleUrls*/],
+	schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
 	changeDetection: /*=c8o_CompChangeDetection*/
 })
 export class /*=c8o_CompName*/ extends C8oPageBase implements OnInit, OnDestroy, OnChanges {

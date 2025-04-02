@@ -1,4 +1,4 @@
-import { Component }																	from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA }											from '@angular/core';
 import { Router, ActivatedRoute } 														from '@angular/router';
 import { DomSanitizer }                 												from '@angular/platform-browser';
 import { NavParams, NavController, LoadingController, MenuController, Platform}			from '@ionic/angular/standalone';
@@ -41,6 +41,7 @@ import { TranslateModule } from '@ngx-translate/core';
 	selector: /*=c8o_PageSelector*/,
 	templateUrl: /*=c8o_PageTplUrl*/,
 	styleUrls: [/*=c8o_PageStyleUrls*/],
+	schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
 	changeDetection: /*=c8o_PageChangeDetection*/
 })
 
