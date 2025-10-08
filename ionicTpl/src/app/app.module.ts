@@ -17,6 +17,7 @@ import { C8o, HttpXsrfInterceptor }                         from "c8osdkangular"
 import { C8oRouter } 			                            from 'c8ocaf';
 import { environment } 										from '../environments/environment';
 import { ActionBeans }                                      from './services/actionbeans.service';
+import { NavParamsWrapperModule } 							from './patch/nav-params-wrapper.module';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -39,6 +40,7 @@ export function createTranslateLoader(http: HttpClient) {
     HttpClientModule,
 	FormsModule,
 	ReactiveFormsModule,
+	NavParamsWrapperModule,
 	TranslateModule.forRoot({
         loader: {
           provide: TranslateLoader,
@@ -61,7 +63,6 @@ export function createTranslateLoader(http: HttpClient) {
     SplashScreen,
     C8o,
     C8oRouter,
-//    ActionBeans,
     {
         provide: HTTP_INTERCEPTORS,
         useClass: HttpXsrfInterceptor,

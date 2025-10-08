@@ -3,7 +3,7 @@ import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector }	
 import { Type, OnChanges, SimpleChanges } 											from "@angular/core";
 import { Router, ActivatedRoute } 													from '@angular/router';
 import { DomSanitizer }                 											from '@angular/platform-browser';
-import { NavParams, NavController, LoadingController, MenuController, Platform }	from '@ionic/angular';
+import { NavController, LoadingController, MenuController, Platform }				from '@ionic/angular';
 import { AlertController, ActionSheetController, ModalController }					from '@ionic/angular';
 import { AnimationController, PopoverController, ToastController }					from '@ionic/angular';
 import { C8oPage, C8oPageBase, C8oRouter, C8oCafUtils }                      		from 'c8ocaf';

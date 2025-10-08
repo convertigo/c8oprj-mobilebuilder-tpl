@@ -4,6 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { TranslateModule } from '@ngx-translate/core';
+import { NavParamsWrapperModule } from '../../patch/nav-params-wrapper.module';
+
 /*=c8o_ModuleTsImports*/
 /*=c8o_PageImport*/
 
@@ -16,6 +18,7 @@ import { TranslateModule } from '@ngx-translate/core';
 	FormsModule,
 	ReactiveFormsModule,
 	IonicModule,
+	NavParamsWrapperModule,
 	TranslateModule.forChild(),
 	/*=c8o_PageRoutingModuleName*/,
   /*End_c8o_NgModules*/],

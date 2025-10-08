@@ -3,7 +3,7 @@ import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector, T
 import { DomSanitizer }                                                                 from '@angular/platform-browser';
 import { Router, ActivatedRoute }                                          				from '@angular/router';
 import { SwUpdate }                                         							from '@angular/service-worker';
-import { NavParams, NavController, LoadingController, MenuController, Platform}         from '@ionic/angular';
+import { NavController, LoadingController, MenuController, Platform}         			from '@ionic/angular';
 import { AlertController, ActionSheetController, ModalController }                      from '@ionic/angular';
 import { AnimationController, PopoverController, ToastController }                      from '@ionic/angular';
 import { SplashScreen }                                                                 from '@ionic-native/splash-screen/ngx';
@@ -20,6 +20,7 @@ import { C8oNetworkStatus }                                 from "c8osdkangular"
 
 import { ActionBeans }                                      from './services/actionbeans.service';
 import { Events }                                           from './services/events.service';
+import { NavParams } 										from './patch/nav-params';
 
 /*
 	You can customize your application class by writing code between the :
@@ -48,7 +49,6 @@ export class AppComponent extends C8oPageBase {
 	rootPage : any = /*=c8o_RootPage*/;
 	public appPages : /*=c8o_PageArrayDef*/;
     pagesKeyValue: any;
-	public navParams : NavParams;
 	public events: Events;
 	public subscriptions = {};
     public actionBeans: ActionBeans;
@@ -59,20 +59,10 @@ export class AppComponent extends C8oPageBase {
     /*Begin_c8o_AppDeclaration*/
     /*End_c8o_AppDeclaration*/
 	
-    constructor(private platform: Platform, private splashScreen: SplashScreen, private statusBar: StatusBar, routerProvider: C8oRouter, private route: ActivatedRoute, private angularRouter: Router, loadingCtrl: LoadingController, sanitizer: DomSanitizer, ref: ChangeDetectorRef, injector: Injector, menuCtrl: MenuController, public translate: TranslateService){
+    constructor(public navParams : NavParams, private platform: Platform, private splashScreen: SplashScreen, private statusBar: StatusBar, routerProvider: C8oRouter, private route: ActivatedRoute, private angularRouter: Router, loadingCtrl: LoadingController, sanitizer: DomSanitizer, ref: ChangeDetectorRef, injector: Injector, menuCtrl: MenuController, public translate: TranslateService){
         super(injector, routerProvider, loadingCtrl, ref);
         this.events = this.getInstance(Events);
         this.actionBeans = this.getInstance(ActionBeans);
-		try {
-			// for PopoverController, ModalController
-			this.navParams = new NavParams(this.getInstance(NavParams).data)
-		} catch (e) {
-			// for NavController (based on angular router)
-			let params = {}
-			this.merge(params, this.route.snapshot.params)
-			this.merge(params, this.route.snapshot.queryParams)
-			this.navParams = new NavParams(params)
-		}
 
 		this.angularRouter.events.subscribe((event: any) => {
 			if (event && event.urlAfterRedirects) {
@@ -128,7 +118,7 @@ export class AppComponent extends C8oPageBase {
                 this.resetImageCache();
                 /*Begin_c8o_AppInitialization*/
                 /*End_c8o_AppInitialization*/
-                this.appInit.next(null); //this.appInit.next();
+                this.appInit.next(null);
             });
 
         });
