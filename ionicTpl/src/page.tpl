@@ -68,6 +68,30 @@ export class /*=c8o_PageName*/  extends C8oPage {
 	    this.angularRouter.navigateByUrl(url);
 	}
 	
+	ngOnInit() {
+		/*Begin_c8o_PageInitialization*/
+		/*End_c8o_PageInitialization*/
+		
+		this.onInit();
+	}
+
+	ngAfterViewInit() {
+		this.afterViewInit();
+		
+		/*Begin_c8o_PageAfterViewInit*/
+		/*End_c8o_PageAfterViewInit*/		
+	}
+
+	ngOnDestroy() {
+		this.onDestroy();
+		
+		/*Begin_c8o_PageFinalization*/
+		/*End_c8o_PageFinalization*/
+		
+		this.subscriptions = {};
+		super.ngOnDestroy();
+	}
+	
 	/*Begin_c8o_PageFunction*/
 	/*End_c8o_PageFunction*/
 	
