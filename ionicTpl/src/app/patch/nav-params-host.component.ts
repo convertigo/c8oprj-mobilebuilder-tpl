@@ -2,6 +2,7 @@ import { Component, Input, OnInit, AfterViewInit, Injector, ElementRef, ViewChil
 import { NavParams } from './nav-params';
 
 @Component({
+  standalone: false,
   selector: 'navparams-host',
   template: `<ng-template #vc></ng-template>`,
   styles: [  `
