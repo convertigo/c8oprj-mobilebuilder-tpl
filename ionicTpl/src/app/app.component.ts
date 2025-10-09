@@ -1,4 +1,4 @@
-import { Component, Input, CUSTOM_ELEMENTS_SCHEMA }                                     from '@angular/core';
+import { Component, Input, CUSTOM_ELEMENTS_SCHEMA }                    					from '@angular/core';
 import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector, Type}    from "@angular/core";
 import { BrowserModule, DomSanitizer }                                                  from '@angular/platform-browser';
 import { Router, RouterLink, ActivatedRoute }											from '@angular/router';
@@ -22,7 +22,7 @@ import { C8oNetworkStatus }                                 from "c8osdkangular"
 import { ActionBeans }                                      from './services/actionbeans.service';
 import { Events }                                           from './services/events.service';
 import { NavParams } 										from './patch/nav-params';
-import { NavParamsWrapperModule } 							from './patch/nav-params-wrapper.module';
+import { NavParamsWrapperService } 							from './patch/nav-params-wrapper.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
@@ -51,6 +51,13 @@ import { addIcons } from 'ionicons';
 
 /*=c8o_PagesImport*/ 
 
+export function patchModalController(patch: NavParamsWrapperService) {
+  return patch.getModalController();
+}
+export function patchPopoverController(patch: NavParamsWrapperService) {
+  return patch.getPopoverController();
+}
+
 @Component({
   standalone: true, 
   imports: [/*Begin_c8o_NgModules*/
@@ -59,13 +66,24 @@ import { addIcons } from 'ionicons';
     IonApp,
     IonRouterOutlet,
     TranslateModule,
-	NavParamsWrapperModule,
 	
 	RouterLink,
 	IonRouterLink,
 	IonRouterLinkWithHref,
 	
     /*End_c8o_NgModules*/
+  ],
+  providers: [
+	{
+	  provide: ModalController,
+	  useFactory: patchModalController,
+	  deps: [NavParamsWrapperService]
+	},
+	{
+	  provide: PopoverController,
+	  useFactory: patchPopoverController,
+	  deps: [NavParamsWrapperService]
+	},
   ],
   selector: 'app-root',
   templateUrl: 'app.component.html',

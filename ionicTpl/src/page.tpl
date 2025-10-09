@@ -12,7 +12,6 @@ import { TranslateService }                                 							from '@ngx-tr
 import { ActionBeans } 																	from '../../services/actionbeans.service';
 import { Events } 																		from '../../services/events.service';
 import { NavParams }																	from '../../patch/nav-params';
-import { NavParamsWrapperModule } 														from '../../patch/nav-params-wrapper.module';
 
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -36,7 +35,6 @@ import { TranslateModule } from '@ngx-translate/core';
 		CommonModule,
 		FormsModule,
 		TranslateModule,
-		NavParamsWrapperModule,
 		
 		RouterLink,
 		IonRouterLink,

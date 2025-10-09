@@ -4,8 +4,9 @@ import { IonicRouteStrategy, provideIonicAngular } from '@ionic/angular/standalo
 
 import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
+import { NavParamsWrapperService } 	from './app/patch/nav-params-wrapper.service';
 import { environment } from './environments/environment';
-import { enableProdMode, importProvidersFrom, provideExperimentalZonelessChangeDetection } from '@angular/core';
+import { APP_INITIALIZER, enableProdMode, importProvidersFrom, provideExperimentalZonelessChangeDetection } from '@angular/core';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HTTP_INTERCEPTORS, HttpClient, provideHttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -19,6 +20,13 @@ import { C8oRouter } from 'c8ocaf';
 
 if (environment.production) {
 	enableProdMode();
+}
+
+/**
+ * Ionic old NavParams service wrapper
+ */
+export function applyOverlayPatch(patch: NavParamsWrapperService) {
+  return () => patch.apply();
 }
 
 /**
@@ -57,6 +65,12 @@ bootstrapApplication(AppComponent, {
 		SplashScreen,
 		C8o,
 		C8oRouter,
+		{
+		  provide: APP_INITIALIZER,
+		  useFactory: applyOverlayPatch,
+		  deps: [NavParamsWrapperService],
+		  multi: true
+		},
 		{
 			provide: HTTP_INTERCEPTORS,
 			useClass: HttpXsrfInterceptor,
