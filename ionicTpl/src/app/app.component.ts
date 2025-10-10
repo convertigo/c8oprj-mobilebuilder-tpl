@@ -1,7 +1,7 @@
 import { Component }                                                                    from '@angular/core';
 import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector, Type}    from "@angular/core";
 import { DomSanitizer }                                                                 from '@angular/platform-browser';
-import { Router, ActivatedRoute }                                          				from '@angular/router';
+import { Router, ActivatedRoute, NavigationEnd }                           				from '@angular/router';
 import { SwUpdate }                                         							from '@angular/service-worker';
 import { NavController, LoadingController, MenuController, Platform}         			from '@ionic/angular';
 import { AlertController, ActionSheetController, ModalController }                      from '@ionic/angular';
@@ -9,7 +9,8 @@ import { AnimationController, PopoverController, ToastController }              
 import { SplashScreen }                                                                 from '@ionic-native/splash-screen/ngx';
 import { StatusBar }                                                                    from '@ionic-native/status-bar/ngx';
 import { TranslateService }                                                             from '@ngx-translate/core';
-import { Subject }                                                                      from 'rxjs';
+import { filter, map } 																	from 'rxjs/operators';
+import { Subject, Observable }                                                          from 'rxjs';
 
 //Convertigo CAF Imports
 import { C8oRouter }                                        from 'c8ocaf';
@@ -52,7 +53,7 @@ export class AppComponent extends C8oPageBase {
 	public events: Events;
 	public subscriptions = {};
     public actionBeans: ActionBeans;
-	public selectedPath = '';
+	public selectedPath$: Observable<string>;
 	public appInit: Subject<any> = new Subject<any>();
     /*=c8o_AppDeclarations*/
     
@@ -64,11 +65,10 @@ export class AppComponent extends C8oPageBase {
         this.events = this.getInstance(Events);
         this.actionBeans = this.getInstance(ActionBeans);
 
-		this.angularRouter.events.subscribe((event: any) => {
-			if (event && event.urlAfterRedirects) {
-				this.selectedPath = event.urlAfterRedirects
-			}
-		})
+		this.selectedPath$ = this.angularRouter.events.pipe(
+		  filter(event => event instanceof NavigationEnd),
+		  map((event: NavigationEnd) => event.urlAfterRedirects)
+		);
 
 		this.appPages = [/*=c8o_PagesVariables*/];
         this.pagesKeyValue = {/*=c8o_PagesVariablesKeyValue*/}
