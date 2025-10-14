@@ -1,10 +1,9 @@
 import { Component, Input, CUSTOM_ELEMENTS_SCHEMA }										from '@angular/core';
-import { Router, RouterLink, ActivatedRoute }											from '@angular/router';
+import { Router, ActivatedRoute }														from '@angular/router';
 import { DomSanitizer }                 												from '@angular/platform-browser';
 import { NavController, LoadingController, MenuController, Platform}					from '@ionic/angular/standalone';
 import { AlertController, ActionSheetController, ModalController }						from '@ionic/angular/standalone';
 import { AnimationController, PopoverController, ToastController }						from '@ionic/angular/standalone';
-import { IonRouterLink, IonRouterLinkWithHref }											from '@ionic/angular/standalone';
 import { C8oPage, C8oPageBase, C8oRouter, C8oCafUtils }                      			from 'c8ocaf';
 import { C8oNetworkStatus }                                 							from 'c8osdkangular';
 import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector, Type}	from "@angular/core";
@@ -35,10 +34,6 @@ import { TranslateModule } from '@ngx-translate/core';
 		CommonModule,
 		FormsModule,
 		TranslateModule,
-		
-		RouterLink,
-		IonRouterLink,
-		IonRouterLinkWithHref,
 		
 		/*c8o_StandAloneNgModules*/
 	],

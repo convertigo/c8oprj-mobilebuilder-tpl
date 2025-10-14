@@ -3979,15 +3979,25 @@
             "properties": {},
             "config": {
                 "local_module_ts_imports": [
+					{
+					   "from": "@angular/router",
+                       "components": [
+                            "{ RouterLink }"
+                        ]
+					},
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "{ IonMenuToggle }"
+                            "{ IonRouterLink, IonItem, IonLabel, IonIcon }"
                         ]
                     }
                 ],
                 "local_module_ng_imports": [
-                    "IonMenuToggle"
+					"RouterLink",
+					"IonRouterLink",
+                    "IonItem",
+					"IonLabel",
+					"IonIcon"
                 ]
             }
         },
@@ -4009,15 +4019,25 @@
             "properties": {},
             "config": {
                 "local_module_ts_imports": [
+					{
+					   "from": "@angular/router",
+                       "components": [
+                            "{ RouterLink }"
+                        ]
+					},
                     {
                         "from": "@ionic/angular/standalone",
                         "components": [
-                            "{ IonMenuToggle }"
+                            "{ IonRouterLink, IonItem, IonLabel, IonIcon }"
                         ]
                     }
                 ],
                 "local_module_ng_imports": [
-                    "IonMenuToggle"
+					"RouterLink",
+					"IonRouterLink",
+                    "IonItem",
+					"IonLabel",
+					"IonIcon"
                 ]
             }
         },

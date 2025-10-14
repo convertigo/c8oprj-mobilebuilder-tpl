@@ -1,12 +1,11 @@
 import { Component, Input, CUSTOM_ELEMENTS_SCHEMA }                    					from '@angular/core';
 import { ChangeDetectorRef, ChangeDetectionStrategy, InjectionToken, Injector, Type}    from "@angular/core";
 import { BrowserModule, DomSanitizer }                                                  from '@angular/platform-browser';
-import { Router, RouterLink, ActivatedRoute, NavigationEnd }							from '@angular/router';
+import { Router, ActivatedRoute, NavigationEnd }										from '@angular/router';
 import { ServiceWorkerModule, SwUpdate }                                         	   	from '@angular/service-worker';
 import { NavController, LoadingController, Platform}         							from '@ionic/angular/standalone';
 import { AlertController, ActionSheetController, ModalController, MenuController }      from '@ionic/angular/standalone';
 import { AnimationController, PopoverController, ToastController }                      from '@ionic/angular/standalone';
-import { IonRouterLink, IonRouterLinkWithHref }											from '@ionic/angular/standalone';
 import { SplashScreen }                                                                 from '@ionic-native/splash-screen/ngx';
 import { StatusBar }                                                                    from '@ionic-native/status-bar/ngx';
 import { TranslateLoader, TranslateModule, TranslateService }                           from '@ngx-translate/core';
@@ -67,10 +66,6 @@ export function patchPopoverController(patch: NavParamsWrapperService) {
     IonApp,
     IonRouterOutlet,
     TranslateModule,
-	
-	RouterLink,
-	IonRouterLink,
-	IonRouterLinkWithHref,
 	
     /*End_c8o_NgModules*/
   ],
