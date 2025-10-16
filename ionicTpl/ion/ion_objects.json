@@ -6637,7 +6637,47 @@
 				"//--placeholder-color\t//Color of the select placeholder text",
 				"//--placeholder-opacity\t//Opacity of the select placeholder text",
 				"//--ripple-color\t//The color of the ripple effect on MD mode"
-			]
+			],
+			"hint": {
+				"Select": {
+					"properties": {
+						"Label": "Please select a color",
+						"Value": "green"
+					},
+					"SelectOption": [
+						{
+							"properties": {
+								"Value": "red"
+							},
+							"com.twinsoft.convertigo.beans.ngx.components.UIText": {
+								"properties": {
+									"textValue": "Red"
+								}
+							}
+						},
+						{
+							"properties": {
+								"Value": "blue"
+							},
+							"com.twinsoft.convertigo.beans.ngx.components.UIText": {
+								"properties": {
+									"textValue": "Blue"
+								}
+							}
+						},
+						{
+							"properties": {
+								"Value": "green"
+							},
+							"com.twinsoft.convertigo.beans.ngx.components.UIText": {
+								"properties": {
+									"textValue": "Green"
+								}
+							}
+						}
+					]
+				}
+			}
 		},
 		/**************************************************/
 		/* Form RadioButton    / RadioGroup                  */
