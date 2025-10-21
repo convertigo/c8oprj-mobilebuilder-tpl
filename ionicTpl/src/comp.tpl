@@ -76,18 +76,6 @@ export class /*=c8o_CompName*/ extends C8oPageBase implements OnInit, OnDestroy,
 		
     }
 	
-	//------------ overwrites CAF---------------
-	public listen(requestables: string[]): any {
-	  	return this.routerProvider.getResponseForView(this.constructor['nameStatic'], requestables, this.instanceID);
-	}
-  	public deleteListen(requestables: string[]): any {
-    	return this.routerProvider.deleteResponseForView(this.constructor['nameStatic'], requestables);
-  	}
-  	public listenNavParams(requestable: string): any {
-    	return (this.routerProvider.getParamForView(this.constructor['nameStatic'], requestable));
-  	}
-  	//-----------------------------------------
-	
 	ngOnInit() {
 		this.events = this.owner ? this.owner["events"] : this.getInstance(Events);
 		this.actionBeans = this.owner ? this.owner["actionBeans"] : this.getInstance(ActionBeans);
