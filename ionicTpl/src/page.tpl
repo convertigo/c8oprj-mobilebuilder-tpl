@@ -90,6 +90,18 @@ export class /*=c8o_PageName*/  extends C8oPage {
 	public navigateByUrl(url: string){
 	    this.angularRouter.navigateByUrl(url);
 	}
+
+	//------------ overwrites CAF---------------
+	public listen(requestables: string[]): any {
+	  	return this.routerProvider.getResponseForView(this.constructor['nameStatic'], requestables, this.instanceID);
+	}
+  	public deleteListen(requestables: string[]): any {
+    	return this.routerProvider.deleteResponseForView(this.constructor['nameStatic'], requestables);
+  	}
+  	public listenNavParams(requestable: string): any {
+    	return (this.routerProvider.getParamForView(this.constructor['nameStatic'], requestable));
+  	}
+  	//-----------------------------------------
 	
 	ngOnInit() {
 		/*Begin_c8o_PageInitialization*/

@@ -187,6 +187,18 @@ export class AppComponent extends C8oPageBase {
 	    this.angularRouter.navigateByUrl(url);
 	}
 	    
+	//------------ overwrites CAF---------------
+	public listen(requestables: string[]): any {
+	  	return this.routerProvider.getResponseForView("AppComponent", requestables, this.instanceID);
+	}
+  	public deleteListen(requestables: string[]): any {
+    	return this.routerProvider.deleteResponseForView("AppComponent", requestables);
+  	}
+  	public listenNavParams(requestable: string): any {
+    	return (this.routerProvider.getParamForView("AppComponent", requestable));
+  	}
+  	//-----------------------------------------
+	
     /*Begin_c8o_AppFunction*/
     /*End_c8o_AppFunction*/
     
