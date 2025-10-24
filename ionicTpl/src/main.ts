@@ -8,6 +8,7 @@ import { NavParamsWrapperService } 	from './app/patch/nav-params-wrapper.service
 import { environment } from './environments/environment';
 import { APP_INITIALIZER, enableProdMode, importProvidersFrom, provideExperimentalZonelessChangeDetection } from '@angular/core';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { APP_BASE_HREF} from '@angular/common';
 import { HTTP_INTERCEPTORS, HttpClient, provideHttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -76,6 +77,7 @@ bootstrapApplication(AppComponent, {
 			useClass: HttpXsrfInterceptor,
 			multi: true
 		},
-		{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+		{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+		{ provide: APP_BASE_HREF, useValue: document.querySelector('base').href},
 	/*End_c8o_NgProviders*/]
 });
