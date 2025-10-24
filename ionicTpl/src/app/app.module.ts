@@ -1,4 +1,5 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, ErrorHandler, provideExperimentalZonelessChangeDetection }	from '@angular/core';
+import { APP_BASE_HREF }									from '@angular/common';
 import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } 	from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule }   				from '@angular/forms';
 import { BrowserModule } 									from '@angular/platform-browser';
@@ -68,7 +69,8 @@ export function createTranslateLoader(http: HttpClient) {
         useClass: HttpXsrfInterceptor,
         multi: true
     },
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+	{ provide: APP_BASE_HREF, useValue: document.querySelector('base').href},
   /*End_c8o_NgProviders*/],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   bootstrap: [AppComponent]
