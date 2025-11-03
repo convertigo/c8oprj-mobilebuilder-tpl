@@ -67,6 +67,9 @@ export class /*=c8o_PageName*/  extends C8oPage {
 		if (this.navParams.data == undefined) {
 			this.navParams = new NavParams(this.route)
 		}
+		if (this.navParams.data == undefined) {
+			this.navParams.data = {};
+		}
 		
 		/*=c8o_PageConstructors*/
 		
