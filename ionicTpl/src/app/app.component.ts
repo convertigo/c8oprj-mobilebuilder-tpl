@@ -32,6 +32,7 @@ import { CommonModule } from '@angular/common';
 import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 import * as icons from "ionicons/icons";
 import { addIcons } from 'ionicons';
+import { signal } from "@angular/core";
 
 
 /*
@@ -104,9 +105,13 @@ export class AppComponent extends C8oPageBase {
         super(injector, routerProvider, loadingCtrl, ref);
         this.events = this.getInstance(Events);
         this.actionBeans = this.getInstance(ActionBeans);
-
+		this.global.c8oLoading = signal(false);
+		
 		if (this.navParams.data == undefined) {
 			this.navParams = new NavParams(this.route)
+			if (this.navParams.data == undefined) {
+				this.navParams.data = {}
+			}
 		}
 		
 		this.selectedPath$ = this.angularRouter.events.pipe(
