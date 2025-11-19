@@ -105,7 +105,21 @@ export class AppComponent extends C8oPageBase {
         super(injector, routerProvider, loadingCtrl, ref);
         this.events = this.getInstance(Events);
         this.actionBeans = this.getInstance(ActionBeans);
-		this.global.c8oLoading = signal(false);
+		this.global.c8oLoadingOptions = {};
+		this.global.c8oLoadingOptions.isOpen = signal(false);
+		this.global.c8oLoadingOptions.mode = signal(undefined);
+		this.global.c8oLoadingOptions.spinner = signal(undefined);
+		this.global.c8oLoadingOptions.message = signal(undefined);
+		this.global.c8oLoadingOptions.duration = signal(undefined);
+		this.global.c8oLoadingOptions.keyboardClose = signal(undefined);
+		this.global.c8oLoadingOptions.showBackdrop = signal(undefined);
+		this.global.c8oLoadingOptions.backdropDismiss = signal(undefined);
+		this.global.c8oLoadingOptions.animated = signal(undefined);
+		this.global.c8oLoadingOptions.enterAnimation = signal(undefined);
+		this.global.c8oLoadingOptions.leaveAnimation = signal(undefined);
+		this.global.c8oLoadingOptions.cssClass = signal(undefined);
+		this.global.c8oLoadingOptions.translucent = signal(undefined);
+		
 		
 		if (this.navParams.data == undefined) {
 			this.navParams = new NavParams(this.route)

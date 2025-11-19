@@ -6,7 +6,7 @@ import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
 import { NavParamsWrapperService } 	from './app/patch/nav-params-wrapper.service';
 import { environment } from './environments/environment';
-import { APP_INITIALIZER, enableProdMode, importProvidersFrom, provideExperimentalZonelessChangeDetection } from '@angular/core';
+import { APP_INITIALIZER, enableProdMode, importProvidersFrom, provideZonelessChangeDetection } from '@angular/core';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { APP_BASE_HREF} from '@angular/common';
 import { HTTP_INTERCEPTORS, HttpClient, provideHttpClient } from '@angular/common/http';
@@ -39,7 +39,7 @@ export function createTranslateLoader(http: HttpClient) {
 
 bootstrapApplication(AppComponent, {
 	providers: [/*Begin_c8o_NgProviders*/
-		provideExperimentalZonelessChangeDetection(),
+		provideZonelessChangeDetection(),
 		{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
 		provideIonicAngular(),
 		provideRouter(routes,
