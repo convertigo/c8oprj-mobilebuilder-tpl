@@ -57,9 +57,12 @@ export class NavParamsHostComponent implements OnInit, AfterViewInit {
     const parent = this.el.nativeElement.closest('ion-modal, ion-popover');
     if (parent?.tagName === 'ION-MODAL') {
       this.el.nativeElement.classList.add('modal');
+	  this.el.nativeElement?.children?.[0]?.classList?.add("ion-page");
     } else if (parent?.tagName === 'ION-POPOVER') {
       this.el.nativeElement.classList.add('popover');
+	  this.el.nativeElement?.children?.[0]?.classList?.add("popover-viewport");
     }
   }
   
 }
+
