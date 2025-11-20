@@ -1,12 +1,17 @@
-import { Injectable, Optional } from '@angular/core';
+import { Inject, Injectable, InjectionToken, Optional } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+
+export const NAV_PARAMS_DATA = new InjectionToken<Record<string, any>>('NAV_PARAMS_DATA');
 
 @Injectable({providedIn: 'root'})
 export class NavParams {
   /** Public like Ionic 3 */
   public data: Record<string, any>;
 
-  constructor(@Optional() private route?: ActivatedRoute) {
+  constructor(
+    @Optional() private route?: ActivatedRoute,
+    @Optional() @Inject(NAV_PARAMS_DATA) private initialData?: Record<string, any>
+  ) {
 	
     // Sync access for routed pages (constructor-safe)
     if (this.route) {
@@ -21,7 +26,7 @@ export class NavParams {
     const params: Record<string, any> = {};
     Object.assign(params, this.route?.snapshot.params);
     Object.assign(params, this.route?.snapshot.queryParams);
-    this.data = Object.keys(params).length ? params : {};
+    this.data = {...this.initialData, ...params}
   }
   
   /** Old Ionic API */

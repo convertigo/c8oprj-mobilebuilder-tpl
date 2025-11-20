@@ -121,12 +121,7 @@ export class AppComponent extends C8oPageBase {
 		this.global.c8oLoadingOptions.translucent = signal(undefined);
 		
 		
-		if (this.navParams.data == undefined) {
-			this.navParams = new NavParams(this.route)
-			if (this.navParams.data == undefined) {
-				this.navParams.data = {}
-			}
-		}
+		this.navParams = new NavParams(this.route, this.navParams.data);
 		
 		this.selectedPath$ = this.angularRouter.events.pipe(
 		  filter(event => event instanceof NavigationEnd),

@@ -8,6 +8,7 @@ import {
   OnInit,
   OnDestroy,
 } from '@angular/core';
+import { clear } from 'console';
 
 @Directive({
   selector: '[throttleEvent]',
@@ -22,6 +23,7 @@ export class ThrottleEventDirective implements OnInit, OnDestroy {
 
   private locked = false;
   private removeListener?: () => void;
+  private timeoutId?: any;
 
   constructor(
     private el: ElementRef,
@@ -42,19 +44,26 @@ export class ThrottleEventDirective implements OnInit, OnDestroy {
     event.stopImmediatePropagation();
 
     if (this.locked) {
-      //console.log('Locked Event throttled:', this.throttleType);
+      //console.log('[ThrottleEventDirective] prevented from ', this.throttleType);
       return;
     }
 
     this.locked = true;
     this.throttleEvent.emit(event);
-    //console.log('Event emitted:', this.throttleType);
+    //console.log('[ThrottleEventDirective] emitted:', this.throttleType);
 
-    setTimeout(() => (this.locked = false), this.throttleTime);
+    this.timeoutId = setTimeout(() => {
+      this.locked = false;
+      //console.log('[ThrottleEventDirective] unlocked after timeout:', this.throttleType);
+    }, this.throttleTime);
   }
 
   unlock() {
-    this.locked = false;
+    if(this.locked){
+      //console.log('[ThrottleEventDirective] unlocked after action:', this.throttleType);
+      clearTimeout(this.timeoutId);
+      this.locked = false;
+    }
   }
 
   ngOnDestroy() {
