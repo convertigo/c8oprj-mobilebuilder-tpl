@@ -41,10 +41,8 @@ export class /*=c8o_PageName*/  extends C8oPage {
 		this.events = this.getInstance(Events);
 		this.actionBeans = this.getInstance(ActionBeans);
 
-		if (this.navParams.data == undefined) {
-			this.navParams = new NavParams(this.route)
-		}
-		
+		this.navParams = new NavParams(this.route, this.navParams.data);
+			
 		/*=c8o_PageConstructors*/
 		
 		/*Begin_c8o_PageConstructor*/

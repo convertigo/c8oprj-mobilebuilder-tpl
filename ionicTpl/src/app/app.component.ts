@@ -65,10 +65,8 @@ export class AppComponent extends C8oPageBase {
         this.events = this.getInstance(Events);
         this.actionBeans = this.getInstance(ActionBeans);
 
-		if (this.navParams.data == undefined) {
-			this.navParams = new NavParams(this.route)
-		}
-		
+		this.navParams = new NavParams(this.route, this.navParams.data);
+				
 		this.selectedPath$ = this.angularRouter.events.pipe(
 		  filter(event => event instanceof NavigationEnd),
 		  map((event: NavigationEnd) => event.urlAfterRedirects)
