@@ -12,6 +12,7 @@ import {
 @Directive({
   selector: '[throttleEvent]',
   standalone: true,
+  exportAs: 'throttleEvent'
 })
 export class ThrottleEventDirective implements OnInit, OnDestroy {
   @Input() throttleTime = 400; // in milliseconds
@@ -41,13 +42,19 @@ export class ThrottleEventDirective implements OnInit, OnDestroy {
     event.stopImmediatePropagation();
 
     if (this.locked) {
+      //console.log('Locked Event throttled:', this.throttleType);
       return;
     }
 
     this.locked = true;
     this.throttleEvent.emit(event);
+    //console.log('Event emitted:', this.throttleType);
 
     setTimeout(() => (this.locked = false), this.throttleTime);
+  }
+
+  unlock() {
+    this.locked = false;
   }
 
   ngOnDestroy() {
