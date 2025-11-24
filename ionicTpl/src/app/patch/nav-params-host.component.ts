@@ -27,6 +27,8 @@ export class NavParamsHostComponent implements OnInit, AfterViewInit {
   @Input() __forwardProps: Record<string, any> = {};
   @Input() __navData: Record<string, any> = {};
 
+  public wrappedInstance: any;
+
   constructor(
 	private el: ElementRef,
     private injector: Injector,
@@ -51,10 +53,16 @@ export class NavParamsHostComponent implements OnInit, AfterViewInit {
 
     Object.assign(ref.instance as object, this.__forwardProps);
     ref.changeDetectorRef.detectChanges();
+	
+	this.wrappedInstance = ref.instance;
   }
   
   ngAfterViewInit() {
     const parent = this.el.nativeElement.closest('ion-modal, ion-popover');
+	if (!parent) return;
+	
+	parent.__navHostInstance = this;
+	
     if (parent?.tagName === 'ION-MODAL') {
       this.el.nativeElement.classList.add('modal');
       this.el.nativeElement?.children?.[0]?.classList?.add("ion-page");
@@ -62,6 +70,15 @@ export class NavParamsHostComponent implements OnInit, AfterViewInit {
       this.el.nativeElement.classList.add('popover');
       this.el.nativeElement?.children?.[0]?.classList?.add("popover-viewport");
     }
+	
+	if (this.wrappedInstance?.ionViewWillEnter) this.wrappedInstance.ionViewWillEnter();
+	if (this.wrappedInstance?.ionViewDidEnter) this.wrappedInstance.ionViewDidEnter();
   }
   
+  public triggerEvent(event: any) {
+	if (this.wrappedInstance[event]) {
+		this.wrappedInstance[event]();
+	}
+  }
+
 }
