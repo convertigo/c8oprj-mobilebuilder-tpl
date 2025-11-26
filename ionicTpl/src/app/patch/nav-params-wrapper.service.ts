@@ -59,8 +59,8 @@ export class NavParamsWrapperService {
   }
 
   private forwardHook(overlay: any, event: any) {
-    const hostInstance = overlay?.el?.__navHostInstance;
-    hostInstance?.triggerEvent?.(event);
+	const hostInstance = overlay?.__navHostInstance;
+	hostInstance?.triggerEvent?.(event);
   }
       
   public getModalController() : ModalController {
