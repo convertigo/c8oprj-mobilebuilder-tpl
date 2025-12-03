@@ -52,10 +52,12 @@ export class ThrottleEventDirective implements OnInit, OnDestroy {
     this.throttleEvent.emit(event);
     //console.log('[ThrottleEventDirective] emitted:', this.throttleType);
 
-    this.timeoutId = setTimeout(() => {
-      this.locked = false;
-      //console.log('[ThrottleEventDirective] unlocked after timeout:', this.throttleType);
-    }, this.throttleTime);
+	if(this.throttleTime != -1){
+		this.timeoutId = setTimeout(() => {
+	      this.locked = false;
+	      //console.log('[ThrottleEventDirective] unlocked after timeout:', this.throttleType);
+	    }, this.throttleTime);
+	}
   }
 
   unlock() {
