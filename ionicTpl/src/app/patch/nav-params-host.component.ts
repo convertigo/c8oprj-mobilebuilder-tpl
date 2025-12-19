@@ -14,10 +14,11 @@ import { NavParams } from './nav-params';
         height: 100%;
       }
 
+      /* disabled because it breaks some popovers
       :host(.popover) {
         height: auto;
         max-height: 80vh;
-      }
+      }*/
     `]
 })
 export class NavParamsHostComponent implements OnInit, AfterViewInit {
