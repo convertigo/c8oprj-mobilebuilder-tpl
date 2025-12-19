@@ -17589,6 +17589,17 @@
                         false,
                         true
                     ]
+                },
+                "async": {
+                    "label": "Asynchronous",
+                    "description": "If set to true, the event will be published asynchronously.",
+                    "category": "@parameters",
+                    "type": "boolean",
+                    "value": "true",
+                    "values": [
+                        "false",
+                        "true"
+                    ]
                 }
             }
         },
