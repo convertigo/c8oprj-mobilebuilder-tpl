@@ -8599,7 +8599,7 @@
 					"value": "100"
 				},
 				"Pin": {
-					"attr": "pin",
+					"attr": "[pin]",
 					"label": "Pin",
 					"description": "If true, a pin with integer value is shown when the knob is pressed. Defaults to false.",
 					"category": "@Properties",
@@ -8611,7 +8611,7 @@
 					]
 				},
 				"PinFormatter": {
-					"attr": "pinFormatter",
+					"attr": "[pinFormatter]",
 					"label": "Pin formatter",
 					"description": [
 						"A callback used to format the pin text. By default the pin text is set to Math.round(value).<br/>",
