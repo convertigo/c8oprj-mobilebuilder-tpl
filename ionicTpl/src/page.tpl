@@ -14,6 +14,7 @@ import { NavParams }																	from '../../patch/nav-params';
 
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { IonicModule } from '@ionic/angular';
 import { TranslateModule } from '@ngx-translate/core';
 
 /*
@@ -33,6 +34,7 @@ import { TranslateModule } from '@ngx-translate/core';
 	imports: [
 		CommonModule,
 		FormsModule,
+		IonicModule,
 		TranslateModule,
 		
 		/*c8o_StandAloneNgModules*/
