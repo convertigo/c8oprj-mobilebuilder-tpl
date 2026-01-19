@@ -30,7 +30,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { CommonModule } from '@angular/common';
 import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
-import { IonicModule } from '@ionic/angular';
 import * as icons from "ionicons/icons";
 import { addIcons } from 'ionicons';
 import { signal } from "@angular/core";
@@ -65,7 +64,6 @@ export function patchPopoverController(patch: NavParamsWrapperService) {
   imports: [/*Begin_c8o_NgModules*/
     CommonModule,
     FormsModule,
-	IonicModule,
     IonApp,
     IonRouterOutlet,
     TranslateModule,
