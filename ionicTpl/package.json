@@ -12,6 +12,7 @@
     "ionic:build:fast": "cross-env NODE_OPTIONS=--max_old_space_size=12288 ng build app --configuration=fastbuild",
     "ionic:build:watch": "cross-env NODE_OPTIONS=--max_old_space_size=12288 ng build app --configuration=fastbuild --watch=true",
     "ionic:build:prod": "cross-env NODE_OPTIONS=--max_old_space_size=12288 ng build app --configuration=production --stats-json",
+	"postionic:build:prod": "node ./fix-basehref-and-ngsw.mjs",
     "ionic:serve": "cross-env NODE_OPTIONS=--max_old_space_size=12288 ng serve app --hmr=true",
     "postinstall": "patch-package"
   },
