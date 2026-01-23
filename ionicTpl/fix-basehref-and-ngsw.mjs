@@ -1,13 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import crypto from "node:crypto";
-
 const baseHrefRe = /^\/convertigo.*?\/mobile\/?/;
-
-function sha1File(filePath) {
-  const buf = fs.readFileSync(filePath);
-  return crypto.createHash("sha1").update(buf).digest("hex");
-}
 
 function setBaseHref(html) {
   const exactBaseTag = `<base href="./" data-c8o-mode="web">`;
@@ -55,32 +48,24 @@ function replaceBaseHrefInJson(value, state) {
   return value;
 }
 
-function updateIndexHashInNgsw(json, newHash) {
-  if (!json.hashTable) throw new Error("ngsw.json: missing hashTable");
-
-  const keys = Object.keys(json.hashTable);
-
-  // on update toutes les clés qui pointent vers index.html
-  const candidates = keys.filter(
-    (k) => k === "index.html" || k === "./index.html" || k.endsWith("/index.html")
-  );
-
-  if (candidates.length === 0) {
-    // fallback : injecte "index.html"
-    json.hashTable["index.html"] = newHash;
-  } else {
-    for (const k of candidates) json.hashTable[k] = newHash;
-  }
-}
-
 function main() {
   // Le script est exécuté depuis _private/ionic normalement
   const root = process.cwd();
+  const args = new Set(process.argv.slice(2));
+  const isPwa = args.has("--pwa");
 
-  const indexFile = path.resolve(root, "../../DisplayObjects/mobile/index.html");
-  const ngswFile = path.resolve(root, "../../DisplayObjects/mobile/ngsw.json");
+  const pwaCandidates = [
+    path.resolve(root, "../../DisplayObjects/template-pwa"),
+    path.resolve(root, "../../DisplayObjects/mobile/template-pwa"),
+  ];
+  const targetDir = isPwa
+    ? pwaCandidates.find((dir) => fs.existsSync(path.join(dir, "index.html"))) ||
+      pwaCandidates[0]
+    : path.resolve(root, "../../DisplayObjects/mobile");
+  const indexFile = path.join(targetDir, "index.html");
+  const ngswFile = path.join(targetDir, "ngsw.json");
   const customWorker = path.resolve(root, "ngsw-worker-custom.js");
-  const workerFile = path.resolve(root, "../../DisplayObjects/mobile/ngsw-worker.js");
+  const workerFile = path.join(targetDir, "ngsw-worker.js");
 
   if (!fs.existsSync(indexFile)) throw new Error(`index.html not found: ${indexFile}`);
   if (!fs.existsSync(ngswFile)) throw new Error(`ngsw.json not found: ${ngswFile}`);
@@ -106,11 +91,7 @@ function main() {
   } else {
     console.log("OK no /convertigo.../mobile base href values found in ngsw.json");
   }
-
-  const newHash = sha1File(indexFile);
-  updateIndexHashInNgsw(ngswAfter, newHash);
   fs.writeFileSync(ngswFile, JSON.stringify(ngswAfter, null, 2) + "\n", "utf8");
-  console.log(`✅ updated ngsw.json index.html hash = ${newHash}`);
 }
 
 main();
