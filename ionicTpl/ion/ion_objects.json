@@ -14858,11 +14858,21 @@
                 },
                 "globalProperty": {
                     "label": "Global property",
-                    "description": "Name of the property set on this.global with selected language.",
+                    "description": "Name of the property set on this.global as an Angular signal with selected language.",
                     "category": "@Properties",
                     "type": "string",
                     "value": "language"
                 }
+            },
+            "config": {
+                "action_ts_imports": [
+                    {
+                        "from": "@angular/core",
+                        "components": [
+                            "{ signal }"
+                        ]
+                    }
+                ]
             }
         },
         "GetLanguageAction": {
@@ -14913,7 +14923,7 @@
                 },
                 "globalProperty": {
                     "label": "Global property",
-                    "description": "Name of the property used on this.global for language value.",
+                    "description": "Name of the property used on this.global for language value (signal or plain value).",
                     "category": "@Properties",
                     "type": "string",
                     "value": "language"
@@ -14973,6 +14983,16 @@
                         "true"
                     ]
                 }
+            },
+            "config": {
+                "action_ts_imports": [
+                    {
+                        "from": "@angular/core",
+                        "components": [
+                            "{ signal }"
+                        ]
+                    }
+                ]
             }
         },
         "SetThemeAction": {

@@ -10,6 +10,35 @@
             props = props || {};
 
             try {
+                var isSignalLike = function(value: any): boolean {
+                    return typeof value === "function" && value != null && typeof value.set === "function";
+                };
+
+                var readValue = function(value: any): any {
+                    if (isSignalLike(value)) {
+                        try {
+                            return value();
+                        } catch (e) {
+                        }
+                    }
+                    return value;
+                };
+
+                var writeGlobalSignal = function(host: any, propertyName: string, value: any): void {
+                    if (!host || !host.global || propertyName == "") {
+                        return;
+                    }
+                    var current = host.global[propertyName];
+                    if (isSignalLike(current)) {
+                        try {
+                            current.set(value);
+                            return;
+                        } catch (e) {
+                        }
+                    }
+                    host.global[propertyName] = signal(value);
+                };
+
                 var normalizeLang = function(value: any): string {
                     if (value == null) {
                         return "";
@@ -56,6 +85,38 @@
                     return [];
                 };
 
+                var resolveLanguageLabelKey = function(value: any): string {
+                    var lang = normalizeLang(value);
+                    if (lang == "fr") {
+                        return "Lang_French";
+                    }
+                    if (lang == "it") {
+                        return "Lang_Italian";
+                    }
+                    if (lang == "es") {
+                        return "Lang_Spanish";
+                    }
+                    return "Lang_English";
+                };
+
+                var exposeLanguageLabelHelper = function(host: any, propertyName: string, fallbackLang: string): void {
+                    if (!host || !host.global) {
+                        return;
+                    }
+                    host.global.getLanguageLabelKey = function(inputLanguage: any): string {
+                        var lang = "";
+                        if (inputLanguage != null && ("" + inputLanguage).trim() != "") {
+                            lang = normalizeLang(inputLanguage);
+                        } else if (propertyName != "") {
+                            lang = normalizeLang(readValue(host.global[propertyName]));
+                        }
+                        if (lang == "") {
+                            lang = normalizeLang(fallbackLang) || "en";
+                        }
+                        return resolveLanguageLabelKey(lang);
+                    };
+                };
+
                 var storageKey = (props.storageKey != null && ("" + props.storageKey).trim() != "") ? ("" + props.storageKey).trim() : "c8o.language";
                 var fallbackLanguage = normalizeLang(props.fallbackLanguage) || "en";
                 var supportedLanguages = parseLanguages(props.supportedLanguages);
@@ -76,7 +137,7 @@
                 }
 
                 if (selectedLanguage == "" && useGlobal && page && page.global && globalProperty != "") {
-                    selectedLanguage = normalizeLang(page.global[globalProperty]);
+                    selectedLanguage = normalizeLang(readValue(page.global[globalProperty]));
                     if (selectedLanguage != "") {
                         source = "global";
                     }
@@ -130,7 +191,8 @@
                 }
 
                 if (page && page.global && globalProperty != "") {
-                    page.global[globalProperty] = selectedLanguage;
+                    writeGlobalSignal(page, globalProperty, selectedLanguage);
+                    exposeLanguageLabelHelper(page, globalProperty, fallbackLanguage);
                 }
 
                 resolve({
