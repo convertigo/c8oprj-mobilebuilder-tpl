@@ -5,5 +5,5 @@
     
     Resources of this project are used as template to build a NGX Builder application.
   httpSessionTimeout: 300
-  version: 8.4.0.38
+  version: 8.4.0.39
   ↓void [connectors.HttpConnector]: 🗏 connectors/void.yaml
