@@ -18626,73 +18626,118 @@
                                     },
                                     "Button": [
                                         {
-                                            "Icon": {
+                                            "properties": {
+                                                "IonFill": "clear"
+                                            },
+                                            "com.twinsoft.convertigo.beans.ngx.components.UIAttribute": {
                                                 "properties": {
-                                                    "IconName": "ellipsis-vertical"
+                                                    "attrName": "class",
+                                                    "attrValue": "toolbar-theme-button"
                                                 }
                                             },
                                             "com.twinsoft.convertigo.beans.ngx.components.UIControlEvent": {
                                                 "properties": {
                                                     "eventName": "onClick"
+                                                },
+                                                "SetThemeAction": {
+                                                    "properties": {
+                                                        "dark": "TS=!(this.global && this.global.themeDark)"
+                                                    }
+                                                }
+                                            },
+                                            "Icon": {
+                                                "properties": {
+                                                    "IconName": "TS=(this.global && this.global.themeDark) ? 'sunny-outline' : 'moon-outline'"
                                                 }
                                             }
                                         }
-                                    ]
+                                    ],
+                                    "Select": {
+                                        "properties": {
+                                            "Justify": "start",
+                                            "Interface": "popover",
+                                            "Value": "TS=this.global?.currentLanguage?.() ?? 'en'",
+                                            "SelectedText": "TS=(this.global?.getLanguageLabelKey?.() ?? 'Lang_English') | translate"
+                                        },
+                                        "com.twinsoft.convertigo.beans.ngx.components.UIAttribute": {
+                                            "properties": {
+                                                "attrName": "class",
+                                                "attrValue": "toolbar-lang-select"
+                                            }
+                                        },
+                                        "com.twinsoft.convertigo.beans.ngx.components.UIControlEvent": {
+                                            "properties": {
+                                                "eventName": "ionChange"
+                                            },
+                                            "SetLanguageAction": {
+                                                "properties": {
+                                                    "language": "TS=event.detail.value",
+                                                    "storageKey": "c8o-lang",
+                                                    "globalProperty": "currentLanguage"
+                                                }
+                                            }
+                                        },
+                                        "SelectOption": [
+                                            {
+                                                "properties": {
+                                                    "Value": "en"
+                                                },
+                                                "com.twinsoft.convertigo.beans.ngx.components.UIText": {
+                                                    "properties": {
+                                                        "textValue": "Lang_English",
+                                                        "i18n": true
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "properties": {
+                                                    "Value": "fr"
+                                                },
+                                                "com.twinsoft.convertigo.beans.ngx.components.UIText": {
+                                                    "properties": {
+                                                        "textValue": "Lang_French",
+                                                        "i18n": true
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "properties": {
+                                                    "Value": "it"
+                                                },
+                                                "com.twinsoft.convertigo.beans.ngx.components.UIText": {
+                                                    "properties": {
+                                                        "textValue": "Lang_Italian",
+                                                        "i18n": true
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "properties": {
+                                                    "Value": "es"
+                                                },
+                                                "com.twinsoft.convertigo.beans.ngx.components.UIText": {
+                                                    "properties": {
+                                                        "textValue": "Lang_Spanish",
+                                                        "i18n": true
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
                                 }
                             ],
                             "BarTitle": {
                                 "com.twinsoft.convertigo.beans.ngx.components.UIText": {
                                     "properties": {
-                                        "textValue": "ToolBar title"
+                                        "textValue": "Home",
+                                        "i18n": true
                                     }
                                 }
                             }
                         }
                     },
-                    "Content": {},
-                    "Footer": {
-                        "ToolBar": {
-                            "ButtonSet": [
-                                {
-                                    "properties": {
-                                        "SetPosition": "start"
-                                    },
-                                    "Button": [
-                                        {
-                                            "com.twinsoft.convertigo.beans.ngx.components.UIText": {
-                                                "properties": {
-                                                    "textValue": "Action1"
-                                                }
-                                            },
-                                            "com.twinsoft.convertigo.beans.ngx.components.UIControlEvent": {
-                                                "properties": {
-                                                    "eventName": "onClick"
-                                                }
-                                            }
-                                        }
-                                    ]
-                                },
-                                {
-                                    "properties": {
-                                        "SetPosition": "end"
-                                    },
-                                    "Button": [
-                                        {
-                                            "com.twinsoft.convertigo.beans.ngx.components.UIText": {
-                                                "properties": {
-                                                    "textValue": "Action2"
-                                                }
-                                            },
-                                            "com.twinsoft.convertigo.beans.ngx.components.UIControlEvent": {
-                                                "properties": {
-                                                    "eventName": "onClick"
-                                                }
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
+                    "Content": {
+                        
                     }
                 }
             }
