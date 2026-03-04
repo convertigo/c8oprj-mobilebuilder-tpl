@@ -1522,7 +1522,7 @@
 			"label": "Back Button",
 			"description": [
 				"ion-back-button| Defines a <i>Back Button</i> component.<br/>",
-				"A <i>Back Button</i> helps navigating back in the app's history upon click.</br>",
+				"A <i>Back Button</i> helps navigating back in the app's history upon click.<br/>",
 				"It is smart enough to know what to render based on the mode and when to show based on the navigation stack.<br/>",
 				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/back-button'>Avatar</a>."
 			],
@@ -2815,10 +2815,10 @@
 			"description": [
 				" | Defines a <i>Tooltip</i> component. The <i>Tooltip</i> is a pop-up tip that appears when you hover over an item or click on it.<br/>",
 				" To use it, place the <i>Tooltip</i> inside any component such as <i>Button</i> or <i>Generic item</i>.<br/>",
-				"Usage for the <i>Tooltip content</i> to be displayed according to the <i>Tooltip content type</i> property:</br><ul>",
-				"<li>string:</br>[TX mode] <code>A simple tooltip string</code></li>",
-				"<li>html:</br>[TX mode] <code><span>Hello i'm a <strong>bold</strong> text!</span></code></li>",
-				"<li>template:</br>[TS mode] <code>this.MyNgTemplateIdentifier</code></li>",
+				"Usage for the <i>Tooltip content</i> to be displayed according to the <i>Tooltip content type</i> property:<br/><ul>",
+				"<li>string:<br/>[TX mode] <code>A simple tooltip string</code></li>",
+				"<li>html:<br/>[TX mode] <code><span>Hello i'm a <strong>bold</strong> text!</span></code></li>",
+				"<li>template:<br/>[TS mode] <code>this.MyNgTemplateIdentifier</code></li>",
 				"</ul><br/>",
 				" For more information: <a href='https://www.npmjs.com/package/ng2-tooltip-directive'>ng2-tooltip-directive</a>."
 			],
@@ -3000,10 +3000,10 @@
 					"label": "Tooltip content",
 					"description": [
 						"The content to be displayed in the popup according to the <i>Tooltip content type</i> property.<br/>",
-						"Usage according to content type:</br><ul>",
-						"<li>string:</br>[TX mode] <code>A simple tooltip string</code></li>",
-						"<li>html:</br>[TX mode] <code><span>Hello i'm a <strong>bold</strong> text!</span></code></li>",
-						"<li>template:</br>[TS mode] <code>this.MyNgTemplateIdentifier</code></li>",
+						"Usage according to content type:<br/><ul>",
+						"<li>string:<br/>[TX mode] <code>A simple tooltip string</code></li>",
+						"<li>html:<br/>[TX mode] <code><span>Hello i'm a <strong>bold</strong> text!</span></code></li>",
+						"<li>template:<br/>[TS mode] <code>this.MyNgTemplateIdentifier</code></li>",
 						"</ul>"
 					],
 					"category": "@Properties",
@@ -3863,7 +3863,7 @@
 				"ion-menu-toggle| Defines a <i>Menu AutoItems</i> component.<br/>",
 				"This component may be added <u>once</u> inside a <i>Menu</i> component.<br/>",
 				"It will generate a menu with links to all your visible pages in the order you've set.<br/>",
-				"A <i>Page</i> is considered as visible if it is <code>enabled</code> and if its <i>Include in auto menu</i> property is set to <ode>true</code>.<br/>",
+				"A <i>Page</i> is considered as visible if it is <code>enabled</code> and if its <i>Include in auto menu</i> property is set to <code>true</code>.<br/>",
 				"You can not add child components to it except <i>Attr</i> components."
 			],
 			"group": "Menus",
@@ -5646,7 +5646,7 @@
 			"description": [
 				"ion-item-sliding| Defines an <i>Sliding Container</i> component.<br/>",
 				"A <i>Sliding Container</i> contains an item that can be dragged to reveal buttons.<br/>",
-				"It requires a <i>List Item</i> or a <Generic Item</i> component as a child.<br/>",
+				"It requires a <i>List Item</i> or a <i>Generic Item</i> component as a child.<br/>",
 				"All <i>Sliding Button</i>s to reveal should be placed in a <i>Sliding ButtonSet</i> component.<br/>",
 				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/item-sliding'>Sliding item</a>."
 			],
@@ -15228,7 +15228,7 @@
       "description": [
 "Defines a <i>SpeechToEvent</i> action component. | Listen a speech.<br/>",
 "This component fires a 'speechReceived' event with speech recognition's data.<br/>",
-" You may subscribe to this event through a <i>Subscribe Handler</i> you can add under a Page and add to it any type of action such as <i>CallSequence, CallFulSync or CustomAction</i> components.</br>Note that more languages are avaible in an external browser, or device than in Convertigo viewer.<br/>",
+" You may subscribe to this event through a <i>Subscribe Handler</i> you can add under a Page and add to it any type of action such as <i>CallSequence, CallFulSync or CustomAction</i> components.<br/>Note that more languages are avaible in an external browser, or device than in Convertigo viewer.<br/>",
 "<br/>",
 "<u>Supported platorm(s):</u> <br/>",
 " \u2022 Android<br/>",
@@ -17000,7 +17000,7 @@
 			"displayName": "PublishEvent",
 			"label": "PublishEvent",
 			"description": [
-				"Defines a <i>PublishEvent</i> action component. |This component helps publishing an event giving its topic and optional data Object in (TS) mode, e.g.:</br>",
+				"Defines a <i>PublishEvent</i> action component. |This component helps publishing an event giving its topic and optional data Object in (TS) mode, e.g.:<br/>",
 				"<code>{user: 'user89', id: 89}</code><br/>",
 				"The event may be handled by an existing <i>Subscribe Handler</i> component in any available page."
 			],
@@ -17039,7 +17039,7 @@
 			"displayName": "EmitEvent",
 			"label": "EmitEvent",
 			"description": [
-				"Defines a <i>EmitEvent</i> action component. |This component helps emiting an event from a shared component giving its name and optional data Object in (TS) mode, e.g.:</br>",
+				"Defines a <i>EmitEvent</i> action component. |This component helps emiting an event from a shared component giving its name and optional data Object in (TS) mode, e.g.:<br/>",
 				"<code>{user: 'user89', id: 89}</code><br/>",
 				"The event may be handled by an existing <i>Event</i> component added to a <i>Use Shared</i> component."
 			],
