@@ -2818,7 +2818,7 @@
 				"Usage for the <i>Tooltip content</i> to be displayed according to the <i>Tooltip content type</i> property:</br><ul>",
 				"<li>string:</br>[TX mode] <code>A simple tooltip string</code></li>",
 				"<li>html:</br>[TX mode] <code><span>Hello i'm a <strong>bold</strong> text!</span></code></li>",
-				"<li>template:</br>[TS mode] <code>this.MyNgTemplateIdentifier</li>",
+				"<li>template:</br>[TS mode] <code>this.MyNgTemplateIdentifier</code></li>",
 				"</ul><br/>",
 				" For more information: <a href='https://www.npmjs.com/package/ng2-tooltip-directive'>ng2-tooltip-directive</a>."
 			],
@@ -3003,7 +3003,7 @@
 						"Usage according to content type:</br><ul>",
 						"<li>string:</br>[TX mode] <code>A simple tooltip string</code></li>",
 						"<li>html:</br>[TX mode] <code><span>Hello i'm a <strong>bold</strong> text!</span></code></li>",
-						"<li>template:</br>[TS mode] <code>this.MyNgTemplateIdentifier</li>",
+						"<li>template:</br>[TS mode] <code>this.MyNgTemplateIdentifier</code></li>",
 						"</ul>"
 					],
 					"category": "@Properties",
