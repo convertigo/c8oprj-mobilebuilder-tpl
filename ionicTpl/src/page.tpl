@@ -84,6 +84,21 @@ export class /*=c8o_PageName*/  extends C8oPage {
 	public log(val) {
 	    console.log(val);
 	}
+
+	public getPageName() {
+		return "/*=c8o_PageName*/";		
+	}
+	
+	public getPageInfos() {
+		//Array<{title: string, titleKey: string, url: string, icon: string, iconPos: string, name: string, includedInAutoMenu?: boolean}>
+		for (let i=0; i<this.routerProvider.pagesArray.length; i++) {
+			let info = this.routerProvider.pagesArray[i];
+			if (this.getPageName() == info["name"]) {
+				return info;
+			}
+		}
+		return {name: this.getPageName()};
+	}
 	
 	public navigate(url: string, data: any) {
 	    this.angularRouter.navigate([url], { queryParams: data });
