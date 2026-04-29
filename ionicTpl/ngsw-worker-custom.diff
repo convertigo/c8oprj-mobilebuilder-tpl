@@ -7,19 +7,13 @@
 >           }
 533a539
 >           const finalRes = await this.maybeRewriteIndexHtml(req, res);
-535c541
-<           await cache.put(req, res.clone());
----
->           await cache.put(req, finalRes.clone());
 541c547
 <           return res;
 ---
 >           return finalRes;
-578c584
-<               throw new SwCriticalError(`Hash mismatch (cacheBustedFetchFromNetwork): ${req.url}: expected ${canonicalHash}, got ${cacheBustedHash} (after cache busting)`);
----
->               //throw new SwCriticalError(`Hash mismatch (cacheBustedFetchFromNetwork): ${req.url}: expected ${canonicalHash}, got ${cacheBustedHash} (after cache busting)`);
-637a644,684
+635a642,678
+>       }
+>     }
 > 
 >     async maybeRewriteIndexHtml(req, res) {
 >       const url = this.adapter.normalizeUrl(req.url);
@@ -55,12 +49,11 @@
 >       }
 >       if (next === text) {
 >         return res;
->       }
+636a680,683
 >       const headers = new Headers(res.headers);
 >       headers.set("Content-Type", "text/html; charset=utf-8");
 >       headers.delete("Content-Length");
 >       return this.adapter.newResponse(next, { status: res.status, statusText: res.statusText, headers });
->     }
 1166a1214,1220
 >       const isNav = this.isNavigationRequest(req);
 >       const maybeRewrite = async (res) => {
@@ -89,7 +82,8 @@
 <         return this.handleFetch(this.adapter.newRequest(this.indexUrl), event);
 ---
 >         return await maybeRewrite(await this.handleFetch(this.adapter.newRequest(this.indexUrl), event));
-1197a1252,1286
+1196a1251,1285
+>     }
 >     async maybeRewriteIndexHtmlForNavigation(req, res) {
 >       if (res.type === "opaque") {
 >         return res;
@@ -124,4 +118,14 @@
 >       headers.set("Content-Type", "text/html; charset=utf-8");
 >       headers.delete("Content-Length");
 >       return this.adapter.newResponse(next, { status: res.status, statusText: res.statusText, headers });
->     }
+1809,1810c1898
+<         this.idle.schedule("check-updates-on-navigation", async () => {
+<           this.scheduledNavUpdateCheck = false;
+---
+>         try {
+1812c1900,1902
+<         });
+---
+>         } finally {
+>           this.scheduledNavUpdateCheck = false;
+>         }

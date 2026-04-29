@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 const baseHrefRe = /^\/convertigo.*?\/mobile\/?/;
 
 function setBaseHref(html) {
@@ -48,6 +49,28 @@ function replaceBaseHrefInJson(value, state) {
   return value;
 }
 
+function sha1(value) {
+  return crypto.createHash("sha1").update(value).digest("hex");
+}
+
+function updateIndexHash(manifest, indexContent) {
+  const hashTable = manifest.hashTable;
+  if (!hashTable || typeof hashTable !== "object" || Array.isArray(hashTable)) {
+    throw new Error("ngsw.json has no hashTable object");
+  }
+
+  const indexHash = sha1(indexContent);
+  const indexKeys = Object.keys(hashTable).filter((key) => key === "index.html" || key.endsWith("/index.html"));
+  if (indexKeys.length === 0) {
+    throw new Error("ngsw.json hashTable has no index.html entry");
+  }
+
+  for (const key of indexKeys) {
+    hashTable[key] = indexHash;
+  }
+  return { indexHash, indexKeys };
+}
+
 function main() {
   // Le script est exécuté depuis _private/ionic normalement
   const root = process.cwd();
@@ -86,11 +109,13 @@ function main() {
   const ngswBefore = JSON.parse(fs.readFileSync(ngswFile, "utf8"));
   const state = { changed: false };
   const ngswAfter = replaceBaseHrefInJson(ngswBefore, state);
+  const { indexHash, indexKeys } = updateIndexHash(ngswAfter, fs.readFileSync(indexFile));
   if (state.changed) {
     console.log("OK replaced /convertigo.../mobile base href values in ngsw.json");
   } else {
     console.log("OK no /convertigo.../mobile base href values found in ngsw.json");
   }
+  console.log(`OK updated ngsw.json index hash (${indexKeys.join(", ")}) to ${indexHash}`);
   fs.writeFileSync(ngswFile, JSON.stringify(ngswAfter, null, 2) + "\n", "utf8");
 }
 
