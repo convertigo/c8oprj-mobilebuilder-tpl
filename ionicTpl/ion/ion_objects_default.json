@@ -1097,7 +1097,37 @@
      "value": false
     }
    }
-  }
+  },
+  "   8   4   0": {
+   "name": "Menu",
+   "properties": {
+    "Disabled": {
+     "name": "Disabled",
+     "mode": "plain",
+     "value": "false"
+    },
+    "MenuType": {
+     "name": "MenuType",
+     "mode": "plain",
+     "value": false
+    },
+    "MenuSide": {
+     "name": "MenuSide",
+     "mode": "plain",
+     "value": "start"
+    },
+    "MenuSwipeEnabled": {
+     "name": "MenuSwipeEnabled",
+     "mode": "plain",
+     "value": "true"
+    },
+    "MenuMaxEdgeStart": {
+     "name": "MenuMaxEdgeStart",
+     "mode": "plain",
+     "value": false
+    }
+   }
+  }  
  },
  "MenuAutoItems": {
   "   7   9   0": {
