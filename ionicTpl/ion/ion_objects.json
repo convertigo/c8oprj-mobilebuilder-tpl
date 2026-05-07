@@ -3678,7 +3678,8 @@
                 "ion-tabs| Defines a <i>Tabs Container</i> component.<br/>",
                 "The <i>Tabs Container</i> is a top level navigation component to implement a tab-based navigation. It is a container of individual Tab components.<br/>",
                 "The <i>Tabs Container</i> does not have any styling and works as a router outlet in order to handle navigation. It does not provide any UI feedback or mechanism to switch between tabs. In order to do so, a <i>Tab Bar</i> should be provided as a direct child.<br/>",
-                " For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/tabs'>Tabs</a>."
+				"You can programmatically select a tab via <code>mytabs.select('mytab')</code> where <code>mytabs</code> is the <i>identifier</i> of your <i>Tabs Container</i>.<br/>",
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/tabs'>Tabs</a>."
             ],
             "group": "Components",
             "icon16": "tabscontainer_16x16.png",
@@ -3715,7 +3716,8 @@
             "description": [
                 "ion-tab-bar| Defines a <i>Tab Bar</i> component.<br/>",
                 "A <i>Tab Bar</i> is component that contains a set of <i>Tab Button</i>s. It must be provided inside of a <i>Tabs Container</i> to communicate with each tab.<br/>",
-                " For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/tab-bar'>Tab Bar</a>."
+				"You can programmatically access the selected tab via <code>mybar.selectedTab</code> where <code>mybar</code> is the <i>identifier</i> of your <i>Tab Bar</i>.<br/>",
+				" For more information: <a href='https://ionic-docs-o31kiyk8l-ionic1.vercel.app/docs/api/tab-bar'>Tab Bar</a>."
             ],
             "group": "Components",
             "icon16": "tabbar_16x16.png",
@@ -3725,6 +3727,7 @@
                 "IonMode": false,
                 "IonSlot": "bottom",
                 "SelectedTab": {
+					"hidden": true,
                     "attr": "selectedTab",
                     "label": "Selected tab",
                     "description": "The selected tab button.",
@@ -3801,6 +3804,7 @@
                     ]
                 },
                 "Selected": {
+					"hidden": true,
                     "attr": "selected",
                     "label": "Selected",
                     "description": "If set to 'true' this tab button will be selected.",
