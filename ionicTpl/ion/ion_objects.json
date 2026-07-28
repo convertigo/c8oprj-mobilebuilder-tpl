@@ -15250,9 +15250,9 @@
             "displayName": "AuthorizePages",
             "label": "Authorize Pages",
             "description": [
-                "Defines an <i>Authorize Page</i> action component. | This component evaluates authentication state and applies page access rules (protected pages and guest-only pages).<br/>",
+                "Defines an <i>Authorize Page</i> action component. | This component evaluates authentication state, permission-based page rules, and page access rules (protected pages and guest-only pages).<br/>",
                 "When denied, it can automatically redirect to another page.<br/>",
-                "You can access results with <code>out.authenticated</code>, <code>out.allowed</code>, <code>out.reason</code> and <code>out.redirected</code>."
+                "You can access results with <code>out.authenticated</code>, <code>out.userPermissions</code>, <code>out.allowed</code>, <code>out.reason</code> and <code>out.redirected</code>."
             ],
             "group": "Actions",
             "icon16": "authorizepages_16x16.png",
@@ -15290,6 +15290,32 @@
                         true
                     ]
                 },
+                "pagePermissionRules": {
+                    "label": "Page permission rules",
+                    "description": "(TS mode) Permission rules by page. Use an array such as [{page: 'Admin', permissions: ['admin.read']}, {pages: ['Audit','Reports'], permissions: ['audit.read','reports.read'], match: 'any'}], or a map such as {Admin: ['admin.read'], Audit: {permissions: ['audit.read','reports.read'], match: 'all'}}. A permission rule also requires authentication.",
+                    "category": "@Permission authorization",
+                    "mode": "script",
+                    "type": "array",
+                    "value": "[]"
+                },
+                "requiredPermissionsMatch": {
+                    "label": "Required permissions match",
+                    "description": "Default evaluation for a page permission rule: any requires one permission, all requires every permission. A rule-level match property overrides this value.",
+                    "category": "@Permission authorization",
+                    "type": "string",
+                    "value": "any",
+                    "values": [
+                        "any",
+                        "all"
+                    ]
+                },
+                "globalUserProfileProperty": {
+                    "label": "Global user profile property",
+                    "description": "(TS/source mode) User profile to evaluate directly, for example this.global.userProfile or a sequence output. The profile must expose a permissions array, for example {name: 'Alice', permissions: ['admin.read']}.",
+                    "category": "@Permission authorization",
+                    "mode": "script",
+                    "value": "this.global.userProfile"
+                },
                 "redirectOnDenied": {
                     "label": "Redirect on denied",
                     "description": "Automatically redirect when the page is denied by access rules.",
@@ -15314,6 +15340,20 @@
                     "category": "@Properties",
                     "type": "string",
                     "value": "page"
+                },
+                "redirectPermissionDeniedTo": {
+                    "label": "Redirect permission denied to",
+                    "description": "Target page when an authenticated user does not have the required permission. Leave empty to deny navigation without redirecting.",
+                    "category": "@Permission authorization",
+                    "type": "string",
+                    "value": ""
+                },
+                "permissionDeniedMessage": {
+                    "label": "Permission denied message",
+                    "description": "Toast message displayed when an authenticated user is denied because required permissions are missing. Leave empty to disable the message.",
+                    "category": "@Permission authorization",
+                    "type": "string",
+                    "value": "Access denied: insufficient permissions."
                 },
                 "allowByDefault": {
                     "label": "Allow by default",
