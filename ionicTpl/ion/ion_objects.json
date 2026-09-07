@@ -14316,13 +14316,6 @@
                     "type": "string",
                     "value": false
                 },
-                "htmlAttributes": {
-                    "label": "Html Attributes",
-                    "description": "Additional attributes to pass to the toast. Type: { [key: string]: any }",
-                    "category": "@Properties",
-                    "type": "string",
-                    "value": false
-                },
                 "showBackdrop": {
                     "label": "Show Backdrop",
                     "description": "If true, a backdrop will be displayed behind the loading indicator.",
