@@ -1,6 +1,6 @@
 {
-  "version": "8.4.0.56",
+  "version": "8.4.0.57",
   "standalone": "true",
-  "nodeJsVersion": "v24.14.1"
+  "nodeJsVersion": "v24.22.1"
 }
 
